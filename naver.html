@@ -1,0 +1,2982 @@
+
+
+<!doctype html>                <html lang="ko" data-dark="false"> <head> <meta charset="utf-8"> <title>NAVER</title> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=1190"> <meta name="apple-mobile-web-app-title" content="NAVER"/> <meta name="robots" content="index,nofollow"/> <meta name="description" content="네이버 메인에서 다양한 정보와 유용한 컨텐츠를 만나 보세요"/> <meta property="og:title" content="네이버"> <meta property="og:url" content="https://www.naver.com/">
+
+
+
+
+
+
+
+
+<div class="special_bg">
+<div class="group_flex">
+<div class="logo_area">
+<h1 class="logo_default">
+<a href="/" class="logo_naver" data-clk="top.logo"
+><span class="blind">네이버</span></a
+>
+</h1>
+</div>
+<div class="service_area">
+<a id="NM_set_home_btn" href="https://help.naver.com/support/welcomePage/guide.help" class="link_set" data-clk="top.mkhome">네이버를 시작페이지로</a>
+<i class="sa_bar"></i>
+<a href="https://jr.naver.com" class="link_jrnaver" data-clk="top.jrnaver"><i class="ico_jrnaver"></i><span class="blind">쥬니어네이버</span></a>
+<a href="https://happybean.naver.com" class="link_happybin" data-clk="top.happybean"><i class="ico_happybin"></i><span class="blind">해피빈</span></a>
+</div>
+
+<div id="search" class="search_area" data-clk-prefix="sch">
+<form id="sform" name="sform" action="https://search.naver.com/search.naver" method="get" role="search">
+<fieldset>
+<legend class="blind">검색</legend>
+<select id="where" name="where" title="검색 범위 선택" class="blind">
+<option value="nexearch" selected="selected">통합검색</option><option value="post">블로그</option><option value="cafeblog">카페</option><option value="cafe">- 카페명</option><option value="article">- 카페글</option><option value="kin">지식iN</option><option value="news">뉴스</option><option value="web">사이트</option><option value="category">- 카테고리</option><option value="site">- 사이트</option><option value="movie">영화</option><option value="webkr">웹문서</option><option value="dic">사전</option><option value="100">- 백과사전</option><option value="endic">- 영어사전</option><option value="eedic">- 영영사전</option><option value="krdic">- 국어사전</option><option value="jpdic">- 일본어사전</option><option value="hanja">- 한자사전</option><option value="terms">- 용어사전</option><option value="book">책</option><option value="music">음악</option><option value="doc">전문자료</option><option value="shop">쇼핑</option><option value="local">지역</option><option value="video">동영상</option><option value="image">이미지</option><option value="mypc">내PC</option><optgroup label="스마트 파인더"><option value="movie">영화</option><option value="auto">자동차</option><option value="game">게임</option><option value="health">건강</option><option value="people">인물</option></optgroup><optgroup label="네이버 랩"><option>긍정부정검색</option></optgroup>
+</select>
+<input type="hidden" id="sm" name="sm" value="top_hty" />
+<input type="hidden" id="fbm" name="fbm" value="0" />
+<input type="hidden" id="acr" name="acr" value="" disabled="disabled" />
+<input type="hidden" id="acq" name="acq" value="" disabled="disabled" />
+<input type="hidden" id="qdt" name="qdt" value="" disabled="disabled" />
+<input type="hidden" id="ie" name="ie" value="utf8" />
+<input type="hidden" id="acir" name="acir" value="" disabled="disabled" />
+<input type="hidden" id="os" name="os" value="" disabled="disabled" />
+<input type="hidden" id="bid" name="bid" value="" disabled="disabled" />
+<input type="hidden" id="pkid" name="pkid" value="" disabled="disabled" />
+<input type="hidden" id="eid" name="eid" value="" disabled="disabled" />
+<input type="hidden" id="mra" name="mra" value="" disabled="disabled" />
+
+
+
+<div class="green_window" style=''>
+<!-- [AU] data-atcmp-element 에 해당하는 attribute를 추가해주세요. -->
+<input id="query" name="query" type="text" title="검색어 입력" maxlength="255" class="input_text" tabindex="1" accesskey="s" style="ime-mode:active;" autocomplete="off"  placeholder="검색어를 입력해 주세요." onclick="document.getElementById('fbm').value=1;" value="" data-atcmp-element>
+</div>
+<button id="search_btn" type="submit" title="검색" tabindex="3" class="btn_submit" onclick="window.nclick(this,'sch.action','','',event);" style=''>
+<span class="blind">검색</span>
+<span class="ico_search_submit"></span>
+</button>
+</fieldset>
+</form>
+<!-- 한글입력기 -->
+<a href="#" id="ke_kbd_btn" role="button" class="btn_keyboard" onclick="return false;"><span class="blind">한글 입력기</span><span class="ico_keyboard"></span></a>
+<div id="_nx_kbd" style="display:none;"></div>
+<div class="autocomplete">
+<!-- 자동완성 열린 경우 fold 클래스 추가, 딤드인 경우 dim 추가 -->
+<a href="#" role="button" id="nautocomplete" tabindex="2" class="btn_arw _btn_arw fold" aria-pressed="false" data-atcmp-element><span class="blind">자동완성 레이어</span><span class="ico_arr"></span></a>
+</div>
+<!-- 자동완성레이어 -->
+<div id="autoFrame" class="reatcmp" style="display: none;">
+<!-- [AU] data-atcmp-element attribute를 추가해주세요. -->
+<div class="ly_atcmp" data-atcmp-element>
+<div class="api_atcmp_wrap">
+<!-- 최근검색어 -->
+<!-- [AU] _recent_layer 클래스를 추가해주세요. -->
+<div class="atcmp_fixer _recent_layer" style="display:none;">
+<!-- [AU] _recent_header 클래스를 추가해주세요. -->
+<div class="atcmp_header _recent_header">
+<strong class="tit">최근검색어</strong>
+<div class="option">
+<!-- [AU] _delAll 클래스를 추가해주세요. -->
+<a role="button" href="#" class="item _delAll" aria-pressed="false">전체삭제</a>
+</div>
+</div>
+<div class="atcmp_container">
+<!-- [AU] _recent 클래스를 추가해주세요. -->
+<ul class="kwd_lst _recent">
+<!-- 최근검색어 템플릿 -->
+<!-- [AU] _item 클래스를 추가해주세요. -->
+<!-- [AU] data-template-type="history" data-keyword="@in_txt@" attribute를 추가해주세요. -->
+<li class="item _item" data-rank="@rank@" data-template-type="history" data-keyword="@in_txt@">
+<a href="#" class="kwd">
+<span class="fix"><span class="common_ico_kwd"><i class="imsc ico_search"></i></span><span>@txt@</span></span>
+</a>
+<span class="etc">
+<em class="date">@date@.</em>
+<!-- [AU] _del 클래스를 추가해주세요. -->
+<a href="#" role="button" class="bt_item _del" aria-pressed="false"><i class="imsc ico_del">삭제</i></a>
+</span>
+</li>
+</ul>
+<!-- [D] 검색어 저장 꺼진 경우 atcmp_fixer에 type_off 추가 -->
+<!-- [AU] _offMsg 클래스를 추가해주세요. -->
+<div class="kwd_info kwd_off _offMsg" style="display: none;">검색어 저장 기능이 꺼져 있습니다.<br><span class="kwd_dsc">설정이 초기화 된다면 <a href="https://help.naver.com/support/alias/search/word/word_29.naver" class="kwd_help" data-clk="sly.help" target="_blank">도움말</a>을 확인해주세요.</span></div>
+<!-- [D] 검색어 내역 없는 경우 atcmp_fixer에 type_off 추가 -->
+<!-- [AU] _recentNone 클래스를 추가해주세요. -->
+<div class="kwd_info kwd_none _recentNone" style="display: none;">최근 검색어 내역이 없습니다.<br><span class="kwd_dsc">설정이 초기화 된다면 <a href="https://help.naver.com/support/alias/search/word/word_29.naver" class="kwd_help" data-clk="sly.help" target="_blank">도움말</a>을 확인해주세요.</span></div>
+</div>
+<div class="atcmp_footer">
+<span class="side_opt_area">
+<span class="opt_item"><a href="https://help.naver.com/support/service/main.help?serviceNo=605&amp;categoryNo=1991" data-clk="sly.help" target="_blank">도움말</a></span>
+</span>
+<span class="rside_opt_area">
+<span class="opt_item">
+<!-- [AU] _keywordOnOff 클래스를 추가해주세요. -->
+<a href="#" class="close _keywordOnOff">자동저장 끄기</a>
+</span>
+</span>
+</div>
+</div>
+<!-- 자동완성 -->
+<!-- [AU] _atcmp_layer 클래스를 추가해주세요. -->
+<div class="atcmp_fixer _atcmp_layer" style="display:none;">
+<!-- [AU] _words 클래스를 추가해주세요. -->
+<div class="atcmp_container _words">
+<!-- 정답형 템플릿 : 로또당첨번호 -->
+<!-- [AU] _answer 클래스를 추가해주세요. -->
+<!-- [AU] data-template-type="answer_3" data-code="@code@" data-keyword="@1@" attribute를 추가해주세요. -->
+<div class="atcmp_correct type_lotto _answer" data-template-type="answer_3" data-code="@code@" data-keyword="@1@">
+<a href="#" class="link_item">
+<span class="common_ico_kwd"><i class="imsc ico_search"></i></span>
+<div class="dsc_area">
+<span class="tit">@5@회차 당첨번호</span>
+<span class="dsc">
+<span class="item">추첨 @13@.</span><span class="item">지급기한 1년</span>
+</span>
+</div>
+<span class="etc_area">
+<span class="etc lotto">
+<em class="n@6@">@6@</em><em class="n@7@">@7@</em><em class="n@8@">@8@</em><em class="n@9@">@9@</em><em class="n@10@">@10@</em><em class="n@11@">@11@</em><em class="imsc_bf bonus n@12@">@12@</em>
+</span>
+</span>
+</a>
+</div>
+<!-- 정답형 템플릿 : 환율 -->
+<!-- [AU] _answer 클래스를 추가해주세요. -->
+<!-- [AU] data-template-type="answer_9" data-code="@code@" data-keyword="@1@" attribute를 추가해주세요. -->
+<div class="atcmp_correct type_exchange _answer" data-template-type="answer_9" data-code="@code@" data-keyword="@1@">
+<!-- [D] 상승 up, 하락 down 추가 -->
+<a href="#" class="link_item @11@">
+<!-- [D] 국가별 class 가나다순
+ZAR 남아프리카 공화국
+NPR 네팔
+NOK 노르웨이
+NZD 뉴질랜드
+TWD 대만
+DKK 덴마크
+RUB 러시아
+MOP 마카오
+MYR 말레이시아
+MXN 멕시코
+MNT 몽골
+USD 미국
+BHD 바레인
+BDT 방글라데시
+VND 베트남
+BRL 브라질
+SAR 사우디아라비아
+SEK 스웨덴
+CHF 스위스
+SGD 싱가포르
+AED 아랍에미리트
+GBP 영국
+EUR 유럽연합
+ILS 이스라엘
+EGP 이집트
+INR 인도
+IDR 인도네시아
+JPY 일본
+CNY 중국
+CZK 체코
+CLP 칠레
+KZT 카자흐스탄
+QAR 카타르
+CAD 캐나다
+KWD 쿠웨이트
+THB 태국
+TRY 터키
+PKR 파키스탄
+PLN 폴란드
+PHP 필리핀
+HUF 헝가리
+AUD 호주
+HKD 홍콩
+-->
+<span class="common_ico_kwd"><i class="imsc ico @12@">@14@</i></span>
+<div class="dsc_area">
+<span class="tit">@txt@<span class="sub">@currency@</span></span>
+<span class="dsc">
+<span class="item"><i class="imsc ico_arr"></i>@8@(@9@%)</span>
+</span>
+</div>
+<span class="etc_area">
+<span class="etc"><em class="num">@6@</em>원</span>
+</span>
+</a>
+</div>
+<!-- 정답형 템플릿 : 날씨(국내11, 해외12) -->
+<!-- [AU] _answer 클래스를 추가해주세요. -->
+<!-- [AU] data-template-type="answer_11" data-code="@code@" data-keyword="@1@" attribute를 추가해주세요. -->
+<div class="atcmp_correct type_weather _answer" data-template-type="answer_11" data-code="@code@" data-keyword="@1@">
+<!-- [D] 상승 up, 하락 down 추가 -->
+<a href="#" class="link_item @12@">
+<span class="common_ico_kwd"><i class="imsc ico_search"></i></span>
+<div class="dsc_area">
+<span class="tit">@txt@</span>
+<span class="dsc">
+<span class="item">@7@, @message@</span>
+</span>
+</div>
+<span class="etc_area">
+<span class="etc">
+<!-- [D] 날씨별 class
+ico1 맑음(낮)
+ico2 맑음(밤)
+ico3 구름조금(낮)
+ico4 구름조금(밤)
+ico5 구름많음(낮)
+ico6 구름많음(밤)
+ico7 흐림
+ico8 약한비
+ico9 비
+ico10 강한비
+ico11 약한눈
+ico12 눈
+ico13 강한눈
+ico14 진눈깨비
+ico15 소나기
+ico16 안개
+ico17 소낙눈
+ico18 번개뇌우
+ico19 우박
+ico20 황사
+ico21 비또는눈
+ico22 가끔비
+ico23 가끔눈
+ico24 가끔비또는눈
+ico25 흐린후갬
+ico26 뇌우후갬
+ico27 비후갬
+ico28 눈후갬
+ico29 흐려져비
+ico30 흐려져눈
+-->
+<span class="ico_weather"><i class="imsc ico ico@iconNo@">@7@</i></span>
+<em class="degree">@8@<sup class="celsius">°</sup></em>
+</span>
+</span>
+</a>
+</div>
+<!-- 정답형 템플릿 : 사이트 바로가기 -->
+<!-- [AU] _answer 클래스를 추가해주세요. -->
+<!-- [AU] data-template-type="answer_17" data-code="@code@" data-keyword="@1@" attribute를 추가해주세요. -->
+<div class="atcmp_correct type_site _answer" data-template-type="answer_17" data-code="@code@" data-keyword="@1@">
+<a href="@5@" class="link_item" target="_blank">
+<span class="common_ico_kwd"><i class="imsc ico_url"></i></span>
+<div class="dsc_area">
+<span class="tit">@txt@</span>
+<span class="dsc">
+<span class="item">@5@</span>
+</span>
+</div>
+<span class="etc_area">
+<span class="etc">바로가기</span>
+</span>
+</a>
+</div>
+<!-- [AU] _kwd_list 클래스를 추가해주세요. -->
+<ul class="kwd_lst _kwd_list">
+<!-- [AU] 자동완성 검색어 템플릿 -->
+<!-- [AU] _item 클래스를 추가해주세요. -->
+<!-- [AU] data-rank="@rank@" data-template-type="suggestion" data-keyword="@in_txt@" attribute를 추가해주세요. -->
+<li class="item _item" data-rank="@rank@" data-template-type="suggestion" data-keyword="@in_txt@">
+<a href="#" class="kwd">
+<span class="fix"><span class="common_ico_kwd"><i class="imsc ico_search"></i></span>@txt@</span>
+</a>
+<span class="etc">
+<a href="#" role="button" class="bt_item _add" aria-pressed="false"><i class="imsc ico_insert">추가</i></a>
+</span>
+</li>
+<!-- [AU] 최근검색어 템플릿 -->
+<!-- [AU] _item 클래스를 추가해주세요. -->
+<!-- [AU] data-rank="@rank@" data-template-type="history" data-keyword="@in_txt@" attribute를 추가해주세요. -->
+<li class="item has_correct _item" data-rank="@rank@" data-template-type="history" data-keyword="@in_txt@">
+<a href="#" class="kwd">
+<span class="fix"><span class="common_ico_kwd"><i class="imsc ico_search"></i></span>@txt@</span>
+</a>
+<span class="etc">
+<!-- 최근검색어 있으면 날짜 표시 -->
+<em class="date">@date@.</em>
+<a href="#" role="button" class="bt_item _add" aria-pressed="false"><i class="imsc ico_insert">추가</i></a>
+</span>
+</li>
+</ul>
+<!-- [AU] 문맥검색 템플릿 -->
+<!-- [AU] _item 클래스를 추가해주세요. -->
+<!-- [AU] data-rank="@rank@" data-template-type="intend" data-keyword="@transQuery@" attribute를 추가해주세요. -->
+<li class="item has_correct _item" data-rank="@rank@" data-intend-rank="@intendRank@" data-template-type="intend" data-keyword="@transQuery@">
+<a href="#" class="kwd">
+<span class="fix"><span class="common_ico_kwd"><i class="imsc ico_search"></i></span>@query@ <span class="context">@intend@</span></span>
+</a>
+<span class="etc">
+<a href="#" role="button" class="bt_item _add" aria-pressed="false"><i class="imsc ico_insert">추가</i></a>
+</span>
+</li>
+<!-- [D] 선거안내문구 -->
+<!-- [AU] _alert 클래스를 추가해주세요. -->
+<div class="atcmp_alert _alert">
+<div class="dsc_election">
+<i class="imsc ico_election"></i>
+<p class="dsc">선거 후보자에 대해 자동완성을 제공하지 않습니다.
+<span class="dsc_inner">기간 : 4월 2일 0시 ~ 4월 15일 18시까지</span>
+<a href="#" class="link">자세히보기</a>
+</p>
+</div>
+</div>
+<!-- [AU] _plus 클래스를 추가해주세요. -->
+<div class="atcmp_plus _plus">
+<div class="dsc_plus">
+<a href="https://help.naver.com/support/contents/contents.nhn?serviceNo=606&categoryNo=16658" class="link_dsc" data-clk="sug.cxhelp" target="_blank">관심사를 반영한 컨텍스트 자동완성<i class="imsc ico_help">도움말</i></a>
+</div>
+<div class="switch">
+<!-- [D] 선택시 aria-pressed="ture/false" -->
+<!-- [AU] _plus_btn 클래스를 추가해주세요. -->
+<a role="button" href="#" class="bt_switch active _plus_btn" aria-pressed="false"><i class="imsc ico_option">컨텍스트 자동완성</i></a>
+</div>
+<!-- [AU] _plus_layer 클래스를 추가해주세요. -->
+<div class="layer_plus _plus_layer">
+<strong class="tit">컨텍스트 자동완성</strong>
+<!-- [AU] _plus_layer_isloggedin 클래스를 추가해주세요. -->
+<!-- [AU] style="display:none" 추가해주세요. -->
+<div class="_plus_layer_isloggedin" style="display:none">
+<p class="dsc">ON/OFF 설정은<br>해당기기(브라우저)에 저장됩니다.</p>
+<div class="btn_area">
+<a href="https://help.naver.com/support/contents/contents.help?serviceNo=606&categoryNo=16659" class="btn btn_view" data-clk="sug.cxlink" target="_blank">자세히</a>
+</div>
+</div>
+<!-- [AU] _plus_layer_isnotloggedin 클래스를 추가해주세요. -->
+<!-- [AU] style="display:none" 추가해주세요. -->
+<div class="_plus_layer_isnotloggedin" style="display:none">
+<p class="dsc"><em class="txt">동일한 시간대/연령/남녀별</em> 사용자 그룹의<br>관심사에 맞춰 자동완성을 제공합니다.</p>
+<div class="btn_area">
+<a href="https://nid.naver.com/nidlogin.login" class="btn btn_login" data-clk="sug.cxlogin">로그인</a>
+<a href="https://help.naver.com/support/alias/search/word/word_16.naver" class="btn btn_view" data-clk="sug.cxlink" target="_blank">자세히</a>
+</div>
+</div>
+<!-- [AU] _plus_layer_close 클래스를 추가해주세요. -->
+<a href="#" role="button" class="btn_close _plus_layer_close"><i class="imsc ico_close">컨텍스트 자동완성 레이어 닫기</i></a>
+</div>
+</div>
+</div>
+<div class="atcmp_footer">
+<span class="side_opt_area">
+<span class="opt_item"><a href="https://help.naver.com/support/service/main.help?serviceNo=605&categoryNo=1987" data-clk="sug.help" target="_blank">도움말</a></span>
+<span class="opt_item"><a href="https://help.naver.com/support/contents/contents.help?serviceNo=605&categoryNo=18215" class="report" data-clk="sug.report" target="_blank">신고</a></span>
+</span>
+<span class="rside_opt_area">
+<span class="opt_item">
+<!-- [AU] _suggestOnOff 클래스를 추가해주세요. -->
+<a href="#" class="close _suggestOnOff">자동완성 끄기</a>
+</span>
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<!--EMPTY-->
+<div id="gnb">
+<div id="NM_FAVORITE" class="gnb_inner">
+<div class="group_nav">
+<ul class="list_nav type_fix">
+<li class="nav_item">
+<a href="https://mail.naver.com/" class="nav" data-clk="svc.mail"><i class="ico_mail"></i>메일</a>
+</li>
+<li class="nav_item"><a href="https://section.cafe.naver.com/" class="nav" data-clk="svc.cafe">카페</a></li>
+<li class="nav_item"><a href="https://section.blog.naver.com/" class="nav" data-clk="svc.blog">블로그</a></li>
+<li class="nav_item"><a href="https://kin.naver.com/" class="nav" data-clk="svc.kin">지식iN</a></li>
+<li class="nav_item"><a href="https://shopping.naver.com/" class="nav" data-clk="svc.shopping">쇼핑</a></li>
+<li class="nav_item"><a href="https://order.pay.naver.com/home" class="nav" data-clk="svc.pay">Pay</a></li>
+<li class="nav_item">
+<a href="https://tv.naver.com/" class="nav" data-clk="svc.tvcast"><i class="ico_tv"></i>TV</a>
+</li>
+</ul>
+<ul
+class="list_nav NM_FAVORITE_LIST"
+>
+<li class="nav_item"><a href="https://dict.naver.com/" class="nav" data-clk="svc.dic">사전</a></li>
+<li class="nav_item"><a href="https://news.naver.com/" class="nav" data-clk="svc.news">뉴스</a></li>
+<li class="nav_item"><a href="https://finance.naver.com/" class="nav" data-clk="svc.stock">증권</a></li>
+<li class="nav_item"><a href="https://land.naver.com/" class="nav" data-clk="svc.land">부동산</a></li>
+<li class="nav_item"><a href="https://map.naver.com/" class="nav" data-clk="svc.map">지도</a></li>
+<li class="nav_item"><a href="https://movie.naver.com/" class="nav" data-clk="svc.movie">영화</a></li>
+<li class="nav_item"><a href="https://vibe.naver.com/" class="nav" data-clk="svc.vibe">VIBE</a>
+<li class="nav_item"><a href="https://book.naver.com/" class="nav" data-clk="svc.book">책</a></li>
+<li class="nav_item"><a href="https://comic.naver.com/" class="nav" data-clk="svc.webtoon">웹툰</a></li>
+
+</ul>
+<ul class="list_nav type_empty" style="display: none;"></ul>
+<a href="#" role="button" class="btn_more" data-clk="svc.more">더보기</a>
+<div class="ly_btn_area">
+<a href="more.html" class="btn NM_FAVORITE_ALL" data-clk="map.svcmore">서비스 전체보기</a>
+<a href="#" role="button" class="btn btn_set" data-clk="map.edit">메뉴설정</a>
+<a href="#" role="button" class="btn btn_reset" data-clk="edt.reset">초기화</a>
+<a href="#" role="button" class="btn btn_save" data-clk="edt.save">저장</a>
+</div>
+</div>
+<div id="rtk" class="group_keyword" data-clk-prefix="lve">
+<div id="NM_RTK_ROLLING_WRAP" class="keyword_area" data-clk="open"></div>
+</div>
+<div id="NM_RTK_VIEW" data-clk-prefix="lve"></div>
+
+</div>
+<div class="ly_service">
+<div class="group_service NM_FAVORITE_ALL_LY"></div>
+<div class="group_service NM_FAVORITE_EDIT_LY" style="display: none;"></div>
+</div>
+</div>
+</div>
+ <div id="container" role="main"> <div style="position:relative;width:1130px;margin:0 auto;z-index:11"> <div id="da_top"></div> <div id="da_expwide"></div> </div> <div id="NM_INT_LEFT" class="column_left">  <div id="veta_top"> <iframe id="da_iframe_time" name="da_iframe_time" data-iframe-src="https://siape.veta.naver.com/fxshow?su=SU10599&amp;nrefreshx=0" data-veta-preview="main_time" title="광고" width="750" height="135" marginheight="0" marginwidth="0" scrolling="no" frameborder="0"> </iframe> <span class="veta_bd_t"></span> <span class="veta_bd_b"></span> <span class="veta_bd_l"></span> <span class="veta_bd_r"></span> </div> <div id="newsstand" class="sc_newscast"> <h2 class="blind">뉴스스탠드</h2> <div id="NM_NEWSSTAND_HEADER" class="group_issue" data-clk-prefix="ncy"> <div class="issue_area"> <a href="http://news.naver.com/main/list.nhn?mode=LPOD&mid=sec&sid1=001&sid2=140&oid=001&isYeonhapFlash=Y" class="link_media" data-clk="newsflash">연합뉴스</a> <div id="yna_rolling" class="list_issue"> <div><a href="http://news.naver.com/main/list.nhn?mode=LPOD&mid=sec&sid1=001&sid2=140&oid=001&isYeonhapFlash=Y&aid=0012106338" class="issue" data-clk="quickarticle">오후 9시 30분까지 931명 확진…29일 다시 1천명 안팎</a></div>
+<div><a href="http://news.naver.com/main/list.nhn?mode=LPOD&mid=sec&sid1=001&sid2=140&oid=001&isYeonhapFlash=Y&aid=0012106051" class="issue" data-clk="quickarticle">코로나 백신 내년 2~3월부터 접종…3분기까지 집단면역 형성목표</a></div>
+<div><a href="http://news.naver.com/main/list.nhn?mode=LPOD&mid=sec&sid1=001&sid2=140&oid=001&isYeonhapFlash=Y&aid=0012106254" class="issue" data-clk="quickarticle">영국발 변이 바이러스 기내전파 가능성,74명중 승무원 12명 음성</a></div>
+<div><a href="http://news.naver.com/main/list.nhn?mode=LPOD&mid=sec&sid1=001&sid2=140&oid=001&isYeonhapFlash=Y&aid=0012106340" class="issue" data-clk="quickarticle">공수처장 후보 2명 추천…판사출신 김진욱·검사출신 이건리</a></div>
+<div><a href="http://news.naver.com/main/list.nhn?mode=LPOD&mid=sec&sid1=001&sid2=140&oid=001&isYeonhapFlash=Y&aid=0012106098" class="issue" data-clk="quickarticle">금주 법무 등 2∼3곳 개각…연초 대대적 인적쇄신 예고</a></div>
+<div><a href="http://news.naver.com/main/list.nhn?mode=LPOD&mid=sec&sid1=001&sid2=140&oid=001&isYeonhapFlash=Y&aid=0012106205" class="issue" data-clk="quickarticle">추미애, 유튜브 채널서 '윤석열, 탄핵 필요' 칼럼 공유</a></div>
+<div><a href="http://news.naver.com/main/list.nhn?mode=LPOD&mid=sec&sid1=001&sid2=140&oid=001&isYeonhapFlash=Y&aid=0012106341" class="issue" data-clk="quickarticle">정부 "징벌적 손해배상 5배 이하로"…중대재해법 의견 제출</a></div>
+<div><a href="http://news.naver.com/main/list.nhn?mode=LPOD&mid=sec&sid1=001&sid2=140&oid=001&isYeonhapFlash=Y&aid=0012106263" class="issue" data-clk="quickarticle">화요일 전국 곳곳서 눈·비…수도권 미세먼지 나쁨</a></div>
+<div><a href="http://news.naver.com/main/list.nhn?mode=LPOD&mid=sec&sid1=001&sid2=140&oid=001&isYeonhapFlash=Y&aid=0012106207" class="issue" data-clk="quickarticle">DH, 요기요 팔고 배민 품는다…김봉진, 합작사 이사회 의장</a></div>
+<div><a href="http://news.naver.com/main/list.nhn?mode=LPOD&mid=sec&sid1=001&sid2=140&oid=001&isYeonhapFlash=Y&aid=0012106267" class="issue" data-clk="quickarticle">'라임 사태' 핵심 이종필 前부사장에 징역 15년 구형</a></div> </div> </div> <div class="direct_area"> <a href="http://news.naver.com/" class="link_news" data-clk="newshome">네이버뉴스</a>
+<a href="http://entertain.naver.com/home" class="link_direct" data-clk="entertainment">연예</a>
+<a href="http://sports.news.naver.com/" class="link_direct" data-clk="sports">스포츠</a>
+<a href="http://news.naver.com/main/main.nhn?mode=LSD&mid=shm&sid1=101" class="link_direct" data-clk="economy">경제</a> </div> </div>       <div id="NM_NEWSSTAND_TITLE" class="group_title" data-clk-prefix="nsd"> <a href="http://newsstand.naver.com/" class="link_newsstand" data-clk="title" target="_blank">뉴스스탠드</a> <div id="NM_NEWSSTAND_data_buttons" class="sort_area">  <a href="#" role="button" data-type="my" data-clk="my" class="btn_sort">구독한 언론사</a> <a href="#" role="button" data-type="all" data-clk="all" class="btn_sort sort_on">전체언론사</a>  </div> <div id="NM_NEWSSTAND_view_buttons" class="set_area">  <a href="#" role="button" data-type="list" data-clk="articleview" class="btn_set"> <i class="ico_list"><span class="blind">리스트형</span></i></a> <a href="#" role="button" data-type="thumb" data-clk="pressview" class="btn_set set_on"> <i class="ico_tile"><span class="blind">썸네일형</span></i></a>  <a href="http://newsstand.naver.com/config.html" class="btn_set" data-clk="set" target="_blank"> <i class="ico_set"><span class="blind">설정</span></i></a> </div> </div> <div id="NM_NEWSSTAND_VIEW_CONTAINER" style="position:relative"> <div id="NM_NEWSSTAND_DEFAULT_LIST" class="group_news" style="display:none" data-clk-prefix="nsd_all"> <a href="#" role="button" class="pm_btn_prev_l _NM_NEWSSTAND_LIST_prev_btn" data-clk-custom="prev"><i class="ico_btn"><span class="blind">이전</span></i></a> <a href="#" role="button" class="pm_btn_next_l _NM_NEWSSTAND_LIST_next_btn" data-clk-custom="next"><i class="ico_btn"><span class="blind">다음</span></i></a> <div class="list_view"> <div class="option_area"> <div class="list_option_wrap"> <ul class="list_option"> <li class="option_item" data-cateid="ct2"><a href="#" class="option" data-clk="daei">종합/경제</a></li> <li class="option_item" data-cateid="ct3"><a href="#" class="option" data-clk="dtvcom">방송/통신</a></li> <li class="option_item" data-cateid="ct4"><a href="#" class="option" data-clk="dit">IT</a></li> <li class="option_item" data-cateid="ct5"><a href="#" class="option" data-clk="deng">영자지</a></li> <li class="option_item" data-cateid="ct6"><a href="#" class="option" data-clk="dsporent">스포츠/연예</a></li> <li class="option_item" data-cateid="ct7"><a href="#" class="option" data-clk="dmagtec">매거진/전문지</a></li> <li class="option_item" data-cateid="ct8"><a href="#" class="option" data-clk="dloc">지역</a></li> </ul> </div> </div> <div class="_NM_NEWSSTAND_ARTICLE_CONTAINER" data-clk-sub="*a"></div> </div> <div class="ly_popup NM_NEWSSTAND_POPUP NM_NEWSSTAND_invalid" style="display:none" data-clk-sub="*a"> <a href="#" role="button" class="btn_close NM_NEWSSTAND_POPUP_CLOSE"><i class="ico_close"></i><span class="blind">닫기</span></a> <p class="popup_msg">해당 언론사 사정으로 접근이 일시 제한됩니다.</p> <div class="popup_btn"> <a href="#" role="button" class="btn_confirm NM_NEWSSTAND_POPUP_CLOSE">확인</a> </div> </div> <div class="ly_popup NM_NEWSSTAND_POPUP NM_NEWSSTAND_undescribe_confirm" style="display:none" data-clk-sub="*a"> <a href="#" role="button" class="btn_close NM_NEWSSTAND_POPUP_CLOSE" data-clk="usclose"><i class="ico_close"></i><span class="blind">닫기</span></a> <p class="popup_msg"><strong class="NM_NEWSSTAND_POPUP_PNAME"></strong>을(를)<br>구독해지 하시겠습니까?</p> <div class="popup_btn"> <a href="#" role="button" class="btn_confirm NM_NEWSSTAND_POPUP_CONFIRM" data-clk="usdone">확인</a> <a href="#" role="button" class="btn_confirm NM_NEWSSTAND_POPUP_CLOSE" data-clk="uscancel">취소</a> </div> </div> <div class="ly_toast NM_NEWSSTAND_TOAST" style="display:none"> <p class="toast_msg">구독한 언론사에 추가되었습니다.</p> </div> </div>   <div id="NM_NEWSSTAND_DEFAULT_THUMB" class="group_news" style="display:block" data-clk-prefix="nsd_all"> <a href="#" role="button" class="pm_btn_prev_l _NM_UI_PAGE_PREV" data-clk-custom="prev"><i class="ico_btn"><span class="blind">이전</span></i></a> <a href="#" role="button" class="pm_btn_next_l _NM_UI_PAGE_NEXT" data-clk-custom="next"><i class="ico_btn"><span class="blind">다음</span></i></a> <div class="_NM_UI_PAGE_CONTAINER" style="height:100%;overflow:hidden" data-clk-sub="*p">   <div style="width: 750px; float: left;">
+<div class="tile_view">
+<div class="frame_area">
+<i class="line to_right1"></i>
+<i class="line to_right2"></i>
+<i class="line to_right3"></i>
+<i class="line to_bottom1"></i>
+<i class="line to_bottom2"></i>
+<i class="line to_bottom3"></i>
+<i class="line to_bottom4"></i>
+<i class="line to_bottom5"></i>
+</div>
+<div class="thumb_area">
+<div
+class="thumb_box _NM_NEWSSTAND_THUMB _NM_NEWSSTAND_THUMB_press_valid"
+data-pid="006"
+>
+<a href="#" class="thumb">
+<img
+src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/006.png"
+height="20"
+alt="미디어오늘"
+class="news_logo"
+/>
+<span class="thumb_dim"></span
+></a>
+<div class="popup_wrap">
+<a
+href="#"
+role="button"
+class="btn_popup _NM_NEWSSTAND_THUMB_subscribe_press"
+data-pid="006"
+data-clk="sub"
+>구독</a
+>
+<a
+href="#"
+role="button"
+class="btn_popup _NM_NEWSSTAND_THUMB_unsubscribe_press"
+data-pid="006"
+data-clk="unsub"
+>해지</a
+>
+<a
+href="http://newsstand.naver.com/?list=&pcode=006"
+target="_blank"
+class="btn_popup"
+data-clk="logo"
+data-pid="006"
+>기사보기</a
+>
+</div>
+</div>
+<div
+class="thumb_box _NM_NEWSSTAND_THUMB _NM_NEWSSTAND_THUMB_press_valid"
+data-pid="009"
+>
+<a href="#" class="thumb">
+<img
+src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/009.png"
+height="20"
+alt="매일경제"
+class="news_logo"
+/>
+<span class="thumb_dim"></span
+></a>
+<div class="popup_wrap">
+<a
+href="#"
+role="button"
+class="btn_popup _NM_NEWSSTAND_THUMB_subscribe_press"
+data-pid="009"
+data-clk="sub"
+>구독</a
+>
+<a
+href="#"
+role="button"
+class="btn_popup _NM_NEWSSTAND_THUMB_unsubscribe_press"
+data-pid="009"
+data-clk="unsub"
+>해지</a
+>
+<a
+href="http://newsstand.naver.com/?list=&pcode=009"
+target="_blank"
+class="btn_popup"
+data-clk="logo"
+data-pid="009"
+>기사보기</a
+>
+</div>
+</div>
+<div
+class="thumb_box _NM_NEWSSTAND_THUMB _NM_NEWSSTAND_THUMB_press_valid"
+data-pid="038"
+>
+<a href="#" class="thumb">
+<img
+src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/038.png"
+height="20"
+alt="한국일보"
+class="news_logo"
+/>
+<span class="thumb_dim"></span
+></a>
+<div class="popup_wrap">
+<a
+href="#"
+role="button"
+class="btn_popup _NM_NEWSSTAND_THUMB_subscribe_press"
+data-pid="038"
+data-clk="sub"
+>구독</a
+>
+<a
+href="#"
+role="button"
+class="btn_popup _NM_NEWSSTAND_THUMB_unsubscribe_press"
+data-pid="038"
+data-clk="unsub"
+>해지</a
+>
+<a
+href="http://newsstand.naver.com/?list=&pcode=038"
+target="_blank"
+class="btn_popup"
+data-clk="logo"
+data-pid="038"
+>기사보기</a
+>
+</div>
+</div>
+<div
+class="thumb_box _NM_NEWSSTAND_THUMB _NM_NEWSSTAND_THUMB_press_valid"
+data-pid="047"
+>
+<a href="#" class="thumb">
+<img
+src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/047.png"
+height="20"
+alt="오마이뉴스"
+class="news_logo"
+/>
+<span class="thumb_dim"></span
+></a>
+<div class="popup_wrap">
+<a
+href="#"
+role="button"
+class="btn_popup _NM_NEWSSTAND_THUMB_subscribe_press"
+data-pid="047"
+data-clk="sub"
+>구독</a
+>
+<a
+href="#"
+role="button"
+class="btn_popup _NM_NEWSSTAND_THUMB_unsubscribe_press"
+data-pid="047"
+data-clk="unsub"
+>해지</a
+>
+<a
+href="http://newsstand.naver.com/?list=&pcode=047"
+target="_blank"
+class="btn_popup"
+data-clk="logo"
+data-pid="047"
+>기사보기</a
+>
+</div>
+</div>
+<div
+class="thumb_box _NM_NEWSSTAND_THUMB _NM_NEWSSTAND_THUMB_press_valid"
+data-pid="003"
+>
+<a href="#" class="thumb">
+<img
+src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/003.png"
+height="20"
+alt="뉴시스"
+class="news_logo"
+/>
+<span class="thumb_dim"></span
+></a>
+<div class="popup_wrap">
+<a
+href="#"
+role="button"
+class="btn_popup _NM_NEWSSTAND_THUMB_subscribe_press"
+data-pid="003"
+data-clk="sub"
+>구독</a
+>
+<a
+href="#"
+role="button"
+class="btn_popup _NM_NEWSSTAND_THUMB_unsubscribe_press"
+data-pid="003"
+data-clk="unsub"
+>해지</a
+>
+<a
+href="http://newsstand.naver.com/?list=&pcode=003"
+target="_blank"
+class="btn_popup"
+data-clk="logo"
+data-pid="003"
+>기사보기</a
+>
+</div>
+</div>
+<div
+class="thumb_box _NM_NEWSSTAND_THUMB _NM_NEWSSTAND_THUMB_press_valid"
+data-pid="011"
+>
+<a href="#" class="thumb">
+<img
+src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/011.png"
+height="20"
+alt="서울경제"
+class="news_logo"
+/>
+<span class="thumb_dim"></span
+></a>
+<div class="popup_wrap">
+<a
+href="#"
+role="button"
+class="btn_popup _NM_NEWSSTAND_THUMB_subscribe_press"
+data-pid="011"
+data-clk="sub"
+>구독</a
+>
+<a
+href="#"
+role="button"
+class="btn_popup _NM_NEWSSTAND_THUMB_unsubscribe_press"
+data-pid="011"
+data-clk="unsub"
+>해지</a
+>
+<a
+href="http://newsstand.naver.com/?list=&pcode=011"
+target="_blank"
+class="btn_popup"
+data-clk="logo"
+data-pid="011"
+>기사보기</a
+>
+</div>
+</div>
+<div
+class="thumb_box _NM_NEWSSTAND_THUMB _NM_NEWSSTAND_THUMB_press_valid"
+data-pid="021"
+>
+<a href="#" class="thumb">
+<img
+src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/021.png"
+height="20"
+alt="문화일보"
+class="news_logo"
+/>
+<span class="thumb_dim"></span
+></a>
+<div class="popup_wrap">
+<a
+href="#"
+role="button"
+class="btn_popup _NM_NEWSSTAND_THUMB_subscribe_press"
+data-pid="021"
+data-clk="sub"
+>구독</a
+>
+<a
+href="#"
+role="button"
+class="btn_popup _NM_NEWSSTAND_THUMB_unsubscribe_press"
+data-pid="021"
+data-clk="unsub"
+>해지</a
+>
+<a
+href="http://newsstand.naver.com/?list=&pcode=021"
+target="_blank"
+class="btn_popup"
+data-clk="logo"
+data-pid="021"
+>기사보기</a
+>
+</div>
+</div>
+<div
+class="thumb_box _NM_NEWSSTAND_THUMB _NM_NEWSSTAND_THUMB_press_valid"
+data-pid="028"
+>
+<a href="#" class="thumb">
+<img
+src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/028.png"
+height="20"
+alt="한겨레"
+class="news_logo"
+/>
+<span class="thumb_dim"></span
+></a>
+<div class="popup_wrap">
+<a
+href="#"
+role="button"
+class="btn_popup _NM_NEWSSTAND_THUMB_subscribe_press"
+data-pid="028"
+data-clk="sub"
+>구독</a
+>
+<a
+href="#"
+role="button"
+class="btn_popup _NM_NEWSSTAND_THUMB_unsubscribe_press"
+data-pid="028"
+data-clk="unsub"
+>해지</a
+>
+<a
+href="http://newsstand.naver.com/?list=&pcode=028"
+target="_blank"
+class="btn_popup"
+data-clk="logo"
+data-pid="028"
+>기사보기</a
+>
+</div>
+</div>
+<div
+class="thumb_box _NM_NEWSSTAND_THUMB _NM_NEWSSTAND_THUMB_press_valid"
+data-pid="044"
+>
+<a href="#" class="thumb">
+<img
+src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/044.png"
+height="20"
+alt="코리아헤럴드"
+class="news_logo"
+/>
+<span class="thumb_dim"></span
+></a>
+<div class="popup_wrap">
+<a
+href="#"
+role="button"
+class="btn_popup _NM_NEWSSTAND_THUMB_subscribe_press"
+data-pid="044"
+data-clk="sub"
+>구독</a
+>
+<a
+href="#"
+role="button"
+class="btn_popup _NM_NEWSSTAND_THUMB_unsubscribe_press"
+data-pid="044"
+data-clk="unsub"
+>해지</a
+>
+<a
+href="http://newsstand.naver.com/?list=&pcode=044"
+target="_blank"
+class="btn_popup"
+data-clk="logo"
+data-pid="044"
+>기사보기</a
+>
+</div>
+</div>
+<div
+class="thumb_box _NM_NEWSSTAND_THUMB _NM_NEWSSTAND_THUMB_press_valid"
+data-pid="014"
+>
+<a href="#" class="thumb">
+<img
+src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/014.png"
+height="20"
+alt="파이낸셜뉴스"
+class="news_logo"
+/>
+<span class="thumb_dim"></span
+></a>
+<div class="popup_wrap">
+<a
+href="#"
+role="button"
+class="btn_popup _NM_NEWSSTAND_THUMB_subscribe_press"
+data-pid="014"
+data-clk="sub"
+>구독</a
+>
+<a
+href="#"
+role="button"
+class="btn_popup _NM_NEWSSTAND_THUMB_unsubscribe_press"
+data-pid="014"
+data-clk="unsub"
+>해지</a
+>
+<a
+href="http://newsstand.naver.com/?list=&pcode=014"
+target="_blank"
+class="btn_popup"
+data-clk="logo"
+data-pid="014"
+>기사보기</a
+>
+</div>
+</div>
+<div
+class="thumb_box _NM_NEWSSTAND_THUMB _NM_NEWSSTAND_THUMB_press_valid"
+data-pid="366"
+>
+<a href="#" class="thumb">
+<img
+src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/366.png"
+height="20"
+alt="조선비즈"
+class="news_logo"
+/>
+<span class="thumb_dim"></span
+></a>
+<div class="popup_wrap">
+<a
+href="#"
+role="button"
+class="btn_popup _NM_NEWSSTAND_THUMB_subscribe_press"
+data-pid="366"
+data-clk="sub"
+>구독</a
+>
+<a
+href="#"
+role="button"
+class="btn_popup _NM_NEWSSTAND_THUMB_unsubscribe_press"
+data-pid="366"
+data-clk="unsub"
+>해지</a
+>
+<a
+href="http://newsstand.naver.com/?list=&pcode=366"
+target="_blank"
+class="btn_popup"
+data-clk="logo"
+data-pid="366"
+>기사보기</a
+>
+</div>
+</div>
+<div
+class="thumb_box _NM_NEWSSTAND_THUMB _NM_NEWSSTAND_THUMB_press_valid"
+data-pid="005"
+>
+<a href="#" class="thumb">
+<img
+src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/005.png"
+height="20"
+alt="국민일보"
+class="news_logo"
+/>
+<span class="thumb_dim"></span
+></a>
+<div class="popup_wrap">
+<a
+href="#"
+role="button"
+class="btn_popup _NM_NEWSSTAND_THUMB_subscribe_press"
+data-pid="005"
+data-clk="sub"
+>구독</a
+>
+<a
+href="#"
+role="button"
+class="btn_popup _NM_NEWSSTAND_THUMB_unsubscribe_press"
+data-pid="005"
+data-clk="unsub"
+>해지</a
+>
+<a
+href="http://newsstand.naver.com/?list=&pcode=005"
+target="_blank"
+class="btn_popup"
+data-clk="logo"
+data-pid="005"
+>기사보기</a
+>
+</div>
+</div>
+<div
+class="thumb_box _NM_NEWSSTAND_THUMB _NM_NEWSSTAND_THUMB_press_valid"
+data-pid="930"
+>
+<a href="#" class="thumb">
+<img
+src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/930.png"
+height="20"
+alt="뉴스타파"
+class="news_logo"
+/>
+<span class="thumb_dim"></span
+></a>
+<div class="popup_wrap">
+<a
+href="#"
+role="button"
+class="btn_popup _NM_NEWSSTAND_THUMB_subscribe_press"
+data-pid="930"
+data-clk="sub"
+>구독</a
+>
+<a
+href="#"
+role="button"
+class="btn_popup _NM_NEWSSTAND_THUMB_unsubscribe_press"
+data-pid="930"
+data-clk="unsub"
+>해지</a
+>
+<a
+href="http://newsstand.naver.com/?list=&pcode=930"
+target="_blank"
+class="btn_popup"
+data-clk="logo"
+data-pid="930"
+>기사보기</a
+>
+</div>
+</div>
+<div
+class="thumb_box _NM_NEWSSTAND_THUMB _NM_NEWSSTAND_THUMB_press_valid"
+data-pid="327"
+>
+<a href="#" class="thumb">
+<img
+src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/327.png"
+height="20"
+alt="뉴데일리"
+class="news_logo"
+/>
+<span class="thumb_dim"></span
+></a>
+<div class="popup_wrap">
+<a
+href="#"
+role="button"
+class="btn_popup _NM_NEWSSTAND_THUMB_subscribe_press"
+data-pid="327"
+data-clk="sub"
+>구독</a
+>
+<a
+href="#"
+role="button"
+class="btn_popup _NM_NEWSSTAND_THUMB_unsubscribe_press"
+data-pid="327"
+data-clk="unsub"
+>해지</a
+>
+<a
+href="http://newsstand.naver.com/?list=&pcode=327"
+target="_blank"
+class="btn_popup"
+data-clk="logo"
+data-pid="327"
+>기사보기</a
+>
+</div>
+</div>
+<div
+class="thumb_box _NM_NEWSSTAND_THUMB _NM_NEWSSTAND_THUMB_press_valid"
+data-pid="422"
+>
+<a href="#" class="thumb">
+<img
+src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/422.png"
+height="20"
+alt="연합뉴스TV"
+class="news_logo"
+/>
+<span class="thumb_dim"></span
+></a>
+<div class="popup_wrap">
+<a
+href="#"
+role="button"
+class="btn_popup _NM_NEWSSTAND_THUMB_subscribe_press"
+data-pid="422"
+data-clk="sub"
+>구독</a
+>
+<a
+href="#"
+role="button"
+class="btn_popup _NM_NEWSSTAND_THUMB_unsubscribe_press"
+data-pid="422"
+data-clk="unsub"
+>해지</a
+>
+<a
+href="http://newsstand.naver.com/?list=&pcode=422"
+target="_blank"
+class="btn_popup"
+data-clk="logo"
+data-pid="422"
+>기사보기</a
+>
+</div>
+</div>
+<div
+class="thumb_box _NM_NEWSSTAND_THUMB _NM_NEWSSTAND_THUMB_press_valid"
+data-pid="910"
+>
+<a href="#" class="thumb">
+<img
+src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/910.png"
+height="20"
+alt="넥스트데일리"
+class="news_logo"
+/>
+<span class="thumb_dim"></span
+></a>
+<div class="popup_wrap">
+<a
+href="#"
+role="button"
+class="btn_popup _NM_NEWSSTAND_THUMB_subscribe_press"
+data-pid="910"
+data-clk="sub"
+>구독</a
+>
+<a
+href="#"
+role="button"
+class="btn_popup _NM_NEWSSTAND_THUMB_unsubscribe_press"
+data-pid="910"
+data-clk="unsub"
+>해지</a
+>
+<a
+href="http://newsstand.naver.com/?list=&pcode=910"
+target="_blank"
+class="btn_popup"
+data-clk="logo"
+data-pid="910"
+>기사보기</a
+>
+</div>
+</div>
+<div
+class="thumb_box _NM_NEWSSTAND_THUMB _NM_NEWSSTAND_THUMB_press_valid"
+data-pid="955"
+>
+<a href="#" class="thumb">
+<img
+src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/955.png"
+height="20"
+alt="독서신문"
+class="news_logo"
+/>
+<span class="thumb_dim"></span
+></a>
+<div class="popup_wrap">
+<a
+href="#"
+role="button"
+class="btn_popup _NM_NEWSSTAND_THUMB_subscribe_press"
+data-pid="955"
+data-clk="sub"
+>구독</a
+>
+<a
+href="#"
+role="button"
+class="btn_popup _NM_NEWSSTAND_THUMB_unsubscribe_press"
+data-pid="955"
+data-clk="unsub"
+>해지</a
+>
+<a
+href="http://newsstand.naver.com/?list=&pcode=955"
+target="_blank"
+class="btn_popup"
+data-clk="logo"
+data-pid="955"
+>기사보기</a
+>
+</div>
+</div>
+<div
+class="thumb_box _NM_NEWSSTAND_THUMB _NM_NEWSSTAND_THUMB_press_valid"
+data-pid="945"
+>
+<a href="#" class="thumb">
+<img
+src="https://s.pstatic.net/static/newsstand/up/2020/0922/nsd152336602.png"
+height="20"
+alt="YTN사이언스"
+class="news_logo"
+/>
+<span class="thumb_dim"></span
+></a>
+<div class="popup_wrap">
+<a
+href="#"
+role="button"
+class="btn_popup _NM_NEWSSTAND_THUMB_subscribe_press"
+data-pid="945"
+data-clk="sub"
+>구독</a
+>
+<a
+href="#"
+role="button"
+class="btn_popup _NM_NEWSSTAND_THUMB_unsubscribe_press"
+data-pid="945"
+data-clk="unsub"
+>해지</a
+>
+<a
+href="http://newsstand.naver.com/?list=&pcode=945"
+target="_blank"
+class="btn_popup"
+data-clk="logo"
+data-pid="945"
+>기사보기</a
+>
+</div>
+</div>
+<div
+class="thumb_box _NM_NEWSSTAND_THUMB _NM_NEWSSTAND_THUMB_press_valid"
+data-pid="975"
+>
+<a href="#" class="thumb">
+<img
+src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/975.png"
+height="20"
+alt="시사저널이코노미"
+class="news_logo"
+/>
+<span class="thumb_dim"></span
+></a>
+<div class="popup_wrap">
+<a
+href="#"
+role="button"
+class="btn_popup _NM_NEWSSTAND_THUMB_subscribe_press"
+data-pid="975"
+data-clk="sub"
+>구독</a
+>
+<a
+href="#"
+role="button"
+class="btn_popup _NM_NEWSSTAND_THUMB_unsubscribe_press"
+data-pid="975"
+data-clk="unsub"
+>해지</a
+>
+<a
+href="http://newsstand.naver.com/?list=&pcode=975"
+target="_blank"
+class="btn_popup"
+data-clk="logo"
+data-pid="975"
+>기사보기</a
+>
+</div>
+</div>
+<div
+class="thumb_box _NM_NEWSSTAND_THUMB _NM_NEWSSTAND_THUMB_press_valid"
+data-pid="803"
+>
+<a href="#" class="thumb">
+<img
+src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/803.png"
+height="20"
+alt="인더스트리뉴스"
+class="news_logo"
+/>
+<span class="thumb_dim"></span
+></a>
+<div class="popup_wrap">
+<a
+href="#"
+role="button"
+class="btn_popup _NM_NEWSSTAND_THUMB_subscribe_press"
+data-pid="803"
+data-clk="sub"
+>구독</a
+>
+<a
+href="#"
+role="button"
+class="btn_popup _NM_NEWSSTAND_THUMB_unsubscribe_press"
+data-pid="803"
+data-clk="unsub"
+>해지</a
+>
+<a
+href="http://newsstand.naver.com/?list=&pcode=803"
+target="_blank"
+class="btn_popup"
+data-clk="logo"
+data-pid="803"
+>기사보기</a
+>
+</div>
+</div>
+<div
+class="thumb_box _NM_NEWSSTAND_THUMB _NM_NEWSSTAND_THUMB_press_valid"
+data-pid="813"
+>
+<a href="#" class="thumb">
+<img
+src="https://s.pstatic.net/static/newsstand/up/2020/1228/nsd102538785.png"
+height="20"
+alt="이코노믹리뷰"
+class="news_logo"
+/>
+<span class="thumb_dim"></span
+></a>
+<div class="popup_wrap">
+<a
+href="#"
+role="button"
+class="btn_popup _NM_NEWSSTAND_THUMB_subscribe_press"
+data-pid="813"
+data-clk="sub"
+>구독</a
+>
+<a
+href="#"
+role="button"
+class="btn_popup _NM_NEWSSTAND_THUMB_unsubscribe_press"
+data-pid="813"
+data-clk="unsub"
+>해지</a
+>
+<a
+href="http://newsstand.naver.com/?list=&pcode=813"
+target="_blank"
+class="btn_popup"
+data-clk="logo"
+data-pid="813"
+>기사보기</a
+>
+</div>
+</div>
+<div
+class="thumb_box _NM_NEWSSTAND_THUMB _NM_NEWSSTAND_THUMB_press_valid"
+data-pid="916"
+>
+<a href="#" class="thumb">
+<img
+src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/916.png"
+height="20"
+alt="머니투데이방송"
+class="news_logo"
+/>
+<span class="thumb_dim"></span
+></a>
+<div class="popup_wrap">
+<a
+href="#"
+role="button"
+class="btn_popup _NM_NEWSSTAND_THUMB_subscribe_press"
+data-pid="916"
+data-clk="sub"
+>구독</a
+>
+<a
+href="#"
+role="button"
+class="btn_popup _NM_NEWSSTAND_THUMB_unsubscribe_press"
+data-pid="916"
+data-clk="unsub"
+>해지</a
+>
+<a
+href="http://newsstand.naver.com/?list=&pcode=916"
+target="_blank"
+class="btn_popup"
+data-clk="logo"
+data-pid="916"
+>기사보기</a
+>
+</div>
+</div>
+<div
+class="thumb_box _NM_NEWSSTAND_THUMB _NM_NEWSSTAND_THUMB_press_valid"
+data-pid="310"
+>
+<a href="#" class="thumb">
+<img
+src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/310.png"
+height="20"
+alt="여성신문"
+class="news_logo"
+/>
+<span class="thumb_dim"></span
+></a>
+<div class="popup_wrap">
+<a
+href="#"
+role="button"
+class="btn_popup _NM_NEWSSTAND_THUMB_subscribe_press"
+data-pid="310"
+data-clk="sub"
+>구독</a
+>
+<a
+href="#"
+role="button"
+class="btn_popup _NM_NEWSSTAND_THUMB_unsubscribe_press"
+data-pid="310"
+data-clk="unsub"
+>해지</a
+>
+<a
+href="http://newsstand.naver.com/?list=&pcode=310"
+target="_blank"
+class="btn_popup"
+data-clk="logo"
+data-pid="310"
+>기사보기</a
+>
+</div>
+</div>
+<div
+class="thumb_box _NM_NEWSSTAND_THUMB _NM_NEWSSTAND_THUMB_press_valid"
+data-pid="213"
+>
+<a href="#" class="thumb">
+<img
+src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/213.png"
+height="20"
+alt="TV리포트"
+class="news_logo"
+/>
+<span class="thumb_dim"></span
+></a>
+<div class="popup_wrap">
+<a
+href="#"
+role="button"
+class="btn_popup _NM_NEWSSTAND_THUMB_subscribe_press"
+data-pid="213"
+data-clk="sub"
+>구독</a
+>
+<a
+href="#"
+role="button"
+class="btn_popup _NM_NEWSSTAND_THUMB_unsubscribe_press"
+data-pid="213"
+data-clk="unsub"
+>해지</a
+>
+<a
+href="http://newsstand.naver.com/?list=&pcode=213"
+target="_blank"
+class="btn_popup"
+data-clk="logo"
+data-pid="213"
+>기사보기</a
+>
+</div>
+</div>
+</div>
+</div>
+</div>  </div> <div class="ly_popup NM_NEWSSTAND_POPUP NM_NEWSSTAND_invalid" style="display:none"> <a href="#" role="button" class="btn_close NM_NEWSSTAND_POPUP_CLOSE"><i class="ico_close"></i><span class="blind">닫기</span></a> <p class="popup_msg">해당 언론사 사정으로 접근이 일시 제한됩니다.</p> <div class="popup_btn"> <a href="#" role="button" class="btn_confirm NM_NEWSSTAND_POPUP_CLOSE">확인</a> </div> </div> <div class="ly_popup NM_NEWSSTAND_POPUP NM_NEWSSTAND_undescribe_confirm" style="display:none" data-clk-sub="*a"> <a href="#" role="button" class="btn_close NM_NEWSSTAND_POPUP_CLOSE" data-clk="usclose"><i class="ico_close"></i><span class="blind">닫기</span></a> <p class="popup_msg"><strong class="NM_NEWSSTAND_POPUP_PNAME"></strong>을(를)<br/>구독해지 하시겠습니까?</p> <div class="popup_btn"> <a href="#" role="button" class="btn_confirm NM_NEWSSTAND_POPUP_CONFIRM" data-clk="usdone">확인</a> <a href="#" role="button" class="btn_confirm NM_NEWSSTAND_POPUP_CLOSE" data-clk="uscancel">취소</a> </div> </div> <div class="ly_toast NM_NEWSSTAND_TOAST" style="display:none"> <p class="toast_msg">구독한 언론사에 추가되었습니다.</p> </div> </div> <div id="NM_NEWSSTAND_MY_LIST" class="group_news" style="display:none" data-clk-prefix="nsd_myn"> <a href="#" role="button" class="pm_btn_prev_l _NM_NEWSSTAND_LIST_prev_btn" data-clk-custom="prev"><i class="ico_btn"></i><span class="blind">이전</span></a> <a href="#" role="button" class="pm_btn_next_l _NM_NEWSSTAND_LIST_next_btn" data-clk-custom="next"><i class="ico_btn"></i><span class="blind">다음</span><span class="blind">다음</span></a> <div class="list_view"> <div class="option_area"> <div class="list_option_wrap"> <ul class="list_option _NM_NEWSSTAND_MY_presslist"> <!-- nvpaperlist:empty --> </ul> </div> </div> <div class="_NM_NEWSSTAND_ARTICLE_CONTAINER" data-clk-sub="*a">  </div> </div> <div class="ly_popup NM_NEWSSTAND_POPUP NM_NEWSSTAND_invalid" style="display:none"> <a href="#" role="button" class="btn_close NM_NEWSSTAND_POPUP_CLOSE"><i class="ico_close"></i><span class="blind">닫기</span></a> <p class="popup_msg">해당 언론사 사정으로 접근이 일시 제한됩니다.</p> <div class="popup_btn"> <a href="#" role="button" class="btn_confirm NM_NEWSSTAND_POPUP_CLOSE">확인</a> </div> </div> <div class="ly_popup NM_NEWSSTAND_POPUP NM_NEWSSTAND_undescribe_confirm" style="display:none" data-clk-sub="*a"> <a href="#" role="button" class="btn_close NM_NEWSSTAND_POPUP_CLOSE" data-clk="usclose"><i class="ico_close"></i><span class="blind">닫기</span></a> <p class="popup_msg"><strong class="NM_NEWSSTAND_POPUP_PNAME"></strong>을(를)<br>구독해지 하시겠습니까?</p> <div class="popup_btn"> <a href="#" role="button" class="btn_confirm NM_NEWSSTAND_POPUP_CONFIRM" data-clk="usdone">확인</a> <a href="#" role="button" class="btn_confirm NM_NEWSSTAND_POPUP_CLOSE" data-clk="uscancel">취소</a> </div> </div> </div> <div id="NM_NEWSSTAND_MY_THUMB" class="group_news" style="display:none" data-clk-prefix="nsd_myn"> <a href="#" role="button" class="pm_btn_prev_l _NM_UI_PAGE_PREV" data-clk-custom="prev"><i class="ico_btn"><span class="blind">이전</span></i></a> <a href="#" role="button" class="pm_btn_next_l _NM_UI_PAGE_NEXT" data-clk-custom="next"><i class="ico_btn"><span class="blind">다음</span></i></a> <div class="_NM_UI_PAGE_CONTAINER" data-clk-sub="*p"></div> <div class="ly_popup NM_NEWSSTAND_POPUP NM_NEWSSTAND_invalid" style="display:none"> <a href="#" role="button" class="btn_close NM_NEWSSTAND_POPUP_CLOSE"><i class="ico_close"></i><span class="blind">닫기</span></a> <p class="popup_msg">해당 언론사 사정으로 접근이 일시 제한됩니다.</p> <div class="popup_btn"> <a href="#" role="button" class="btn_confirm NM_NEWSSTAND_POPUP_CLOSE">확인</a> </div> </div> <div class="ly_popup NM_NEWSSTAND_POPUP NM_NEWSSTAND_undescribe_confirm" style="display:none" data-clk-sub="*a"> <a href="#" role="button" class="btn_close NM_NEWSSTAND_POPUP_CLOSE" data-clk="usclose"><i class="ico_close"></i><span class="blind">닫기</span></a> <p class="popup_msg"><strong class="NM_NEWSSTAND_POPUP_PNAME"></strong>을(를)<br>구독해지 하시겠습니까?</p> <div class="popup_btn"> <a href="#" role="button" class="btn_confirm NM_NEWSSTAND_POPUP_CONFIRM" data-clk="usdone">확인</a> <a href="#" role="button" class="btn_confirm NM_NEWSSTAND_POPUP_CLOSE" data-clk="uscancel">취소</a> </div> </div> </div> <div id="NM_NEWSSTAND_MY_EMPTY" class="group_news" style="display:none"> <div class="error_view"> <div class="error_area"> <strong class="error_msg">구독한 언론사가 없습니다.</strong> <p class="dsc_msg">언론사 구독 설정에서 관심있는 언론사를 구독하시면<br>언론사가 직접 편집한 뉴스들을 네이버 홈에서 바로 보실 수 있습니다.</p> <a href="http://newsstand.naver.com/config.html" class="link_redirect" target="_blank">언론사 구독 설정하기</a> </div> </div> </div> </div> </div> <!-- EMPTY --> <div id="NM_THEMECAST_CONTENTS_CONTAINER"> <div id="themecast" class="sc_themecast id_business" >
+	<h2 class="blind">주제별 캐스트</h2>
+	<div class="theme_head">
+		<div class="group_title">
+	<div class="title_area">
+		<strong class="title">오늘 읽을만한 글</strong><span class="dsc">주제별로 분류된 다양한 글 모음</span>
+	</div>
+	<div class="info_area">
+
+			<span class="info"><strong class="new">1,796</strong> 개의 글</span>
+
+		<a id="NM_THEME_EDIT_SET" href="#" role="button" class="btn_set" data-clk="tca.like">관심주제 설정</a>
+	</div>
+</div>
+<div class="theme_fix_wrap">
+	<div id="NM_THEME_CATE_GROUPS" class="group_category" data-demo-key="m_30_39">
+		<div class="main_category">
+			<a href="#" role="button" class="pm_btn_prev NM_THEME_PREV" data-clk="tct.prev" style="display: none;">
+				<i class="ico_btn"><span class="blind">이전</span></i>
+			</a>
+			<a href="#" role="button" class="pm_btn_next NM_THEME_NEXT" data-clk="tct.next" style="display: none;">
+				<i class="ico_btn"><span class="blind">다음</span></i>
+			</a>
+			<div id="NM_THEME_CATE_FLICK" class="_NM_UI_PAGE_CONTAINER" style="height: 49px; overflow: hidden;">
+
+					<div style="width: 750px;">
+						<ul class="list_category" role="tablist">
+
+								<li class="category_item" role="presentation">
+
+
+									<a href="#" role="tab" class="_NM_THEME_CATE tab id_enter"
+									   aria-selected="false"
+									   data-clk="tct.tvc" data-panel-code="ENTER">엔터</a>
+								</li>
+
+								<li class="category_item" role="presentation">
+
+
+									<a href="#" role="tab" class="_NM_THEME_CATE tab id_sports"
+									   aria-selected="false"
+									   data-clk="tct.spo" data-panel-code="SPORTS">스포츠</a>
+								</li>
+
+								<li class="category_item" role="presentation">
+
+
+									<a href="#" role="tab" class="_NM_THEME_CATE tab id_cargame"
+									   aria-selected="false"
+									   data-clk="tct.aut" data-panel-code="CARGAME">자동차</a>
+								</li>
+
+								<li class="category_item" role="presentation">
+
+
+									<a href="#" role="tab" class="_NM_THEME_CATE tab id_bboom"
+									   aria-selected="false"
+									   data-clk="tct.web" data-panel-code="BBOOM">웹툰</a>
+								</li>
+
+								<li class="category_item" role="presentation">
+
+
+									<a href="#" role="tab" class="_NM_THEME_CATE tab id_finance"
+									   aria-selected="false"
+									   data-clk="tct.fin" data-panel-code="FINANCE">경제M</a>
+								</li>
+
+								<li class="category_item" role="presentation">
+
+
+									<a href="#" role="tab" class="_NM_THEME_CATE tab id_living"
+									   aria-selected="false"
+									   data-clk="tct.fod" data-panel-code="LIVING">푸드</a>
+								</li>
+
+								<li class="category_item" role="presentation">
+
+
+									<a href="#" role="tab" class="_NM_THEME_CATE tab id_gameapp"
+									   aria-selected="false"
+									   data-clk="tct.gam" data-panel-code="GAMEAPP">게임</a>
+								</li>
+
+								<li class="category_item" role="presentation">
+
+
+									<a href="#" role="tab" class="_NM_THEME_CATE tab id_movie"
+									   aria-selected="false"
+									   data-clk="tct.mov" data-panel-code="MOVIE">영화</a>
+								</li>
+
+						</ul>
+					</div>
+
+					<div style="width: 750px;">
+						<ul class="list_category" role="tablist">
+
+								<li class="category_item" role="presentation">
+
+
+									<a href="#" role="tab" class="_NM_THEME_CATE tab id_job"
+									   aria-selected="false"
+									   data-clk="tct.job" data-panel-code="JOB">JOB&amp;</a>
+								</li>
+
+								<li class="category_item" role="presentation">
+
+
+									<a href="#" role="tab" class="_NM_THEME_CATE tab id_ittech"
+									   aria-selected="false"
+									   data-clk="tct.tec" data-panel-code="ITTECH">테크</a>
+								</li>
+
+								<li class="category_item" role="presentation">
+
+
+									<a href="#" role="tab" class="_NM_THEME_CATE tab id_travel"
+									   aria-selected="false"
+									   data-clk="tct.tra" data-panel-code="TRAVEL">여행+</a>
+								</li>
+
+								<li class="category_item" role="presentation">
+
+
+									<a href="#" role="tab" class="_NM_THEME_CATE tab id_science"
+									   aria-selected="false"
+									   data-clk="tct.sci" data-panel-code="SCIENCE">과학</a>
+								</li>
+
+								<li class="category_item" role="presentation">
+
+
+									<a href="#" role="tab" class="_NM_THEME_CATE tab id_livinghome"
+									   aria-selected="false"
+									   data-clk="tct.lif" data-panel-code="LIVINGHOME">리빙</a>
+								</li>
+
+								<li class="category_item" role="presentation">
+
+
+									<a href="#" role="tab" class="_NM_THEME_CATE tab id_health"
+									   aria-selected="false"
+									   data-clk="tct.hea" data-panel-code="HEALTH">건강</a>
+								</li>
+
+								<li class="category_item" role="presentation">
+
+
+									<a href="#" role="tab" class="_NM_THEME_CATE tab id_business"
+									   aria-selected="true"
+									   data-clk="tct.bsn" data-panel-code="BUSINESS">비즈니스</a>
+								</li>
+
+								<li class="category_item" role="presentation">
+
+
+									<a href="#" role="tab" class="_NM_THEME_CATE tab id_wedding"
+									   aria-selected="false"
+									   data-clk="tct.wed" data-panel-code="WEDDING">연애·결혼</a>
+								</li>
+
+						</ul>
+					</div>
+
+					<div style="width: 750px;">
+						<ul class="list_category" role="tablist">
+
+								<li class="category_item" role="presentation">
+
+
+									<a href="#" role="tab" class="_NM_THEME_CATE tab id_culture"
+									   aria-selected="false"
+									   data-clk="tct.bok" data-panel-code="CULTURE">책문화</a>
+								</li>
+
+								<li class="category_item" role="presentation">
+
+
+									<a href="#" role="tab" class="_NM_THEME_CATE tab id_momkids"
+									   aria-selected="false"
+									   data-clk="tct.mom" data-panel-code="MOMKIDS">부모i</a>
+								</li>
+
+								<li class="category_item" role="presentation">
+
+
+									<a href="#" role="tab" class="_NM_THEME_CATE tab id_law"
+									   aria-selected="false"
+									   data-clk="tct.law" data-panel-code="LAW">법률</a>
+								</li>
+
+								<li class="category_item" role="presentation">
+
+
+									<a href="#" role="tab" class="_NM_THEME_CATE tab id_beauty"
+									   aria-selected="false"
+									   data-clk="tct.bty" data-panel-code="BEAUTY">패션뷰티</a>
+								</li>
+
+								<li class="category_item" role="presentation">
+
+
+									<a href="#" role="tab" class="_NM_THEME_CATE tab id_animal"
+									   aria-selected="false"
+									   data-clk="tct.ani" data-panel-code="ANIMAL">동물공감</a>
+								</li>
+
+								<li class="category_item" role="presentation">
+
+
+									<a href="#" role="tab" class="_NM_THEME_CATE tab id_design"
+									   aria-selected="false"
+									   data-clk="tct.des" data-panel-code="DESIGN">디자인</a>
+								</li>
+
+								<li class="category_item" role="presentation">
+
+
+									<a href="#" role="tab" class="_NM_THEME_CATE tab id_china"
+									   aria-selected="false"
+									   data-clk="tct.chn" data-panel-code="CHINA">중국</a>
+								</li>
+
+								<li class="category_item" role="presentation">
+
+
+									<a href="#" role="tab" class="_NM_THEME_CATE tab id_farm"
+									   aria-selected="false"
+									   data-clk="tct.far" data-panel-code="FARM">FARM</a>
+								</li>
+
+						</ul>
+					</div>
+
+					<div style="width: 750px;">
+						<ul class="list_category" role="tablist">
+
+								<li class="category_item" role="presentation">
+
+
+									<a href="#" role="tab" class="_NM_THEME_CATE tab id_show"
+									   aria-selected="false"
+									   data-clk="tct.sow" data-panel-code="SHOW">공연전시</a>
+								</li>
+
+								<li class="category_item" role="presentation">
+
+
+									<a href="#" role="tab" class="_NM_THEME_CATE tab id_with"
+									   aria-selected="false"
+									   data-clk="tct.pub" data-panel-code="WITH">함께N</a>
+								</li>
+
+								<li class="category_item" role="presentation">
+
+
+									<a href="#" role="tab" class="_NM_THEME_CATE tab id_school"
+									   aria-selected="false"
+									   data-clk="tct.scl" data-panel-code="SCHOOL">스쿨잼</a>
+								</li>
+
+						</ul>
+					</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+	<div class="theme_cont" data-panel-code="BUSINESS">
+		<div class="group_topstory" data-block-id="5fe44c1f43d1b94d8a155c0a" data-block-code="PC-THEME-BUSINESS-EDIT-AREA" data-block-type="BLOCKS" data-template-code="PC-THEMECAST-EDIT-AREA"
+
+	 data-da="margin-top"
+	 >
+
+	<div class="topstory_inner" data-block-id="5fe44c0735ea4757cb3b377f" data-block-code="PC-THEME-BUSINESS-EDIT-AREA-ITEM" data-block-type="A-MATERIAL" data-template-code="IMAGE1"
+
+	 >
+
+
+		<div class="topstory_view ">
+
+
+
+			<a href="https://cafe.naver.com/teamleadersclub/12146" class="topstory_thumb"
+			   data-clk="tcc_bsn.editbigimg1"
+			   target="_blank">
+				<img src="https://s.pstatic.net/static/www/mobile/edit/2020/1224/cropImg_728x360_50737674369298776.jpeg" data-src="https://s.pstatic.net/static/www/mobile/edit/2020/1224/cropImg_728x360_50737674369298776.jpeg" alt="서로 말하고 들었지만 통한 건 아닐지도 " width="364" height="180">
+
+
+					<span class="thumb_bd"></span>
+
+			</a>
+			<a href="https://cafe.naver.com/teamleadersclub/12146" class="topstory_info"
+			   data-clk="tcc_bsn.editbigtxt1"
+			   target="_blank">
+
+					<em class="theme_category">팀장클럽</em>
+
+
+				<strong class="title  ">서로 말하고 들었지만 통한 건 아닐지도 </strong>
+
+					<p class="desc">언젠가 동기 모임에서 나눈 대화 중 일부입니다. &quot;야, 너는 팀원들하고 문제없냐?&quot; &quot;응? 어떤?&quot; &quot;아휴...답답해서 정말... 내 뜻대로 일해오는 인간이 하나도 없어. 그럼 또 얘길 하고... 듣는 걔도 기분이 안 좋을 거고.&quot; </p>
+
+
+
+					<div class="source_area">
+						<span class="source"><span class="source_inner">인터비즈</span></span>
+					</div>
+
+			</a>
+
+		</div>
+
+</div>
+<div class="topstory_inner" data-block-id="5fe43f55e3f5842878afac2c" data-block-code="PC-THEME-BUSINESS-EDIT-AREA-ITEM" data-block-type="MATERIALS" data-template-code="IMAGE3"
+
+	 >
+
+	<div class="list_theme_wrap type_topstory">
+		<ul class="list_theme">
+
+			<li class="theme_item">
+
+
+				<a href="https://blog.naver.com/businessinsight/222184041454" class="theme_thumb" data-clk="tcc_bsn.editsmallimg1" target="_blank">
+					<img src="https://s.pstatic.net/static/www/mobile/edit/2020/1224/cropImg_196x196_50734225139332996.png" data-src="https://s.pstatic.net/static/www/mobile/edit/2020/1224/cropImg_196x196_50734225139332996.png" alt="&quot;바쁘다&quot; 입에 달고 사는 사람, 비효율적으로 일해서 그렇다?" width="98" height="98">
+
+
+						<span class="thumb_bd"></span>
+
+				</a>
+				<a href="https://blog.naver.com/businessinsight/222184041454" class="theme_info" data-clk="tcc_bsn.editsmalltxt1" target="_blank">
+					<em class="theme_category">조직관리</em>
+					<strong class="title">"바쁘다" 입에 달고 사는 사람, 비효율적으로 일해서 그렇다? </strong>
+					<div class="source_box">
+						<span class="source"><span class="source_inner">인터비즈</span></span>
+					</div>
+				</a>
+			</li>
+
+			<li class="theme_item">
+
+
+				<a href="https://post.naver.com/viewer/postView.nhn?volumeNo&#x3D;30243589&amp;memberNo&#x3D;50538240" class="theme_thumb" data-clk="tcc_bsn.editsmallimg2" target="_blank">
+					<img src="https://s.pstatic.net/static/www/mobile/edit/2020/1224/cropImg_196x196_50734283716780975.jpeg" data-src="https://s.pstatic.net/static/www/mobile/edit/2020/1224/cropImg_196x196_50734283716780975.jpeg" alt="제2의 타다&#x27;로 불리다 1년 만에 영업 재개.. 제주 빈집으로 사업하는 &#x27;다자요&#x27;" width="98" height="98">
+
+
+						<span class="thumb_bd"></span>
+
+				</a>
+				<a href="https://post.naver.com/viewer/postView.nhn?volumeNo&#x3D;30243589&amp;memberNo&#x3D;50538240" class="theme_info" data-clk="tcc_bsn.editsmalltxt2" target="_blank">
+					<em class="theme_category">CEO 인터뷰</em>
+					<strong class="title">제2의 타다'로 불리다 1년 만에 영업 재개.. 제주 빈집으로 사업하는 '다자요' </strong>
+					<div class="source_box">
+						<span class="source"><span class="source_inner">EO</span></span>
+					</div>
+				</a>
+			</li>
+
+			<li class="theme_item">
+
+
+				<a href="https://post.naver.com/viewer/postView.nhn?volumeNo&#x3D;29502521&amp;memberNo&#x3D;48683444" class="theme_thumb" data-clk="tcc_bsn.editsmallimg3" target="_blank">
+					<img src="https://s.pstatic.net/static/www/mobile/edit/2020/1224/cropImg_196x196_50734418041398265.jpeg" data-src="https://s.pstatic.net/static/www/mobile/edit/2020/1224/cropImg_196x196_50734418041398265.jpeg" alt="상권까지 바꾼 &#x27;뉴트로&#x27;.. 적응 못하면 살아남지 못한다" width="98" height="98">
+
+
+						<span class="thumb_bd"></span>
+
+				</a>
+				<a href="https://post.naver.com/viewer/postView.nhn?volumeNo&#x3D;29502521&amp;memberNo&#x3D;48683444" class="theme_info" data-clk="tcc_bsn.editsmalltxt3" target="_blank">
+					<em class="theme_category">이슈 &amp; 트렌드</em>
+					<strong class="title">상권까지 바꾼 '뉴트로'.. 적응 못하면 살아남지 못한다 </strong>
+					<div class="source_box">
+						<span class="source"><span class="source_inner">더본코리아</span></span>
+					</div>
+				</a>
+			</li>
+
+		</ul>
+	</div>
+</div>
+</div>
+<div class="group_theme" data-block-id="" data-block-code="PC-THEME-BUSINESS-MOBILE-RANKING-DEFAULT-0" data-block-type="MATERIALS" data-template-code="MOBILE-RANKING-LIST"
+
+	 data-da="container"
+	 data-index=""
+     data-page="1"
+	 >
+
+	<div class="list_theme_wrap">
+		<ul class="list_theme">
+
+				<li class="theme_item" data-gdid="CAS_420d5835-45b5-11eb-ad1e-61d791b4a040" data-da-position="true">
+					<a href="https://blog.naver.com/businessinsight/222142152548" class="theme_thumb" data-clk="tcc_bsn.list1cont1" target="_blank">
+						<img src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1225%2Fupload_24811749629481951GVuZ1.png%22&amp;type&#x3D;nf340_228" data-src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1225%2Fupload_24811749629481951GVuZ1.png%22&amp;type&#x3D;nf340_228" alt="코로나 이후 여행업계에서 살아남기" width="170" height="114">
+						<span class="thumb_bd"></span>
+					</a>
+					<a href="https://blog.naver.com/businessinsight/222142152548" class="theme_info" data-clk="tcc_bsn.list1cont1" target="_blank">
+						<em class="theme_category"> 비즈니스</em>
+						<strong class="title elss">코로나 이후 여행업계에서 살아남기</strong>
+						<p class="desc">&quot;지금처럼 살다가 여행이 재개돼서 다시 출근하고 일을 하면 좋겠지만 ​실낱 같은 연을 유지하기에도, 회사가 숨만 쉬기에도 어려운 상황이다&quot;코로나19와 함께한 지 어연 10개월째, 여행 업계는 사경을 헤매고 있다. 최근 NHN 여행박사는 직원을 10명 만 남기고 한 번에 250여 명의 희망퇴직 신청을 받았다. 대한항공 또한 경영난으로 최대 1년간 승무원 무급</p>
+						<div class="source_box">
+							<span class="date">1개월 전</span>
+							<span class="source"><span class="source_inner">인터비즈</span></span>
+						</div>
+					</a>
+				</li>
+
+				<li class="theme_item" data-gdid="CAS_420d583a-45b5-11eb-ad1e-79e33226028a" data-da-position="true">
+					<a href="https://blog.naver.com/businessinsight/222036260497" class="theme_thumb" data-clk="tcc_bsn.list1cont2" target="_blank">
+						<img src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1225%2Fupload_24811397853650050gmvSB.jpg%22&amp;type&#x3D;nf340_228" data-src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1225%2Fupload_24811397853650050gmvSB.jpg%22&amp;type&#x3D;nf340_228" alt="삼성전자 순이익 1위 계열사는 어디에 있을까?" width="170" height="114">
+						<span class="thumb_bd"></span>
+					</a>
+					<a href="https://blog.naver.com/businessinsight/222036260497" class="theme_info" data-clk="tcc_bsn.list1cont2" target="_blank">
+						<em class="theme_category"> 비즈니스</em>
+						<strong class="title elss">삼성전자 순이익 1위 계열사는 어디에 있을까?</strong>
+						<p class="desc">[베트남 시장 진출 입체분석 Case 1 : 삼성전자]​들어가며 : 왜 &#x27;베트남 투자&#x27;였나​​1986년 베트남 공산당은 제 6차 전당대회에서 ‘도이머이(Doi Moi)’ 슬로건을 내세우기 시작했다. 도이머이는 ‘새롭게 바꾸다’는 의미다. ‘사회주의 바탕의 시장경제’로 해석할 수 있다. 이를 기점으로 베트남은 1992년 한국과 수교를 맺었다. 1995년엔 동</p>
+						<div class="source_box">
+							<span class="date">5개월 전</span>
+							<span class="source"><span class="source_inner">인터비즈</span></span>
+						</div>
+					</a>
+				</li>
+
+				<li class="theme_item" data-gdid="CAS_e342ce7a-45b7-11eb-93a0-393d696877d7" data-da-position="true">
+					<a href="https://blog.naver.com/businessinsight/221479845992" class="theme_thumb" data-clk="tcc_bsn.list1cont3" target="_blank">
+						<img src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1225%2Fupload_24812776694950572hTquf.jpg%22&amp;type&#x3D;nf340_228" data-src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1225%2Fupload_24812776694950572hTquf.jpg%22&amp;type&#x3D;nf340_228" alt="조언이나 평가할 땐 &quot;Yes, and...&quot; 화법을 활용하라" width="170" height="114">
+						<span class="thumb_bd"></span>
+					</a>
+					<a href="https://blog.naver.com/businessinsight/221479845992" class="theme_info" data-clk="tcc_bsn.list1cont3" target="_blank">
+						<em class="theme_category"> 비즈니스</em>
+						<strong class="title elss">조언이나 평가할 땐 "Yes, and..." 화법을 활용하라</strong>
+						<p class="desc">[DBR/동아비즈니스리뷰] 얼마 전 연예인과 매니저가 함께 출연하는 방송에서 방송인 이영자는 이런 질문을 받았다. &quot;말을 잘하는 방법은 무엇인가요?&quot; 이영자의 대답은 다음과 같았다. “말을 잘하려면 상대의 말을 들어야 해요.” &#x27;듣는 것&#x27;은 상대에게 호감을 줄 수 있는 방법 중 하나다. 그리고 뇌과학에서는 이것이 의사결정에 큰 영향을 미친다고 말...</p>
+						<div class="source_box">
+							<span class="date">1년 전</span>
+							<span class="source"><span class="source_inner">인터비즈</span></span>
+						</div>
+					</a>
+				</li>
+
+				<li class="theme_item" data-gdid="CAS_bff6e8f7-45bc-11eb-a438-bdaaae2e2879" data-da-position="true">
+					<a href="https://post.naver.com/viewer/postView.nhn?volumeNo&#x3D;30236524&amp;memberNo&#x3D;3185448" class="theme_thumb" data-clk="tcc_bsn.list1cont4" target="_blank">
+						<img src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1225%2Fupload_24814887414043269NkDb6.jpg%22&amp;type&#x3D;nf340_228" data-src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1225%2Fupload_24814887414043269NkDb6.jpg%22&amp;type&#x3D;nf340_228" alt="가트너가 뽑은 2021년 전략 기술 트렌드" width="170" height="114">
+						<span class="thumb_bd"></span>
+					</a>
+					<a href="https://post.naver.com/viewer/postView.nhn?volumeNo&#x3D;30236524&amp;memberNo&#x3D;3185448" class="theme_info" data-clk="tcc_bsn.list1cont4" target="_blank">
+						<em class="theme_category"> 비즈니스</em>
+						<strong class="title elss">가트너가 뽑은 2021년 전략 기술 트렌드</strong>
+						<p class="desc">팬데믹은 그리스어 판데모스(Pandemos)에서 나온 말로 ‘모두’와 ‘인구’의 합성어라고 합니다. 2020년 코로나 팬데믹은 말 그대로 모든 영역에서 모든 이들에게 영향을 미치고 있습니다. 사회, 문화, 경제적으로 지역을 가리지 않고 심각한 혼란을 일으키고 있고, 전반적인 투자가 줄면서 어려운 한 해를 보내고 있습니다.또 다른 측면에서는 전 세계 10억 </p>
+						<div class="source_box">
+							<span class="date">1주일 전</span>
+							<span class="source"><span class="source_inner">LG CNS</span></span>
+						</div>
+					</a>
+				</li>
+
+		</ul>
+	</div>
+</div>
+<div class="group_theme" data-block-id="" data-block-code="PC-THEME-BUSINESS-MOBILE-RANKING-DEFAULT-1" data-block-type="MATERIALS" data-template-code="MOBILE-RANKING-LIST"
+
+	 data-da="container"
+	 data-index=""
+     data-page="1"
+	 >
+
+	<div class="list_theme_wrap">
+		<ul class="list_theme">
+
+				<li class="theme_item" data-gdid="CAS_e342ce7c-45b7-11eb-93a0-e370df148362" data-da-position="true">
+					<a href="https://blog.naver.com/businessinsight/222050074809" class="theme_thumb" data-clk="tcc_bsn.list2cont1" target="_blank">
+						<img src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1225%2Fupload_24812654145173084A4hJZ.jpg%22&amp;type&#x3D;nf340_228" data-src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1225%2Fupload_24812654145173084A4hJZ.jpg%22&amp;type&#x3D;nf340_228" alt="신뢰주는 리더가 되고 싶다면 스마트폰부터 내려놔라?" width="170" height="114">
+						<span class="thumb_bd"></span>
+					</a>
+					<a href="https://blog.naver.com/businessinsight/222050074809" class="theme_info" data-clk="tcc_bsn.list2cont1" target="_blank">
+						<em class="theme_category"> 비즈니스</em>
+						<strong class="title elss">신뢰주는 리더가 되고 싶다면 스마트폰부터 내려놔라?</strong>
+						<p class="desc">2017년 우버는 대내외적으로 위기에 직면했다. 뉴욕시 택시운전사들이 트럼프 대통령의 여행금지령*에 반대하는 파업을 벌였을 때 우버는 규정보다 싼 요금으로 영업을 하는 등 이 상황을 이용하는 전략을 구사했다. 이 때문에 일각에서 #우버를지우자는 캠페인이 일어났다. 그로부터 한 달 뒤, 우버 엔지니어 수전 파울러가 회사에서 겪은 괴롭힘과 차별을 자신의 블로그</p>
+						<div class="source_box">
+							<span class="date">4개월 전</span>
+							<span class="source"><span class="source_inner">인터비즈</span></span>
+						</div>
+					</a>
+				</li>
+
+				<li class="theme_item" data-gdid="CAS_bff6e8f6-45bc-11eb-a438-e732aeeb4b3a" data-da-position="true">
+					<a href="https://post.naver.com/viewer/postView.nhn?volumeNo&#x3D;30305544&amp;memberNo&#x3D;11291600" class="theme_thumb" data-clk="tcc_bsn.list2cont2" target="_blank">
+						<img src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1225%2Fupload_248147593496272184ryOn.jpg%22&amp;type&#x3D;nf340_228" data-src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1225%2Fupload_248147593496272184ryOn.jpg%22&amp;type&#x3D;nf340_228" alt="“폐업해도 실업급여 ‘그림의 떡’ 자영업자 눈문" width="170" height="114">
+						<span class="thumb_bd"></span>
+					</a>
+					<a href="https://post.naver.com/viewer/postView.nhn?volumeNo&#x3D;30305544&amp;memberNo&#x3D;11291600" class="theme_info" data-clk="tcc_bsn.list2cont2" target="_blank">
+						<em class="theme_category"> 비즈니스</em>
+						<strong class="title elss">“폐업해도 실업급여 ‘그림의 떡’ 자영업자 눈문</strong>
+						<p class="desc">[‘코로나 혹한’ 자영업의 눈물] &lt;2&gt; 출구 없는 자영업자올해 3월까지 ‘우유대리점 사장’으로 불렸던 신모 씨(58)는 요즘 건설 현장 일용직으로 일하고 있다. 건설 현장을 오가는 와중에 틈틈이 학원에서 도배일도 배웠다. 토목일도 도배일도 처음이라 겨우 밥벌이를 할 정도다. 하지만 겨울이</p>
+						<div class="source_box">
+							<span class="date">4일 전</span>
+							<span class="source"><span class="source_inner">동아일보</span></span>
+						</div>
+					</a>
+				</li>
+
+				<li class="theme_item" data-gdid="CAS_f24cd8ee-45bd-11eb-ad1e-3941d277d955" data-da-position="true">
+					<a href="https://post.naver.com/viewer/postView.nhn?volumeNo&#x3D;30303938&amp;memberNo&#x3D;1130561" class="theme_thumb" data-clk="tcc_bsn.list2cont3" target="_blank">
+						<img src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1225%2Fupload_24815337223568228hEFl5.jpg%22&amp;type&#x3D;nf340_228" data-src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1225%2Fupload_24815337223568228hEFl5.jpg%22&amp;type&#x3D;nf340_228" alt="중국에서 온라인 도매시장 발전이 우리나라에 미칠 영향은?" width="170" height="114">
+						<span class="thumb_bd"></span>
+					</a>
+					<a href="https://post.naver.com/viewer/postView.nhn?volumeNo&#x3D;30303938&amp;memberNo&#x3D;1130561" class="theme_info" data-clk="tcc_bsn.list2cont3" target="_blank">
+						<em class="theme_category"> 비즈니스</em>
+						<strong class="title elss">중국에서 온라인 도매시장 발전이 우리나라에 미칠 영향은?</strong>
+						<p class="desc">보통 중국인하면 가장 먼저 떠오르는 이미지가 만만디(慢慢地)이다. ‘천천히’ ‘더디게’ ‘살살’ 정도로 풀이되는 중국어 표현인데, 중국 최대의 무역도시 광저우에서 15년을 살았지만 어디에서도 만만디는 찾아볼 수가 없었다. 광저우는 중국 전역에서 돈을 벌기 위해 농민공에서 중소상인</p>
+						<div class="source_box">
+							<span class="date">4일 전</span>
+							<span class="source"><span class="source_inner">패션포스트</span></span>
+						</div>
+					</a>
+				</li>
+
+				<li class="theme_item" data-gdid="CAS_3fb3ded0-45bd-11eb-93a0-cd5584553b5a" data-da-position="true">
+					<a href="https://post.naver.com/viewer/postView.nhn?volumeNo&#x3D;30123554&amp;memberNo&#x3D;36529745" class="theme_thumb" data-clk="tcc_bsn.list2cont4" target="_blank">
+						<img src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1225%2Fupload_24815038712030444pNaQj.jpg%22&amp;type&#x3D;nf340_228" data-src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1225%2Fupload_24815038712030444pNaQj.jpg%22&amp;type&#x3D;nf340_228" alt="MZ세대가 조미료에 빠졌다?" width="170" height="114">
+						<span class="thumb_bd"></span>
+					</a>
+					<a href="https://post.naver.com/viewer/postView.nhn?volumeNo&#x3D;30123554&amp;memberNo&#x3D;36529745" class="theme_info" data-clk="tcc_bsn.list2cont4" target="_blank">
+						<em class="theme_category"> 비즈니스</em>
+						<strong class="title elss">MZ세대가 조미료에 빠졌다?</strong>
+						<p class="desc">대상(주) 미원이 감성 편의점 고잉메리와 손잡고 발효조미료 미원을 이용한 신메뉴를 출시하는가 하면 요즘 가장 잘나가는 패션 브랜드 무신사를 통해 ‘미원 굿즈’를 선보이는 등 흥미로운 행보를 이어가며 MZ 세대와 활발히 소통하고 있다. 아직도 미원 사용을 숨기고 있는 식당 사장님이라면 주목하자. 이제부터는 ‘미원 한꼬집’으로 MZ세대와 맛있게 소통할 수 있으</p>
+						<div class="source_box">
+							<span class="date">2주일 전</span>
+							<span class="source"><span class="source_inner">월간식당</span></span>
+						</div>
+					</a>
+				</li>
+
+		</ul>
+	</div>
+</div>
+<div class="group_theme" data-block-id="" data-block-code="PC-THEME-BUSINESS-MOBILE-RANKING-DEFAULT-2" data-block-type="MATERIALS" data-template-code="MOBILE-RANKING-LIST"
+
+	 data-da="container"
+	 data-index=""
+     data-page="2"
+	 style="display:none">
+
+	<div class="list_theme_wrap">
+		<ul class="list_theme">
+
+				<li class="theme_item" data-gdid="CAS_9bded752-45bd-11eb-93a0-23b912d7e3d6" data-da-position="true">
+					<a href="https://post.naver.com/viewer/postView.nhn?volumeNo&#x3D;30195521&amp;memberNo&#x3D;42990795" class="theme_thumb" data-clk="tcc_bsn.list3cont1" target="_blank">
+						<img  data-src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1225%2Fupload_24815214861852531rtNv0.jpg%22&amp;type&#x3D;nf340_228" alt="리바이스 자체 중고샵 오픈... 브랜드도 중고 시장 관심" width="170" height="114">
+						<span class="thumb_bd"></span>
+					</a>
+					<a href="https://post.naver.com/viewer/postView.nhn?volumeNo&#x3D;30195521&amp;memberNo&#x3D;42990795" class="theme_info" data-clk="tcc_bsn.list3cont1" target="_blank">
+						<em class="theme_category"> 비즈니스</em>
+						<strong class="title elss">리바이스 자체 중고샵 오픈... 브랜드도 중고 시장 관심</strong>
+						<p class="desc">원본기사 : http://trendinsight.biz/archives/49878중고시장의 성장세가 무섭습니다. 중고 거래를 좀 해봤다는 사람들에게 중고나라는 너무나 익숙한 단어일 것이고, 우리 엄마가 당근마켓으로 물건을 거래하는 모습을 보며 중고 거래가 일상화된 현실을 깨닫고 있습니다. 실제로 최근 조사에 따르면 당근마켓은 우리나라 사람들이 두 번째로 많</p>
+						<div class="source_box">
+							<span class="date">2주일 전</span>
+							<span class="source"><span class="source_inner">Trend Insight</span></span>
+						</div>
+					</a>
+				</li>
+
+				<li class="theme_item" data-gdid="CAS_f24cd8ef-45bd-11eb-ad1e-876fc02afc54" data-da-position="true">
+					<a href="https://post.naver.com/viewer/postView.nhn?volumeNo&#x3D;30283808&amp;memberNo&#x3D;47129033&amp;vType&#x3D;VERTICAL" class="theme_thumb" data-clk="tcc_bsn.list3cont2" target="_blank">
+						<img  data-src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1225%2Fupload_2481540124457649411B0o.jpg%22&amp;type&#x3D;nf340_228" alt="&quot;프리랜서의 삶, 특별하지도 않고 대단하지도 않다&quot;" width="170" height="114">
+						<span class="thumb_bd"></span>
+					</a>
+					<a href="https://post.naver.com/viewer/postView.nhn?volumeNo&#x3D;30283808&amp;memberNo&#x3D;47129033&amp;vType&#x3D;VERTICAL" class="theme_info" data-clk="tcc_bsn.list3cont2" target="_blank">
+						<em class="theme_category"> 비즈니스</em>
+						<strong class="title elss">"프리랜서의 삶, 특별하지도 않고 대단하지도 않다"</strong>
+						<p class="desc">3년 전만 해도 서메리에게 특별한 수식어는 없었다. ‘문과 출신’, ‘평범한 직장인’, ‘사무직 5년차’가 그녀를 표현할 수 있는 전부였다. 그랬던 그녀가 출판번역가의 꿈을 가지고 퇴사했다. 3년이 지난 지금은, 프리랜서가 된 서메리를 한 단어로 표현할 수 있는 말은 없다. 서메리는 &lt;나</p>
+						<div class="source_box">
+							<span class="date">5일 전</span>
+							<span class="source"><span class="source_inner">클래스101</span></span>
+						</div>
+					</a>
+				</li>
+
+				<li class="theme_item" data-gdid="CAS_9bded753-45bd-11eb-93a0-8be31c0a954d" data-da-position="true">
+					<a href="https://post.naver.com/viewer/postView.nhn?volumeNo&#x3D;29757056&amp;memberNo&#x3D;547531" class="theme_thumb" data-clk="tcc_bsn.list3cont3" target="_blank">
+						<img  data-src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1225%2Fupload_24815211367832484CL37M.jpg%22&amp;type&#x3D;nf340_228" alt="MZ세대 놀이터로 거듭난 중고마켓.. N차신상이 뜬다" width="170" height="114">
+						<span class="thumb_bd"></span>
+					</a>
+					<a href="https://post.naver.com/viewer/postView.nhn?volumeNo&#x3D;29757056&amp;memberNo&#x3D;547531" class="theme_info" data-clk="tcc_bsn.list3cont3" target="_blank">
+						<em class="theme_category"> 비즈니스</em>
+						<strong class="title elss">MZ세대 놀이터로 거듭난 중고마켓.. N차신상이 뜬다</strong>
+						<p class="desc">Heading to the Resell MarketN차 신상 사진 &#x3D; 나이키 에어포스 파라노이즈 2021년 트렌드 키워드&quot;COWBOY HERO&quot;에 맞춰매일 키워드 하나씩 연재가 진행됩니다.#7. N차 신상 트렌드 코리아 2021 저자 김난도,전미영,최지혜,이향은,이준영,이수진,서유현,권정윤,한다혜 출판 미래의창 발매 2020.10.</p>
+						<div class="source_box">
+							<span class="date">2개월 전</span>
+							<span class="source"><span class="source_inner">미래의창</span></span>
+						</div>
+					</a>
+				</li>
+
+				<li class="theme_item" data-gdid="CAS_e342ce7b-45b7-11eb-93a0-59ec4a5ea1b1" data-da-position="true">
+					<a href="https://blog.naver.com/businessinsight/221476829122" class="theme_thumb" data-clk="tcc_bsn.list3cont4" target="_blank">
+						<img  data-src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1225%2Fupload_24812650868089792dsyhu.jpg%22&amp;type&#x3D;nf340_228" alt="마마이트가 고약한 냄새를 앞세운 광고를 내보낸 이유" width="170" height="114">
+						<span class="thumb_bd"></span>
+					</a>
+					<a href="https://blog.naver.com/businessinsight/221476829122" class="theme_info" data-clk="tcc_bsn.list3cont4" target="_blank">
+						<em class="theme_category"> 비즈니스</em>
+						<strong class="title elss">마마이트가 고약한 냄새를 앞세운 광고를 내보낸 이유</strong>
+						<p class="desc">마마이트(Marmite)는 영국 사람들이 빵에 자주 발라 먹는 스프레드입니다. 이스트 추출물을 농축해 만들어 각종 비타민이 듬뿍 들어가 있습니다. 건강에 좋다지만 냄새가 고약합니다. 저도 한번 먹어 보았는데 맛과 냄새 때문에 삼키기 어려웠습니다. ​단점처럼 보이는 고약한 냄새를, 이 회사는 광고의 핵심 메시지로 사용했습니다. ‘사랑하거나 끔찍하게 싫어하거나</p>
+						<div class="source_box">
+							<span class="date">1년 전</span>
+							<span class="source"><span class="source_inner">인터비즈</span></span>
+						</div>
+					</a>
+				</li>
+
+				<li class="theme_item" data-gdid="CAS_420d5836-45b5-11eb-ad1e-477630e10ac0" data-da-position="true">
+					<a href="https://blog.naver.com/businessinsight/222050978853" class="theme_thumb" data-clk="tcc_bsn.list3cont5" target="_blank">
+						<img  data-src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1225%2Fupload_24812087220282942Bz4Ve.jpg%22&amp;type&#x3D;nf340_228" alt="재무제표로 풀어본 이스타항공 인수 불발" width="170" height="114">
+						<span class="thumb_bd"></span>
+					</a>
+					<a href="https://blog.naver.com/businessinsight/222050978853" class="theme_info" data-clk="tcc_bsn.list3cont5" target="_blank">
+						<em class="theme_category"> 비즈니스</em>
+						<strong class="title elss">재무제표로 풀어본 이스타항공 인수 불발</strong>
+						<p class="desc">▼ 팟빵(윤현종의 비행)에서 청취할 수 있습니다.　윤 : 오늘은 ‘재무로 풀어보는 비즈니스 이야기’, 재미가 아닙니다, 재무입니다. 두 번째 시간인데요. 인터비즈 진희찬씨, 일명 우리 진 선생과 이야기 나눠보도록 하겠습니다. 안녕하세요.　진 : 네. 안녕하세요. 진 선생입니다.　윤 : 이제는 자연스럽게 본인 스스로를 진 선생이라고 하시네요. 오늘은 어떤 이</p>
+						<div class="source_box">
+							<span class="date">4개월 전</span>
+							<span class="source"><span class="source_inner">인터비즈</span></span>
+						</div>
+					</a>
+				</li>
+
+		</ul>
+	</div>
+</div>
+<div class="group_theme" data-block-id="" data-block-code="PC-THEME-BUSINESS-MOBILE-RANKING-DEFAULT-3" data-block-type="MATERIALS" data-template-code="MOBILE-RANKING-LIST"
+
+	 data-da="container"
+	 data-index=""
+     data-page="2"
+	 style="display:none">
+
+	<div class="list_theme_wrap">
+		<ul class="list_theme">
+
+				<li class="theme_item" data-gdid="CAS_420d5838-45b5-11eb-ad1e-7f4e3c51feec" data-da-position="true">
+					<a href="https://blog.naver.com/businessinsight/222166913794" class="theme_thumb" data-clk="tcc_bsn.list4cont1" target="_blank">
+						<img  data-src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1225%2Fupload_24811319461144213APsrh.jpg%22&amp;type&#x3D;nf340_228" alt="친환경 속도 높이는 자동차 산업" width="170" height="114">
+						<span class="thumb_bd"></span>
+					</a>
+					<a href="https://blog.naver.com/businessinsight/222166913794" class="theme_info" data-clk="tcc_bsn.list4cont1" target="_blank">
+						<em class="theme_category"> 비즈니스</em>
+						<strong class="title elss">친환경 속도 높이는 자동차 산업</strong>
+						<p class="desc">자동차 산업에 친환경 바람이 거세다. 그 열기는 기존 탄소 배출의 주범이란 인식을 뒤집겠다는 것 이상으로 뜨겁다. 친환경을 대표하는 메이커 중 한 곳으로 거듭나겠다는 의지를 내비치는 곳이 많아졌다. 그중에서도 미국의 혁신 기업 테슬라는 내연기관 중심이었던 자동차 생태계를 전기차로 재편하는 파괴자 역할을 수행하고 있다. 자동차 기업은 이제 이동 수단으로의 전</p>
+						<div class="source_box">
+							<span class="date">2주일 전</span>
+							<span class="source"><span class="source_inner">인터비즈</span></span>
+						</div>
+					</a>
+				</li>
+
+				<li class="theme_item" data-gdid="CAS_387260ac-40ff-11eb-aece-d7016a2b0738" data-da-position="true">
+					<a href="https://blog.naver.com/businessinsight/222146822295" class="theme_thumb" data-clk="tcc_bsn.list4cont2" target="_blank">
+						<img  data-src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1118%2Fupload_21620780577428280WsvaD.jpg%22&amp;type&#x3D;nf340_228" alt="F&amp;B 마케터 커뮤니티, ICE CREAM. 5기" width="170" height="114">
+						<span class="thumb_bd"></span>
+					</a>
+					<a href="https://blog.naver.com/businessinsight/222146822295" class="theme_info" data-clk="tcc_bsn.list4cont2" target="_blank">
+						<em class="theme_category"> 비즈니스</em>
+						<strong class="title elss">F&B 마케터 커뮤니티, ICE CREAM. 5기</strong>
+						<p class="desc">열정적이고 창의적인 F&amp;B 마케터들을 위한 커뮤니티,ICE CREAM(Insightful Community for Enthusiastic &amp; CREAtive Marketers)각계 전문가들의 직무 노하우와 경험담을 듣고 폭넓은 교류의 시간을 가지시길 바랍니다.전례없는 바이러스의 습격 속에 모두가 어려움을 겪으면서, F&amp;B업계도 급속히 변화하고 있습니다. 이</p>
+						<div class="source_box">
+							<span class="date">1개월 전</span>
+							<span class="source"><span class="source_inner">인터비즈</span></span>
+						</div>
+					</a>
+				</li>
+
+				<li class="theme_item" data-gdid="CAS_58045544-45b8-11eb-93a0-c3948b364c78" data-da-position="true">
+					<a href="https://post.naver.com/viewer/postView.nhn?volumeNo&#x3D;30294798&amp;memberNo&#x3D;22700030" class="theme_thumb" data-clk="tcc_bsn.list4cont3" target="_blank">
+						<img  data-src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1225%2Fupload_24812951957073054zGEtV.jpg%22&amp;type&#x3D;nf340_228" alt="테러사건 이후 신용거래가 급감하는 이유" width="170" height="114">
+						<span class="thumb_bd"></span>
+					</a>
+					<a href="https://post.naver.com/viewer/postView.nhn?volumeNo&#x3D;30294798&amp;memberNo&#x3D;22700030" class="theme_info" data-clk="tcc_bsn.list4cont3" target="_blank">
+						<em class="theme_category"> 비즈니스</em>
+						<strong class="title elss">테러사건 이후 신용거래가 급감하는 이유</strong>
+						<p class="desc">무엇을, 왜 연구했나? 테러가 금융 시장이나 경제에 가하는 충격과 비용은 실로 막대하다. 전 세계를 경악하게 한 9·11 테러는 세계무역센터의 건물 가치를 증발시켰다. 미국 정부는 테러 응징과 재난 극복을 위해 막대한 금액을 지출했다. 미국의 경제 활동은 위축됐고 세계 경제도 천문학적인 타격을 입었다. 인류 공동체가 겪은 정신적 상처까지 포함하면 테러의 폐</p>
+						<div class="source_box">
+							<span class="date">5일 전</span>
+							<span class="source"><span class="source_inner">동아비즈니스리뷰</span></span>
+						</div>
+					</a>
+				</li>
+
+				<li class="theme_item" data-gdid="CAS_420d5837-45b5-11eb-ad1e-cf5b41ffb76f" data-da-position="true">
+					<a href="https://blog.naver.com/businessinsight/222162462723" class="theme_thumb" data-clk="tcc_bsn.list4cont4" target="_blank">
+						<img  data-src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1225%2Fupload_24811606451741817K6UAk.jpg%22&amp;type&#x3D;nf340_228" alt="효과적인 ESG 경영 위한 5가지 방법" width="170" height="114">
+						<span class="thumb_bd"></span>
+					</a>
+					<a href="https://blog.naver.com/businessinsight/222162462723" class="theme_info" data-clk="tcc_bsn.list4cont4" target="_blank">
+						<em class="theme_category"> 비즈니스</em>
+						<strong class="title elss">효과적인 ESG 경영 위한 5가지 방법</strong>
+						<p class="desc">[DBR/동아비즈니스리뷰] 최근 &#x27;ESG경영&#x27;을 내세우는 기업이 늘었다. 투자자 관점이 바뀌면서 이 같은 흐름이 생겼다. 투자자는 재무성과를 올릴 목적으로 자본을 투입하고 회수하기 때문에 기존에는 주로 경제적 가치와 재무적 정보, 혹은 여기에 직접적인 영향을 주는 요소들에 초점을 뒀다. 그러다 환경(E), 사회(S), 지배구조(G)라는 ‘비재무적’ 정보를 </p>
+						<div class="source_box">
+							<span class="date">3주일 전</span>
+							<span class="source"><span class="source_inner">인터비즈</span></span>
+						</div>
+					</a>
+				</li>
+
+				<li class="theme_item" data-gdid="CAS_58045543-45b8-11eb-93a0-77812288b621" data-da-position="true">
+					<a href="https://post.naver.com/viewer/postView.nhn?volumeNo&#x3D;30308515&amp;memberNo&#x3D;35786474" class="theme_thumb" data-clk="tcc_bsn.list4cont5" target="_blank">
+						<img  data-src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1225%2Fupload_24812937943733058lTp9P.jpg%22&amp;type&#x3D;nf340_228" alt="위에는 운동권, 아래에는 MZ세대? &#x27;낀세대&#x27; 팀장이 전하는 꿀팁" width="170" height="114">
+						<span class="thumb_bd"></span>
+					</a>
+					<a href="https://post.naver.com/viewer/postView.nhn?volumeNo&#x3D;30308515&amp;memberNo&#x3D;35786474" class="theme_info" data-clk="tcc_bsn.list4cont5" target="_blank">
+						<em class="theme_category"> 비즈니스</em>
+						<strong class="title elss">위에는 운동권, 아래에는 MZ세대? '낀세대' 팀장이 전하는 꿀팁</strong>
+						<p class="desc">새로운 시대 팀장은 어떻게 살고 있고 무엇을 살아낼까요? 회사에서 팀장들이 겪고 있는 고충은 무엇일까요? 네이버 카페 &#x27;팀장클럽&#x27;에서 33만 조회수를 기록 중인 연재글 &#x27;팀장으로 산다는 건&#x27;의 저자이자 13년째 팀장생활을 하고 있는 현직 김진영 팀장님을 모시고 슬기로운 팀장생활에 대해 물었습니다. 김진영 팀장님의 초보시절 좌충우돌부터, MZ세대와 함께 일하</p>
+						<div class="source_box">
+							<span class="date">4일 전</span>
+							<span class="source"><span class="source_inner">InterBiz 인터비즈</span></span>
+						</div>
+					</a>
+				</li>
+
+		</ul>
+	</div>
+</div>
+<div class="group_theme" data-block-id="" data-block-code="PC-THEME-BUSINESS-MOBILE-RANKING-DEFAULT-4" data-block-type="MATERIALS" data-template-code="MOBILE-RANKING-LIST"
+
+	 data-da="container"
+	 data-index=""
+     data-page="3"
+	 style="display:none">
+
+	<div class="list_theme_wrap">
+		<ul class="list_theme">
+
+				<li class="theme_item" data-gdid="CAS_a1879b0f-45c3-11eb-a438-9b88c03b688e" data-da-position="true">
+					<a href="https://post.naver.com/viewer/postView.nhn?volumeNo&#x3D;30264532&amp;memberNo&#x3D;11166748&amp;searchKeyword&#x3D;%25EC%259D%25BC%25EB%25B3%25B8%2520%25EB%25B9%2584%25EC%25A6%2588%25EB%258B%2588%25EC%258A%25A4&amp;searchRank&#x3D;5" class="theme_thumb" data-clk="tcc_bsn.list5cont1" target="_blank">
+						<img  data-src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1225%2Fupload_248178012753260553ZT9o.jpg%22&amp;type&#x3D;nf340_228" alt="삼성과 반대로 해서 성공했다는 이 기업은?" width="170" height="114">
+						<span class="thumb_bd"></span>
+					</a>
+					<a href="https://post.naver.com/viewer/postView.nhn?volumeNo&#x3D;30264532&amp;memberNo&#x3D;11166748&amp;searchKeyword&#x3D;%25EC%259D%25BC%25EB%25B3%25B8%2520%25EB%25B9%2584%25EC%25A6%2588%25EB%258B%2588%25EC%258A%25A4&amp;searchRank&#x3D;5" class="theme_info" data-clk="tcc_bsn.list5cont1" target="_blank">
+						<em class="theme_category"> 비즈니스</em>
+						<strong class="title elss">삼성과 반대로 해서 성공했다는 이 기업은?</strong>
+						<p class="desc">김미희 튜터링 대표는 삼성전자 사내 공모전에서 떨어진 아이디어를 포기할 수 없어 퇴사를 선택했어요. 그가 2016년에 론칭한 영어 회화 교육 플랫폼 ‘튜터링’은 실시간으로 전 세계 튜터 2000여 명과 학생을 연결해줘요. 수많은 영어 회화 플랫폼이 난무하고 있는 가운데 튜터링이 주목받는 이유는 무엇일까요?영어교육 시장은 레드오션이 된 </p>
+						<div class="source_box">
+							<span class="date">4일 전</span>
+							<span class="source"><span class="source_inner">중앙시사매거진</span></span>
+						</div>
+					</a>
+				</li>
+
+				<li class="theme_item" data-gdid="CAS_686a10b1-45c4-11eb-a438-5bd3250fd910" data-da-position="true">
+					<a href="https://blog.naver.com/businessinsight/222181667884" class="theme_thumb" data-clk="tcc_bsn.list5cont2" target="_blank">
+						<img  data-src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1225%2Fupload_24818079899836330q1zeP.jpg%22&amp;type&#x3D;nf340_228" alt="갤러리가 코로나19에 대응하는 자세" width="170" height="114">
+						<span class="thumb_bd"></span>
+					</a>
+					<a href="https://blog.naver.com/businessinsight/222181667884" class="theme_info" data-clk="tcc_bsn.list5cont2" target="_blank">
+						<em class="theme_category"> 비즈니스</em>
+						<strong class="title elss">갤러리가 코로나19에 대응하는 자세</strong>
+						<p class="desc">예상치 못한 위기는 비즈니스를 가라앉게 만들기도 하지만, 오히려 새로운 변화로 이끌기도 한다. 명품 브랜드가 대표적이다. 일부 소수층을 대상으로 하는 명품 브랜드의 폐쇄성은 고급스러운 이미지를 구축하는 데 안성맞춤이었지만, 주요 소비층으로 떠오르는 MZ세대의 라이프스타일과는 맞지 않았다. 전통을 고수하다가는 &#x27;한물 간 브랜드&#x27;로의 추락이 코앞이었...</p>
+						<div class="source_box">
+							<span class="date">4일 전</span>
+							<span class="source"><span class="source_inner">인터비즈</span></span>
+						</div>
+					</a>
+				</li>
+
+				<li class="theme_item" data-gdid="CAS_4dc71791-45c1-11eb-a438-3711b1b6be7d" data-da-position="true">
+					<a href="https://post.naver.com/viewer/postView.nhn?volumeNo&#x3D;30285765&amp;memberNo&#x3D;11466887&amp;searchRank&#x3D;24" class="theme_thumb" data-clk="tcc_bsn.list5cont3" target="_blank">
+						<img  data-src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1225%2Fupload_24816755638068253owalt.jpg%22&amp;type&#x3D;nf340_228" alt="내년 업종별 기상도..조선·건설·철강 여전히 &#x27;흐림&#x27;" width="170" height="114">
+						<span class="thumb_bd"></span>
+					</a>
+					<a href="https://post.naver.com/viewer/postView.nhn?volumeNo&#x3D;30285765&amp;memberNo&#x3D;11466887&amp;searchRank&#x3D;24" class="theme_info" data-clk="tcc_bsn.list5cont3" target="_blank">
+						<em class="theme_category"> 비즈니스</em>
+						<strong class="title elss">내년 업종별 기상도..조선·건설·철강 여전히 '흐림'</strong>
+						<p class="desc">22일 한국산업연합포럼 &#x27;2021년 산업 경제 현황 및 전망&#x27; 中업체 공습받는 디스플레이·건설 디스플레이 내년 시장점유율 1위 잃을수도 반도체·배터리·바이오는 &#x27;맑음&#x27;신종 코로나바이러스감염증(코로나19) 백신 접종의 시작으로 내년 글로벌 경제가 브이(V)자 반등할 것으로 예상되는 가운데 우리</p>
+						<div class="source_box">
+							<span class="date">6일 전</span>
+							<span class="source"><span class="source_inner">아시아경제</span></span>
+						</div>
+					</a>
+				</li>
+
+				<li class="theme_item" data-gdid="CAS_16e5c960-45bf-11eb-93a0-77856d8b9289" data-da-position="true">
+					<a href="https://blog.naver.com/businessinsight/221738834727" class="theme_thumb" data-clk="tcc_bsn.list5cont4" target="_blank">
+						<img  data-src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1225%2Fupload_24815683551730542cG7O5.jpg%22&amp;type&#x3D;nf340_228" alt="겨울철 필수템인 &#x27;이것&#x27;..효능이 너무 좋아 전쟁에도 쓰였다고?" width="170" height="114">
+						<span class="thumb_bd"></span>
+					</a>
+					<a href="https://blog.naver.com/businessinsight/221738834727" class="theme_info" data-clk="tcc_bsn.list5cont4" target="_blank">
+						<em class="theme_category"> 비즈니스</em>
+						<strong class="title elss">겨울철 필수템인 '이것'..효능이 너무 좋아 전쟁에도 쓰였다고?</strong>
+						<p class="desc">건조한 겨울철만 되면 꼭 찾게 되는 게 보습 제품이다. 대표적 보습 제품중 하나인 바세린(Vaseline)은 상처 치료, 피부 보습뿐만 아니라 각질 제거, 가죽제품 관리, 큐티클 정리 등 다양한 효능을 갖춘 &#x27;만능템&#x27;으로 오랫동안 사랑받아왔다. 그렇지만 바세린이 석유 찌꺼기로부터 시작됐다는 걸 아는 사람은 많지 않다. 골칫덩어리 찌꺼기에서 전 세계 90여 </p>
+						<div class="source_box">
+							<span class="date">1년 전</span>
+							<span class="source"><span class="source_inner">인터비즈</span></span>
+						</div>
+					</a>
+				</li>
+
+				<li class="theme_item" data-gdid="CAS_62ea349a-45c2-11eb-a438-a92b54a1385f" data-da-position="true">
+					<a href="https://post.naver.com/viewer/postView.nhn?volumeNo&#x3D;30304688&amp;memberNo&#x3D;37570062&amp;searchKeyword&#x3D;%25EC%25BF%25A0%25ED%258C%25A1&amp;searchRank&#x3D;1" class="theme_thumb" data-clk="tcc_bsn.list5cont5" target="_blank">
+						<img  data-src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1225%2Fupload_24817214318117047uIKuv.jpg%22&amp;type&#x3D;nf340_228" alt="아마존 따라가는 쿠팡..월 2900원 로켓배송에 영화·드라마까지" width="170" height="114">
+						<span class="thumb_bd"></span>
+					</a>
+					<a href="https://post.naver.com/viewer/postView.nhn?volumeNo&#x3D;30304688&amp;memberNo&#x3D;37570062&amp;searchKeyword&#x3D;%25EC%25BF%25A0%25ED%258C%25A1&amp;searchRank&#x3D;1" class="theme_info" data-clk="tcc_bsn.list5cont5" target="_blank">
+						<em class="theme_category"> 비즈니스</em>
+						<strong class="title elss">아마존 따라가는 쿠팡..월 2900원 로켓배송에 영화·드라마까지</strong>
+						<p class="desc">전자상거래(e커머스) 기업 쿠팡이 OTT(온라인 동영상 스트리밍 서비스) 시장에 진출하고 &#x27;쿠팡플레이&#x27;를 선보였다. 이는 로켓 배송 서비스를 제공하는 자사 멤버십 &#x27;와우 멤버십&#x27;에 영상 콘텐츠 경쟁력을 더하는 조치로 &#x27;롤모델&#x27;인 세계 최대 e커머스 기업 아마존과 같은 행보다. 쿠팡은 영화, 국내외 TV시리즈 등 다양한 영상 콘텐</p>
+						<div class="source_box">
+							<span class="date">4일 전</span>
+							<span class="source"><span class="source_inner">한국경제</span></span>
+						</div>
+					</a>
+				</li>
+
+		</ul>
+	</div>
+</div>
+<div class="group_theme" data-block-id="" data-block-code="PC-THEME-BUSINESS-MOBILE-RANKING-DEFAULT-5" data-block-type="MATERIALS" data-template-code="MOBILE-RANKING-LIST"
+
+	 data-da="container"
+	 data-index=""
+     data-page="3"
+	 style="display:none">
+
+	<div class="list_theme_wrap">
+		<ul class="list_theme">
+
+				<li class="theme_item" data-gdid="CAS_62ea349b-45c2-11eb-a438-11ff742f2b6d" data-da-position="true">
+					<a href="https://post.naver.com/viewer/postView.nhn?volumeNo&#x3D;30189570&amp;memberNo&#x3D;42894257&amp;searchKeyword&#x3D;%25EC%25BF%25A0%25ED%258C%25A1&amp;searchRank&#x3D;2" class="theme_thumb" data-clk="tcc_bsn.list6cont1" target="_blank">
+						<img  data-src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1225%2Fupload_24817281091828247GqiDq.jpg%22&amp;type&#x3D;nf340_228" alt="잘 나가는 쿠팡, 내놓고 배짱영업?…1년 새 수수료율 10.1% 인상" width="170" height="114">
+						<span class="thumb_bd"></span>
+					</a>
+					<a href="https://post.naver.com/viewer/postView.nhn?volumeNo&#x3D;30189570&amp;memberNo&#x3D;42894257&amp;searchKeyword&#x3D;%25EC%25BF%25A0%25ED%258C%25A1&amp;searchRank&#x3D;2" class="theme_info" data-clk="tcc_bsn.list6cont1" target="_blank">
+						<em class="theme_category"> 비즈니스</em>
+						<strong class="title elss">잘 나가는 쿠팡, 내놓고 배짱영업?…1년 새 수수료율 10.1% 인상</strong>
+						<p class="desc">[나이스경제 &#x3D; 이선영 기자] 해외 직구족을 위한 ‘로켓 배송’으로 인기를 끌고 있는 쿠팡이 온라인쇼핑몰 가운데 가장 높은 실질수수료율을 책정하고 있는 것으로 드러났다. 유통업체가 납품업자들로부터 일정 비율로 받는 수수료가 많아지면 소비자들의 부담이 그만큼 커지게 된다. 최근 공정거래위원회가 발표한 ‘대형유통업체 서면 실태조</p>
+						<div class="source_box">
+							<span class="date">2주일 전</span>
+							<span class="source"><span class="source_inner">나이스경제</span></span>
+						</div>
+					</a>
+				</li>
+
+				<li class="theme_item" data-gdid="CAS_4dc71792-45c1-11eb-a438-dd5618deb2ab" data-da-position="true">
+					<a href="https://post.naver.com/viewer/postView.nhn?volumeNo&#x3D;30305587&amp;memberNo&#x3D;37570062&amp;searchKeyword&#x3D;%25EC%25BD%2594%25EC%258A%25A4%25ED%2594%25BC3200&amp;searchRank&#x3D;2" class="theme_thumb" data-clk="tcc_bsn.list6cont2" target="_blank">
+						<img  data-src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1225%2Fupload_24816803522535628CRMLb.jpg%22&amp;type&#x3D;nf340_228" alt="&quot;백신 덕에 코스피 3200 간다&quot;..내년 주목할 종목은?" width="170" height="114">
+						<span class="thumb_bd"></span>
+					</a>
+					<a href="https://post.naver.com/viewer/postView.nhn?volumeNo&#x3D;30305587&amp;memberNo&#x3D;37570062&amp;searchKeyword&#x3D;%25EC%25BD%2594%25EC%258A%25A4%25ED%2594%25BC3200&amp;searchRank&#x3D;2" class="theme_info" data-clk="tcc_bsn.list6cont2" target="_blank">
+						<em class="theme_category"> 비즈니스</em>
+						<strong class="title elss">"백신 덕에 코스피 3200 간다"..내년 주목할 종목은?</strong>
+						<p class="desc">내년 코스피지수가 3000시대를 새롭게 열 것으로 점쳐진다. 신종 코로나바이러스 감염증(코로나19) 팬데믹 이후 경기 회복 기대감과 한국판 뉴딜 정책 등 신성장 산업에 대한 관심이 집중되면서 시장이 상승세를 이어갈 것이라는 전망이다. 24일 한경닷컴이 국내 11개 증권사를 통해 내년 코스피지수 전망을 조사한 결과, KB증권과 신한금융투자가 가</p>
+						<div class="source_box">
+							<span class="date">4일 전</span>
+							<span class="source"><span class="source_inner">한국경제</span></span>
+						</div>
+					</a>
+				</li>
+
+				<li class="theme_item" data-gdid="CAS_16e5c962-45bf-11eb-93a0-b3ff18983e9b" data-da-position="true">
+					<a href="https://blog.naver.com/businessinsight/221506108454" class="theme_thumb" data-clk="tcc_bsn.list6cont3" target="_blank">
+						<img  data-src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1225%2Fupload_248157811535499850Wejl.jpg%22&amp;type&#x3D;nf340_228" alt="나이키가 홀대한 선수를 모델로 기용해 인기 얻은 언더아머 전략" width="170" height="114">
+						<span class="thumb_bd"></span>
+					</a>
+					<a href="https://blog.naver.com/businessinsight/221506108454" class="theme_info" data-clk="tcc_bsn.list6cont3" target="_blank">
+						<em class="theme_category"> 비즈니스</em>
+						<strong class="title elss">나이키가 홀대한 선수를 모델로 기용해 인기 얻은 언더아머 전략</strong>
+						<p class="desc">올림픽 농구 결승전, 만년 우승팀 미국과 천신만고 끝에 결승에 진출한 동유럽의 한 팀이 금메달을 다투고 있다면 당신은 어느 팀을 응원할 것 같나요? 많은 사람들이 &#x27;언더독&#x27;인 동유럽팀을 응원할 것입니다. 언더독(underdog)은 ‘밑에 깔린 개’란 뜻으로, 이길 가능성이 적은 약자를 뜻합니다. 열정을 가진 언더독은 많은 이들의 응원을 이끌어 냅니다.불쌍함</p>
+						<div class="source_box">
+							<span class="date">1년 전</span>
+							<span class="source"><span class="source_inner">인터비즈</span></span>
+						</div>
+					</a>
+				</li>
+
+				<li class="theme_item" data-gdid="CAS_076439bd-45c3-11eb-ad1e-bd6c9e8b3acd" data-da-position="true">
+					<a href="https://blog.naver.com/kmacforever/222181547207" class="theme_thumb" data-clk="tcc_bsn.list6cont4" target="_blank">
+						<img  data-src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1225%2Fupload_24817565239155561wmXQL.jpg%22&amp;type&#x3D;nf340_228" alt="2030년, &#x27;8가지 축의 전환&#x27;" width="170" height="114">
+						<span class="thumb_bd"></span>
+					</a>
+					<a href="https://blog.naver.com/kmacforever/222181547207" class="theme_info" data-clk="tcc_bsn.list6cont4" target="_blank">
+						<em class="theme_category"> 비즈니스</em>
+						<strong class="title elss">2030년, '8가지 축의 전환'</strong>
+						<p class="desc">​&quot;당신의 미래는 오늘 시작된다&quot;는 교황 요한 바오로 2세의 말처럼 미래는 현재에서 시작된다. 그 영향력이 크면 클수록 변화는 더욱 예측 가능하다. 세계적인 경영 석학 마우로 기옌 와튼스쿨 교수는 &#x27;2030 축의 전환&#x27;이라는 미래학 책을 통해 다가올 10년의 8가지 큰 변화를 이야기하면서 2030년에 펼쳐질 세계를 그렸다. 한국능률협회컨설팅(KMAC) ..</p>
+						<div class="source_box">
+							<span class="date">6일 전</span>
+							<span class="source"><span class="source_inner">한국능률협회컨설팅</span></span>
+						</div>
+					</a>
+				</li>
+
+				<li class="theme_item" data-gdid="CAS_16e5c963-45bf-11eb-93a0-a3e52a200b65" data-da-position="true">
+					<a href="https://blog.naver.com/businessinsight/221456446222" class="theme_thumb" data-clk="tcc_bsn.list6cont5" target="_blank">
+						<img  data-src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1225%2Fupload_248158334360270661ZJZ5.jpg%22&amp;type&#x3D;nf340_228" alt="이렇게 추운데 웬 지구온난화 타령? 우리가 세상을 인식하는 불완전한 방식" width="170" height="114">
+						<span class="thumb_bd"></span>
+					</a>
+					<a href="https://blog.naver.com/businessinsight/221456446222" class="theme_info" data-clk="tcc_bsn.list6cont5" target="_blank">
+						<em class="theme_category"> 비즈니스</em>
+						<strong class="title elss">이렇게 추운데 웬 지구온난화 타령? 우리가 세상을 인식하는 불완전한 방식</strong>
+						<p class="desc">시카고는 북극보다 추웠고, 위스콘신 주와 미네소타 주 일부 지역은 남극보다 추웠다. 에베레스트 산 꼭대기만큼 추운 곳도 많았다. 섭씨 영하 50도의 체감 온도를 넘나드는 추위. 2019년 1월의 마지막 주에 미국 많은 지역 기온은 그렇게 기록적으로 내려갔다. 이번 한파로 8명 이상이 사망했다. 우체국은 우편물 배달을 멈췄고 맥주도 얼어 터질지 몰라 배달이 </p>
+						<div class="source_box">
+							<span class="date">1년 전</span>
+							<span class="source"><span class="source_inner">인터비즈</span></span>
+						</div>
+					</a>
+				</li>
+
+		</ul>
+	</div>
+</div>
+<div class="group_theme" data-block-id="" data-block-code="PC-THEME-BUSINESS-MOBILE-RANKING-DEFAULT-6" data-block-type="MATERIALS" data-template-code="MOBILE-RANKING-LIST"
+
+	 data-da="container"
+	 data-index=""
+     data-page="4"
+	 style="display:none">
+
+	<div class="list_theme_wrap">
+		<ul class="list_theme">
+
+				<li class="theme_item" data-gdid="CAS_cb756739-45b8-11eb-93a0-95e59fb8d0b1" data-da-position="true">
+					<a href="https://blog.naver.com/businessinsight/221345039682" class="theme_thumb" data-clk="tcc_bsn.list7cont1" target="_blank">
+						<img  data-src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1225%2Fupload_24813082766146119r7jUf.jpg%22&amp;type&#x3D;nf340_228" alt="직장인 20%가 겪는다는 &#x27;사기꾼 증후군&#x27; 극복하려면?" width="170" height="114">
+						<span class="thumb_bd"></span>
+					</a>
+					<a href="https://blog.naver.com/businessinsight/221345039682" class="theme_info" data-clk="tcc_bsn.list7cont1" target="_blank">
+						<em class="theme_category"> 비즈니스</em>
+						<strong class="title elss">직장인 20%가 겪는다는 '사기꾼 증후군' 극복하려면?</strong>
+						<p class="desc">[HBR/하버드비즈니스리뷰] 일을 하다 보면 자기 자신이 사기꾼처럼 느껴지는 순간이 누구에게나 존재할 것이다. 그런데 어떤 사람들은 이런 느낌을 지속적으로 경험하기도 한다. 심리학에선 이런 현상을 일컬어 ‘사기꾼 증후군(impostor phenomenon)’이라고 한다. 벨기에 겐트대 연구원들의 조사에 따르면 사기꾼 증후권이 직장인들에게 얼마나 보편적으로 </p>
+						<div class="source_box">
+							<span class="date">2년 전</span>
+							<span class="source"><span class="source_inner">인터비즈</span></span>
+						</div>
+					</a>
+				</li>
+
+				<li class="theme_item" data-gdid="CAS_686a10b2-45c4-11eb-a438-110591cdf38f" data-da-position="true">
+					<a href="https://post.naver.com/viewer/postView.nhn?volumeNo&#x3D;29747842&amp;memberNo&#x3D;22700030" class="theme_thumb" data-clk="tcc_bsn.list7cont2" target="_blank">
+						<img  data-src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1225%2Fupload_24818115393580901Pyzbo.jpg%22&amp;type&#x3D;nf340_228" alt="벤처기업, 특정 고객 의존도 &#x27;이대로 괜찮을까?&#x27;" width="170" height="114">
+						<span class="thumb_bd"></span>
+					</a>
+					<a href="https://post.naver.com/viewer/postView.nhn?volumeNo&#x3D;29747842&amp;memberNo&#x3D;22700030" class="theme_info" data-clk="tcc_bsn.list7cont2" target="_blank">
+						<em class="theme_category"> 비즈니스</em>
+						<strong class="title elss">벤처기업, 특정 고객 의존도 '이대로 괜찮을까?'</strong>
+						<p class="desc">Business-to-Business(B2B)는 일반 소비자들이 고객이 아닌 다른 기업들을 고객으로 하는 비즈니스 모델이다. B2B 모델은 기업의 규모와 상관없이 이뤄지지만 벤처기업과 규모가 있는 기존 기업들과는 기업의 생존과 성장에 다른 시사점이 있을 수 있다. 중·대형 규모 기업과는 달리 벤처기업들은 확보하고 있는 자원이 한정</p>
+						<div class="source_box">
+							<span class="date">2개월 전</span>
+							<span class="source"><span class="source_inner">동아비즈니스리뷰</span></span>
+						</div>
+					</a>
+				</li>
+
+				<li class="theme_item" data-gdid="CAS_fd115c6b-45c1-11eb-ad1e-a1bdb7a75325" data-da-position="true">
+					<a href="https://blog.naver.com/businessinsight/222184011752" class="theme_thumb" data-clk="tcc_bsn.list7cont3" target="_blank">
+						<img  data-src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1225%2Fupload_24817016312998500NllLp.jpg%22&amp;type&#x3D;nf340_228" alt="30년 전과 뭐가 달라?..다시 돌아온 &#x27;마이카 마이홈&#x27;시대 라이프 스타일" width="170" height="114">
+						<span class="thumb_bd"></span>
+					</a>
+					<a href="https://blog.naver.com/businessinsight/222184011752" class="theme_info" data-clk="tcc_bsn.list7cont3" target="_blank">
+						<em class="theme_category"> 비즈니스</em>
+						<strong class="title elss">30년 전과 뭐가 달라?..다시 돌아온 '마이카 마이홈'시대 라이프 스타일</strong>
+						<p class="desc">2020년은 그야말로 비즈니스 풍토가 극적으로 변한 한 해로 꼽힌다. 골목 상권은 처참히 무너졌고, 배달 및 플랫폼 사업과 같은 비대면 산업만 홀로 고공비행한다. 최근 10년간 산업계를 뒤흔든 각종 비즈니스 모델이 그 생존 여부를 놓고 최종 시험대에 올라선 모양새. 이에 따라 각 비즈니스 판(산업) 위에서 바삐 움직이던 사람들의 일상도 크게 요동치고 있다.</p>
+						<div class="source_box">
+							<span class="date">4일 전</span>
+							<span class="source"><span class="source_inner">인터비즈</span></span>
+						</div>
+					</a>
+				</li>
+
+				<li class="theme_item" data-gdid="CAS_cb75673a-45b8-11eb-93a0-496218f39a07" data-da-position="true">
+					<a href="https://blog.naver.com/businessinsight/221344240207" class="theme_thumb" data-clk="tcc_bsn.list7cont4" target="_blank">
+						<img  data-src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1225%2Fupload_24813129302721485OQSra.jpg%22&amp;type&#x3D;nf340_228" alt="조직의 소금 같은 존재인 &#x27;투명인간&#x27;에 주목하라" width="170" height="114">
+						<span class="thumb_bd"></span>
+					</a>
+					<a href="https://blog.naver.com/businessinsight/221344240207" class="theme_info" data-clk="tcc_bsn.list7cont4" target="_blank">
+						<em class="theme_category"> 비즈니스</em>
+						<strong class="title elss">조직의 소금 같은 존재인 '투명인간'에 주목하라</strong>
+						<p class="desc">[HBR/하버드비즈니스리뷰] 조직에서 누군가 당신을 &#x27;투명인간&#x27;이라 부른다면 어떤 기분이 들까. 대개는 자신을 존재감 없는 사람 취급한 데 대해 분노할 것이다. 언론인이자 &lt;인비저블(Invisible)&gt;을 저술한 데이비드 츠바이크가 정의한 투명인간은 조금 다르다. 그는 아마존의 전자책 리더기 &#x27;킨들&#x27;의 이름을 만든 마이클 크로난, UN에서 근무...</p>
+						<div class="source_box">
+							<span class="date">2년 전</span>
+							<span class="source"><span class="source_inner">인터비즈</span></span>
+						</div>
+					</a>
+				</li>
+
+				<li class="theme_item" data-gdid="CAS_a1879b0e-45c3-11eb-a438-b33724ffd583" data-da-position="true">
+					<a href="https://post.naver.com/viewer/postView.nhn?volumeNo&#x3D;30309699&amp;memberNo&#x3D;40721833" class="theme_thumb" data-clk="tcc_bsn.list7cont5" target="_blank">
+						<img  data-src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1225%2Fupload_24817789325410177p5OrB.jpg%22&amp;type&#x3D;nf340_228" alt="&#x27;아랍의 봄&#x27;10년..실패에서 찾는 교훈" width="170" height="114">
+						<span class="thumb_bd"></span>
+					</a>
+					<a href="https://post.naver.com/viewer/postView.nhn?volumeNo&#x3D;30309699&amp;memberNo&#x3D;40721833" class="theme_info" data-clk="tcc_bsn.list7cont5" target="_blank">
+						<em class="theme_category"> 비즈니스</em>
+						<strong class="title elss">'아랍의 봄'10년..실패에서 찾는 교훈</strong>
+						<p class="desc">북아프리카의 튀니지 국민이 민주화 혁명에 나선 지 10년이 지났지만, 중동 지역에는 봄바람이 아닌 겨울바람이 불고 있습니다. 혁명의 시작은 모하메드 부아지지(Muhammad Bouazizi)의 분신자살이었는데요. 그의 행동은 중동 지역의 많은 사람에게 큰 울림이 되었고, 2010년 아랍의 봄으로 이어졌죠. 실제로 혁명은 이집트, 리비아, 튀니</p>
+						<div class="source_box">
+							<span class="date">4일 전</span>
+							<span class="source"><span class="source_inner">북저널리즘</span></span>
+						</div>
+					</a>
+				</li>
+
+		</ul>
+	</div>
+</div>
+<div class="group_theme" data-block-id="" data-block-code="PC-THEME-BUSINESS-MOBILE-RANKING-DEFAULT-7" data-block-type="MATERIALS" data-template-code="MOBILE-RANKING-LIST"
+
+	 data-da="container"
+	 data-index=""
+     data-page="4"
+	 style="display:none">
+
+	<div class="list_theme_wrap">
+		<ul class="list_theme">
+
+				<li class="theme_item" data-gdid="CAS_cb756737-45b8-11eb-93a0-df93859a5189" data-da-position="true">
+					<a href="https://blog.naver.com/businessinsight/221735134074" class="theme_thumb" data-clk="tcc_bsn.list8cont1" target="_blank">
+						<img  data-src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1225%2Fupload_24812973390766070MEByI.jpg%22&amp;type&#x3D;nf340_228" alt="1년 중 절반만 문 여는 레스토랑이 &#x27;세계 최고&#x27;가 된 이유" width="170" height="114">
+						<span class="thumb_bd"></span>
+					</a>
+					<a href="https://blog.naver.com/businessinsight/221735134074" class="theme_info" data-clk="tcc_bsn.list8cont1" target="_blank">
+						<em class="theme_category"> 비즈니스</em>
+						<strong class="title elss">1년 중 절반만 문 여는 레스토랑이 '세계 최고'가 된 이유</strong>
+						<p class="desc">[HBR/하버드비즈니스리뷰] 지난 수년간의 디지털기술 발전으로 기업들은 훌륭한 아이디어를 개발하는 데 필요한 지식, 인재, 자본, 소비자에 유례없이 쉽게 접근할 수 있게 됐다. 그럼에도 불구하고 획기적인 제품의 등장은 여전히 요원한 일이다. 미국 리서치 회사 CB Insights의 조사에 따르면 전문가가 제대로 된 &#x27;혁신 프로세스&#x27;를 따르고 있다고 평가한 </p>
+						<div class="source_box">
+							<span class="date">1년 전</span>
+							<span class="source"><span class="source_inner">인터비즈</span></span>
+						</div>
+					</a>
+				</li>
+
+				<li class="theme_item" data-gdid="CAS_16e5c961-45bf-11eb-93a0-fbd18469d060" data-da-position="true">
+					<a href="https://blog.naver.com/businessinsight/221158248221" class="theme_thumb" data-clk="tcc_bsn.list8cont2" target="_blank">
+						<img  data-src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1225%2Fupload_24815727346103608gGk6a.jpg%22&amp;type&#x3D;nf340_228" alt="애플의 창업자 워즈니악과 잡스가 일본 문화에 심취한 이유" width="170" height="114">
+						<span class="thumb_bd"></span>
+					</a>
+					<a href="https://blog.naver.com/businessinsight/221158248221" class="theme_info" data-clk="tcc_bsn.list8cont2" target="_blank">
+						<em class="theme_category"> 비즈니스</em>
+						<strong class="title elss">애플의 창업자 워즈니악과 잡스가 일본 문화에 심취한 이유</strong>
+						<p class="desc">애플의 공동창업자 스티브 워즈니악은 ‘긱’(Geek)의 표본과도 같은 인물이다. 영어로 ‘한 분야(특히 IT)에 몰두하는 괴짜’를 일컫는 긱은 일본의 ‘오타쿠’와 통하는 부분이 있다. 적어도 워즈니악은 그렇게 본다. “상상을 현실로 이끌어내고 싶어 하는 욕구를 품고 있다”는 생각에서다. 2017년 12월 1~3일 일본 지바현 마쿠하리 메세에서 열린 ‘도쿄 </p>
+						<div class="source_box">
+							<span class="date">3년 전</span>
+							<span class="source"><span class="source_inner">인터비즈</span></span>
+						</div>
+					</a>
+				</li>
+
+				<li class="theme_item" data-gdid="CAS_076439bc-45c3-11eb-ad1e-fd38f2ad5c69" data-da-position="true">
+					<a href="https://blog.naver.com/jongscokr/222181499825" class="theme_thumb" data-clk="tcc_bsn.list8cont3" target="_blank">
+						<img  data-src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1225%2Fupload_24817491894770148YIvPJ.jpg%22&amp;type&#x3D;nf340_228" alt="테슬라 자율주행, 도로주행시험 합격할 수 있을까" width="170" height="114">
+						<span class="thumb_bd"></span>
+					</a>
+					<a href="https://blog.naver.com/jongscokr/222181499825" class="theme_info" data-clk="tcc_bsn.list8cont3" target="_blank">
+						<em class="theme_category"> 비즈니스</em>
+						<strong class="title elss">테슬라 자율주행, 도로주행시험 합격할 수 있을까</strong>
+						<p class="desc">최근 자동차에 있어 가장 주목받고 있는 기술 중 하나는 바로 자율주행입니다. 운전자 없이도 목적지까지 스스로 최적의 경로를 찾아 안전하게 주행할 수 있는 기술이기 때문입니다. 이 기술의 궁극적인 목표는 운전자가 필요 없는 완전 자율주행 자동차를 만드는 것이며, 그로 인해 자동차 내에 운전석과 운전자는 사라지고 탑승객을 위한 새로운 공간을 제공하겠다는 것이 </p>
+						<div class="source_box">
+							<span class="date">5일 전</span>
+							<span class="source"><span class="source_inner">엄지Chuck</span></span>
+						</div>
+					</a>
+				</li>
+
+				<li class="theme_item" data-gdid="CAS_cb756738-45b8-11eb-93a0-478de88530e0" data-da-position="true">
+					<a href="https://blog.naver.com/businessinsight/221611166270" class="theme_thumb" data-clk="tcc_bsn.list8cont4" target="_blank">
+						<img  data-src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1225%2Fupload_24813073168154030n4caa.jpg%22&amp;type&#x3D;nf340_228" alt="구글처럼 혁신 조직 되고 싶은데..그럼 “혁신의 역설” 알아야" width="170" height="114">
+						<span class="thumb_bd"></span>
+					</a>
+					<a href="https://blog.naver.com/businessinsight/221611166270" class="theme_info" data-clk="tcc_bsn.list8cont4" target="_blank">
+						<em class="theme_category"> 비즈니스</em>
+						<strong class="title elss">구글처럼 혁신 조직 되고 싶은데..그럼 “혁신의 역설” 알아야</strong>
+						<p class="desc">[HBR/하버드비즈니스리뷰] IT 기술을 앞세운 혁신 기업들이 전통적인 제조업 중심의 기업들을 누르고 승승장구하면서 이들의 조직문화를 배우려는 움직임이 전세계적으로 퍼져나갔다. 이는 한국도 예외가 아니다. 지난 몇 년 사이 국내 기업들은 조직 구조를 수평적으로 개편하고 호칭을 파괴하면서 이른바 &#x27;구글 따라잡기&#x27;에 나섰다. 하지만 조직문화 개선을 시...</p>
+						<div class="source_box">
+							<span class="date">1년 전</span>
+							<span class="source"><span class="source_inner">인터비즈</span></span>
+						</div>
+					</a>
+				</li>
+
+				<li class="theme_item" data-gdid="CAS_69cdaa36-4351-11eb-a953-ff77e4b1a052" data-da-position="true">
+					<a href="https://blog.naver.com/businessinsight/222180720166" class="theme_thumb" data-clk="tcc_bsn.list8cont5" target="_blank">
+						<img  data-src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1222%2Fupload_24548823626550330Pc89e.jpg%22&amp;type&#x3D;nf340_228" alt="F&amp;B 상권분석 실전" width="170" height="114">
+						<span class="thumb_bd"></span>
+					</a>
+					<a href="https://blog.naver.com/businessinsight/222180720166" class="theme_info" data-clk="tcc_bsn.list8cont5" target="_blank">
+						<em class="theme_category"> 비즈니스</em>
+						<strong class="title elss">F&B 상권분석 실전</strong>
+						<p class="desc">상권을 알면 매출이 보인다.&quot;빅데이터 분석가&quot;와 &quot;핫한 F&amp;B브랜드 입점유치 전략가&quot;의 상권분석지금 바로 알아보세요!전례없는 코로나19의 습격으로 오프라인 매장보다는 온라인 플랫폼에서 구매를 선호하는 추세로 했지만 수많은 산업들에서 오프라인 매장은 여전히 필요합니다. 또한 브랜드 경험을 가오하할 수 있는 오프라인 매장의 기능은 오히려 ...</p>
+						<div class="source_box">
+							<span class="date">1주일 전</span>
+							<span class="source"><span class="source_inner">인터비즈</span></span>
+						</div>
+					</a>
+				</li>
+
+		</ul>
+	</div>
+</div>
+<div class="group_theme" data-block-id="" data-block-code="PC-THEME-BUSINESS-MOBILE-RANKING-DEFAULT-8" data-block-type="MATERIALS" data-template-code="MOBILE-RANKING-LIST"
+
+	 data-da="container"
+	 data-index=""
+     data-page="5"
+	 style="display:none">
+
+	<div class="list_theme_wrap">
+		<ul class="list_theme">
+
+				<li class="theme_item" data-gdid="CAS_b9a5c1fa-45bf-11eb-93a0-2d04d8f74de1" data-da-position="true">
+					<a href="https://post.naver.com/viewer/postView.nhn?volumeNo&#x3D;30250682&amp;memberNo&#x3D;34904471" class="theme_thumb" data-clk="tcc_bsn.list9cont1" target="_blank">
+						<img  data-src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1225%2Fupload_24816119950364205oiu6z.jpg%22&amp;type&#x3D;nf340_228" alt="직장서 &#x27;열심&#x27;?..&#x27;멍청한데 부지런함&#x27;의 뜻" width="170" height="114">
+						<span class="thumb_bd"></span>
+					</a>
+					<a href="https://post.naver.com/viewer/postView.nhn?volumeNo&#x3D;30250682&amp;memberNo&#x3D;34904471" class="theme_info" data-clk="tcc_bsn.list9cont1" target="_blank">
+						<em class="theme_category"> 비즈니스</em>
+						<strong class="title elss">직장서 '열심'?..'멍청한데 부지런함'의 뜻</strong>
+						<p class="desc">급여 생활자의 특성 중 하나는 생존을 위해 일하는 사람이 많다는 것입니다. 성공을 위해 일하는 것과 생존을 위해 일하는 것은 같아 보이지만 중요한 차이가 있습니다. 나와 관계된 이익에 치우치면서 상대적인 관점에서 스스로를 평가한다는 것이죠. 대표적인 것이 ‘열심히’ 일하는 것입니다. 열심히 일하는 것만큼 상대적이면서 나의 장기적 생존을 담보하는 행위는 찾기</p>
+						<div class="source_box">
+							<span class="date">4일 전</span>
+							<span class="source"><span class="source_inner">지식의 전당 PPSS</span></span>
+						</div>
+					</a>
+				</li>
+
+				<li class="theme_item" data-gdid="CAS_a4364e86-45bd-11eb-a438-f7ed041d3e8a" data-da-position="true">
+					<a href="https://post.naver.com/viewer/postView.nhn?volumeNo&#x3D;29981330&amp;memberNo&#x3D;799097&amp;navigationType&#x3D;push" class="theme_thumb" data-clk="tcc_bsn.list9cont2" target="_blank">
+						<img  data-src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1225%2Fupload_24815184269978641W8aPG.jpg%22&amp;type&#x3D;nf340_228" alt="일머리 있는 사람과 없는 사람의 &#x27;단 한 가지&#x27; 차이점" width="170" height="114">
+						<span class="thumb_bd"></span>
+					</a>
+					<a href="https://post.naver.com/viewer/postView.nhn?volumeNo&#x3D;29981330&amp;memberNo&#x3D;799097&amp;navigationType&#x3D;push" class="theme_info" data-clk="tcc_bsn.list9cont2" target="_blank">
+						<em class="theme_category"> 비즈니스</em>
+						<strong class="title elss">일머리 있는 사람과 없는 사람의 '단 한 가지' 차이점</strong>
+						<p class="desc">『탄탄한 문장력』은 학생부터 직장인까지 글쓰기를 두려워하는 모든 이들에게 최소한의 기본원칙을 알려주는 책이다. 저자는 각종 미사여구로 버무려진 글보다 문법의 오류나 문장의 실수가 없는 글이 더 품격 있는 글로 평가받는다고 이야기하며, 글쓰기의 기본을 지켜서 한 문장씩 연습하는 게 글쓰기 실력을 높이는 가장 효과적인 방법이라고 강조한다.</p>
+						<div class="source_box">
+							<span class="date">1개월 전</span>
+							<span class="source"><span class="source_inner">카시오페아</span></span>
+						</div>
+					</a>
+				</li>
+
+				<li class="theme_item" data-gdid="CAS_89e749a4-45b7-11eb-93a0-a9b3c5c84e13" data-da-position="true">
+					<a href="https://post.naver.com/viewer/postView.nhn?volumeNo&#x3D;30284854&amp;memberNo&#x3D;15229762&amp;searchRank&#x3D;30" class="theme_thumb" data-clk="tcc_bsn.list9cont3" target="_blank">
+						<img  data-src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1225%2Fupload_24812602739975103vMKv8.jpg%22&amp;type&#x3D;nf340_228" alt="워크맨ㆍ유니클로, 코로나 뚫고 승승장구" width="170" height="114">
+						<span class="thumb_bd"></span>
+					</a>
+					<a href="https://post.naver.com/viewer/postView.nhn?volumeNo&#x3D;30284854&amp;memberNo&#x3D;15229762&amp;searchRank&#x3D;30" class="theme_info" data-clk="tcc_bsn.list9cont3" target="_blank">
+						<em class="theme_category"> 비즈니스</em>
+						<strong class="title elss">워크맨ㆍ유니클로, 코로나 뚫고 승승장구</strong>
+						<p class="desc">젊은 층 공략한 틈새 공략과 이커머스 전략 적중신종 코로나 바이러스 감염 확대에 의해 전세계적으로 어려운 경제상황이 계속되고 있다. 특히 패션시장은 외출 통제와 셧다운에 의해 치명적인 매출 타격을 입었다. 일본 내 상장한 패션회사 11개사의 결산발표를 살펴보면, 고정 자산 매각으로 이익을 낸 산코세이코(산코세이코, 닥스, 레오나드, 행텐 등 브랜드 </p>
+						<div class="source_box">
+							<span class="date">6일 전</span>
+							<span class="source"><span class="source_inner">패션인사이트</span></span>
+						</div>
+					</a>
+				</li>
+
+				<li class="theme_item" data-gdid="CAS_a4364e87-45bd-11eb-a438-6f5f792d1535" data-da-position="true">
+					<a href="https://post.naver.com/viewer/postView.nhn?volumeNo&#x3D;30259135&amp;memberNo&#x3D;618343" class="theme_thumb" data-clk="tcc_bsn.list9cont4" target="_blank">
+						<img  data-src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1225%2Fupload_24815224580359856w7eVQ.jpg%22&amp;type&#x3D;nf340_228" alt="넷플릭스의 달콤한 제안을 거절한 대가" width="170" height="114">
+						<span class="thumb_bd"></span>
+					</a>
+					<a href="https://post.naver.com/viewer/postView.nhn?volumeNo&#x3D;30259135&amp;memberNo&#x3D;618343" class="theme_info" data-clk="tcc_bsn.list9cont4" target="_blank">
+						<em class="theme_category"> 비즈니스</em>
+						<strong class="title elss">넷플릭스의 달콤한 제안을 거절한 대가</strong>
+						<p class="desc">“어쨌건 인터넷은 그냥 하나의 추세일 뿐이야”1980년대에는 단연코 비디오 영화가 가정용 오락의 대세였다. 비디오 영화 시장의 제왕은 소매 체인 블록버스터Blockbustr였다. 1985년 설립된 블록버스터는 폭발적으로 성장해 1988년 400개가 넘는 매장을 운영했고 1991년에는 체인점 수가 1,000개를 돌파했다. 1994년 언론 재벌인 바이어컴에 인</p>
+						<div class="source_box">
+							<span class="date">1주일 전</span>
+							<span class="source"><span class="source_inner">다산북스</span></span>
+						</div>
+					</a>
+				</li>
+
+				<li class="theme_item" data-gdid="CAS_b9a5c1f9-45bf-11eb-93a0-c77fcba4a5e7" data-da-position="true">
+					<a href="https://post.naver.com/viewer/postView.nhn?volumeNo&#x3D;30273303&amp;memberNo&#x3D;1130561" class="theme_thumb" data-clk="tcc_bsn.list9cont5" target="_blank">
+						<img  data-src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1225%2Fupload_24816080417862753tEYDG.jpg%22&amp;type&#x3D;nf340_228" alt="라방으로 &#x27;온라인판 스타필드&#x27; 꿈꾸는 보고플레이" width="170" height="114">
+						<span class="thumb_bd"></span>
+					</a>
+					<a href="https://post.naver.com/viewer/postView.nhn?volumeNo&#x3D;30273303&amp;memberNo&#x3D;1130561" class="theme_info" data-clk="tcc_bsn.list9cont5" target="_blank">
+						<em class="theme_category"> 비즈니스</em>
+						<strong class="title elss">라방으로 '온라인판 스타필드' 꿈꾸는 보고플레이</strong>
+						<p class="desc">&lt;인터뷰&gt; 류승태 보고플레이 대표​굴지의 대기업에서, 그것도 핵심 사업부에 속해서 한창 잘나가는 30대를 보내는 사람이 창업을 한다고 나서면 보통 응원보다 “조금 더 버텨보는 건 어때”라는 말을 듣기 마련이다. 류승태 보고플레이 대표와 인터뷰를 시작하기 전, 비슷한 생각을 했음을 고백한다. 사업 아이템이 요즘 ‘핫</p>
+						<div class="source_box">
+							<span class="date">1주일 전</span>
+							<span class="source"><span class="source_inner">패션포스트</span></span>
+						</div>
+					</a>
+				</li>
+
+		</ul>
+	</div>
+</div>
+<div class="group_theme" data-block-id="" data-block-code="PC-THEME-BUSINESS-MOBILE-RANKING-DEFAULT-9" data-block-type="MATERIALS" data-template-code="MOBILE-RANKING-LIST"
+
+	 data-da="container"
+	 data-index=""
+     data-page="5"
+	 style="display:none">
+
+	<div class="list_theme_wrap">
+		<ul class="list_theme">
+
+				<li class="theme_item" data-gdid="CAS_89e749a3-45b7-11eb-93a0-7bd5e9554ddd" data-da-position="true">
+					<a href="https://post.naver.com/viewer/postView.nhn?volumeNo&#x3D;30300353&amp;memberNo&#x3D;22166171" class="theme_thumb" data-clk="tcc_bsn.list10cont1" target="_blank">
+						<img  data-src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1225%2Fupload_24812555671570412dOrDw.jpg%22&amp;type&#x3D;nf340_228" alt="日, 코로나 사태 속 ‘데이트’ 위한 외식은 더욱 증가" width="170" height="114">
+						<span class="thumb_bd"></span>
+					</a>
+					<a href="https://post.naver.com/viewer/postView.nhn?volumeNo&#x3D;30300353&amp;memberNo&#x3D;22166171" class="theme_info" data-clk="tcc_bsn.list10cont1" target="_blank">
+						<em class="theme_category"> 비즈니스</em>
+						<strong class="title elss">日, 코로나 사태 속 ‘데이트’ 위한 외식은 더욱 증가</strong>
+						<p class="desc">평일 비지니스 목적 회식은 감소…11월 경우 ‘가족 행사’ 및 ‘데이트’ 목적 외식 비율은 작년보다 늘어신종 코로나바이러스 감염증(코로나19) 확산이 일본의 외식 풍경을 변화시키고 있다. 일본의 경우 코로나19가 빠르게 확산하는 상황에서도 스가 요시히데(菅義偉) 총리부터 다</p>
+						<div class="source_box">
+							<span class="date">5일 전</span>
+							<span class="source"><span class="source_inner">프레스맨</span></span>
+						</div>
+					</a>
+				</li>
+
+				<li class="theme_item" data-gdid="CAS_0b783b63-45b8-11eb-a438-c9b3057725e9" data-da-position="true">
+					<a href="https://blog.naver.com/businessinsight/222182718155" class="theme_thumb" data-clk="tcc_bsn.list10cont2" target="_blank">
+						<img  data-src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1225%2Fupload_24812793433772812V5XoX.jpg%22&amp;type&#x3D;nf340_228" alt="&quot;퇴사하고 유튜브 할 거야&quot; 실천,구독자 35만 거느린 &#x27;이스타TV&#x27;" width="170" height="114">
+						<span class="thumb_bd"></span>
+					</a>
+					<a href="https://blog.naver.com/businessinsight/222182718155" class="theme_info" data-clk="tcc_bsn.list10cont2" target="_blank">
+						<em class="theme_category"> 비즈니스</em>
+						<strong class="title elss">"퇴사하고 유튜브 할 거야" 실천,구독자 35만 거느린 '이스타TV'</strong>
+						<p class="desc">영상을 TV로만 접하는 시대는 이미 끝난지 오래다. 출퇴근 시간 지하철과 버스에서 유튜브를 보는 사람이 늘어나는 만큼 뉴미디어에도 기회가 열려 있다. 누구나 1인 미디어가 될 수 있고, 누구든 방송에 뛰어들 수 있다. 유튜브 &#x27;이스타TV&#x27;와 팟캐스트 &#x27;히든풋볼&#x27;을 운영하는 뉴미디어 스타트업 랩추종윤의 이주헌·박종윤 대표는 변화의 중심에 선 대표...</p>
+						<div class="source_box">
+							<span class="date">5일 전</span>
+							<span class="source"><span class="source_inner">인터비즈</span></span>
+						</div>
+					</a>
+				</li>
+
+				<li class="theme_item" data-gdid="CAS_543d53a3-45be-11eb-ad1e-edff36078fab" data-da-position="true">
+					<a href="https://post.naver.com/viewer/postView.nhn?volumeNo&#x3D;30258358&amp;memberNo&#x3D;40721833" class="theme_thumb" data-clk="tcc_bsn.list10cont3" target="_blank">
+						<img  data-src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1225%2Fupload_24815404772053236paOHd.jpg%22&amp;type&#x3D;nf340_228" alt="시험대에 오른 시험 제도..평가, 더 좋은 방법 없나?" width="170" height="114">
+						<span class="thumb_bd"></span>
+					</a>
+					<a href="https://post.naver.com/viewer/postView.nhn?volumeNo&#x3D;30258358&amp;memberNo&#x3D;40721833" class="theme_info" data-clk="tcc_bsn.list10cont3" target="_blank">
+						<em class="theme_category"> 비즈니스</em>
+						<strong class="title elss">시험대에 오른 시험 제도..평가, 더 좋은 방법 없나?</strong>
+						<p class="desc">지난 3일, 사상 최초로 12월에 수능 시험이 치러졌습니다. 바로 코로나19 때문이었는데요. 입실 전 체온을 측정하고, 시험장에 불투명 가림막이 설치되는 등 이전과는 사뭇 다른 모습이었습니다. 코로나19로 인해 이러한 시험 제도의 문제점이 드러나기 시작했습니다. 대규모 시험이 혼란에 굉장히 취약하다는 것을 모두가 알게 되었죠. 따라서 각국 정부는 주요 시험</p>
+						<div class="source_box">
+							<span class="date">1주일 전</span>
+							<span class="source"><span class="source_inner">북저널리즘</span></span>
+						</div>
+					</a>
+				</li>
+
+				<li class="theme_item" data-gdid="CAS_543d53a4-45be-11eb-ad1e-fbdfc86b97f0" data-da-position="true">
+					<a href="https://blog.naver.com/baemsu/222175700322" class="theme_thumb" data-clk="tcc_bsn.list10cont4" target="_blank">
+						<img  data-src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1225%2Fupload_248154703677092892kUhP.jpg%22&amp;type&#x3D;nf340_228" alt="이제는 청각과 후각, 촉각으로 이동하는 AI기술" width="170" height="114">
+						<span class="thumb_bd"></span>
+					</a>
+					<a href="https://blog.naver.com/baemsu/222175700322" class="theme_info" data-clk="tcc_bsn.list10cont4" target="_blank">
+						<em class="theme_category"> 비즈니스</em>
+						<strong class="title elss">이제는 청각과 후각, 촉각으로 이동하는 AI기술</strong>
+						<p class="desc">인공지능은 이미지 데이터를 활용한 판단 기술이 진일보했다. 당연히 해당 데이터가 많기때문에 가능했던것!!! 지금까지는 시각적인 정보를 활용하는 인공지능 솔루션이 주를 이루었다면, 이제는 청각, 후각, 촉각을 활용한 인공지능 솔루션들이 속속 소개되고 있다.​&lt;청각을 이용한 인공지능 솔루션&gt;​MIT에서는 강제 기침 소리만으로 감염여부를 판단하는 인공지능 ...</p>
+						<div class="source_box">
+							<span class="date">6일 전</span>
+							<span class="source"><span class="source_inner">더미브릿지</span></span>
+						</div>
+					</a>
+				</li>
+
+				<li class="theme_item" data-gdid="CAS_0b786274-45b8-11eb-a438-2d82a4b4c24c" data-da-position="true">
+					<a href="https://post.naver.com/viewer/postView.nhn?volumeNo&#x3D;30247064&amp;memberNo&#x3D;22700030" class="theme_thumb" data-clk="tcc_bsn.list10cont5" target="_blank">
+						<img  data-src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1225%2Fupload_24812820594368547kJlo1.jpg%22&amp;type&#x3D;nf340_228" alt="‘15초 마법’ 틱톡, 숏폼 플랫폼 춘추전국 시대" width="170" height="114">
+						<span class="thumb_bd"></span>
+					</a>
+					<a href="https://post.naver.com/viewer/postView.nhn?volumeNo&#x3D;30247064&amp;memberNo&#x3D;22700030" class="theme_info" data-clk="tcc_bsn.list10cont5" target="_blank">
+						<em class="theme_category"> 비즈니스</em>
+						<strong class="title elss">‘15초 마법’ 틱톡, 숏폼 플랫폼 춘추전국 시대</strong>
+						<p class="desc">2020년 소셜미디어 분야에서 가장 큰 관심을 받은 서비스는 ‘틱톡(TikTok)’이다. 틱톡은 2016년 9월 탄생한 15초 전후의 숏폼(Short-form) 콘텐츠 전문 유통 플랫폼으로 Z세대들의 전폭적인 지지를 받으며 전 세계에서 가장 핫한 소셜미디어 서비스로 성장했다. 틱톡의 전 세계 앱 다운로드 수는 iOS와 안드로이드 기기를 합쳐 20억 건을 넘</p>
+						<div class="source_box">
+							<span class="date">1주일 전</span>
+							<span class="source"><span class="source_inner">동아비즈니스리뷰</span></span>
+						</div>
+					</a>
+				</li>
+
+		</ul>
+	</div>
+</div>
+<div class="group_theme" data-block-id="" data-block-code="PC-THEME-BUSINESS-MOBILE-RANKING-DEFAULT-10" data-block-type="MATERIALS" data-template-code="MOBILE-RANKING-LIST"
+
+	 data-da="container"
+	 data-index=""
+     data-page="6"
+	 style="display:none">
+
+	<div class="list_theme_wrap">
+		<ul class="list_theme">
+
+				<li class="theme_item" data-gdid="CAS_60f60437-4420-11eb-aa73-1fd5804183e2" data-da-position="true">
+					<a href="https://blog.naver.com/businessinsight/222175325040" class="theme_thumb" data-clk="tcc_bsn.list11cont1" target="_blank">
+						<img  data-src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1223%2Fupload_246375172732741312WJ5G.jpg%22&amp;type&#x3D;nf340_228" alt="&quot;10년뒤 &#x27;옷 사이즈&#x27;는 없다&quot;" width="170" height="114">
+						<span class="thumb_bd"></span>
+					</a>
+					<a href="https://blog.naver.com/businessinsight/222175325040" class="theme_info" data-clk="tcc_bsn.list11cont1" target="_blank">
+						<em class="theme_category"> 비즈니스</em>
+						<strong class="title elss">"10년뒤 '옷 사이즈'는 없다"</strong>
+						<p class="desc">비즈니스의 핵심 성공 요소로 꼽히는 고객 경험 관리에 인공지능(AI)이 적극적으로 도입되고 있습니다. 기업들은 고객 여정 전 단계에 걸쳐 AI를 활용해 고객에게 유용한 정보를 전달하고 생생하고 편리한 경험을 제공함으로써 고객 경험을 향상하고자 합니다.​AI로 고객 데이터를 분석해 고객 맞춤형 정보를 제공합니다. 가상 현실(VR), 증강 현실(AR)을 통해 </p>
+						<div class="source_box">
+							<span class="date">1주일 전</span>
+							<span class="source"><span class="source_inner">인터비즈</span></span>
+						</div>
+					</a>
+				</li>
+
+				<li class="theme_item" data-gdid="CAS_4d3467e6-44ed-11eb-93cb-c9ab73450d8b" data-da-position="true">
+					<a href="https://blog.naver.com/businessinsight/222148746013" class="theme_thumb" data-clk="tcc_bsn.list11cont2" target="_blank">
+						<img  data-src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1224%2Fupload_247257709251647868g3fY.jpg%22&amp;type&#x3D;nf340_228" alt="마시는 소주를 보면 고향을 알 수 있다?" width="170" height="114">
+						<span class="thumb_bd"></span>
+					</a>
+					<a href="https://blog.naver.com/businessinsight/222148746013" class="theme_info" data-clk="tcc_bsn.list11cont2" target="_blank">
+						<em class="theme_category"> 비즈니스</em>
+						<strong class="title elss">마시는 소주를 보면 고향을 알 수 있다?</strong>
+						<p class="desc">[일러스트로 보는 &#x27;알랑말랑&#x27; 소주 탐구생활 (15)]​비대면 시대에도 &#x27;술자리&#x27;의 중요성은 여전하다. 단순히 &#x27;만나야 비즈니스가 된다&#x27;는 이유여서가 아니다. 모니터 너머 상대와도 술잔은 맞댈 수 있다. 핵심은 ‘주도(酒道)’를 알고 있느냐다. 술자리에서 마땅히 행해야 할 바른 예절이다. 가장 대중적인 술인 소주를 마실 때도 나름대로의 예...</p>
+						<div class="source_box">
+							<span class="date">1개월 전</span>
+							<span class="source"><span class="source_inner">인터비즈</span></span>
+						</div>
+					</a>
+				</li>
+
+				<li class="theme_item" data-gdid="CAS_8fafebb4-45b5-11eb-a438-3f75eedb7ed7" data-da-position="true">
+					<a href="https://post.naver.com/viewer/postView.nhn?volumeNo&#x3D;30284168&amp;memberNo&#x3D;25079232" class="theme_thumb" data-clk="tcc_bsn.list11cont3" target="_blank">
+						<img  data-src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1225%2Fupload_24811753088451953vBezv.jpg%22&amp;type&#x3D;nf340_228" alt="패키지 안에 그려진 원의 정체는?" width="170" height="114">
+						<span class="thumb_bd"></span>
+					</a>
+					<a href="https://post.naver.com/viewer/postView.nhn?volumeNo&#x3D;30284168&amp;memberNo&#x3D;25079232" class="theme_info" data-clk="tcc_bsn.list11cont3" target="_blank">
+						<em class="theme_category"> 비즈니스</em>
+						<strong class="title elss">패키지 안에 그려진 원의 정체는?</strong>
+						<p class="desc">본 콘텐츠는 읽는데 총 4분 정도 소요됩니다. #징성위 #시식하는 매장 #패키지 디자인시식을 위한 매장을 운영한다면 어떨까요? 손해 보는 장사처럼 보이지만, 대만의 국민 과자 펑리수를 파는 ‘써니힐즈‘는 시식하는 매장으로 대만을 대표하는 펑리수 브랜드가 되었습니다. 시식이라고 해서 펑리수를 잘라 일부만 제공하는 것이 아닙니다. 매장에 </p>
+						<div class="source_box">
+							<span class="date">6일 전</span>
+							<span class="source"><span class="source_inner">트래블코드</span></span>
+						</div>
+					</a>
+				</li>
+
+				<li class="theme_item" data-gdid="CAS_60f60434-4420-11eb-aa73-ab6554db9c03" data-da-position="true">
+					<a href="https://blog.naver.com/businessinsight/222042793015" class="theme_thumb" data-clk="tcc_bsn.list11cont4" target="_blank">
+						<img  data-src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1224%2Fupload_24731346278579980PzY7k.jpg%22&amp;type&#x3D;nf340_228" alt="&#x27;어제의 여행&#x27;은 이제 죽었다(!)" width="170" height="114">
+						<span class="thumb_bd"></span>
+					</a>
+					<a href="https://blog.naver.com/businessinsight/222042793015" class="theme_info" data-clk="tcc_bsn.list11cont4" target="_blank">
+						<em class="theme_category"> 비즈니스</em>
+						<strong class="title elss">'어제의 여행'은 이제 죽었다(!)</strong>
+						<p class="desc">* 인터비즈에서는 점심시간을 의미있게 보내고 싶어하는 모든 분들을 위해, 각 분야의 전문가분들을 모시고 매주 목요일 점심시간(12~13시) &#x27;이시한의 점심약속 LIVE&#x27;를 진행하고 있습니다. 글 하단 링크로 들어가시면 지난 회차들의 풀영상, VOD를 보실 수 있습니다. ​ [이시한의 점심약속 5회]​코로나는 산업계에 여러가지 변화를 만들었고, 앞으로 더 큰</p>
+						<div class="source_box">
+							<span class="date">5개월 전</span>
+							<span class="source"><span class="source_inner">인터비즈</span></span>
+						</div>
+					</a>
+				</li>
+
+				<li class="theme_item" data-gdid="CAS_015716b8-44eb-11eb-aa73-35ccd013f660" data-da-position="true">
+					<a href="https://blog.naver.com/businessinsight/220987884348" class="theme_thumb" data-clk="tcc_bsn.list11cont5" target="_blank">
+						<img  data-src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1224%2Fupload_24724526643840671Nz1Ql.jpg%22&amp;type&#x3D;nf340_228" alt="칭기즈칸, 세상의 원칙을 깨고, 세상에 없던 군대를 만들다!" width="170" height="114">
+						<span class="thumb_bd"></span>
+					</a>
+					<a href="https://blog.naver.com/businessinsight/220987884348" class="theme_info" data-clk="tcc_bsn.list11cont5" target="_blank">
+						<em class="theme_category"> 비즈니스</em>
+						<strong class="title elss">칭기즈칸, 세상의 원칙을 깨고, 세상에 없던 군대를 만들다!</strong>
+						<p class="desc">[DBR/동아비즈니스리뷰] 13세기 초 칭기즈칸의 첫번째 공격 목표는 호레즘 왕국이었다. 호레즘 왕군은 몽골군의 전술을 잘 파악하고 있는데 오히려 이것이 화근이 되었다. 몽골군은 호레즘이 절대 침투하지 못할 것이라 생각한 지역으로 침투했고, 대군 앞에서 병력을 집중할 거란 예상과 달리 부챗살처럼 병력을 분산시켜 호레즘 전 지역을 유린했다. 몽골에 의해 호레</p>
+						<div class="source_box">
+							<span class="date">3년 전</span>
+							<span class="source"><span class="source_inner">인터비즈</span></span>
+						</div>
+					</a>
+				</li>
+
+		</ul>
+	</div>
+</div>
+<div class="group_theme" data-block-id="" data-block-code="PC-THEME-BUSINESS-MOBILE-RANKING-DEFAULT-11" data-block-type="MATERIALS" data-template-code="MOBILE-RANKING-LIST"
+
+	 data-da="container"
+	 data-index=""
+     data-page="6"
+	 style="display:none">
+
+	<div class="list_theme_wrap">
+		<ul class="list_theme">
+
+				<li class="theme_item" data-gdid="CAS_4d3467e3-44ed-11eb-93cb-c3201132787c" data-da-position="true">
+					<a href="https://blog.naver.com/businessinsight/222085395562" class="theme_thumb" data-clk="tcc_bsn.list12cont1" target="_blank">
+						<img  data-src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1224%2Fupload_24725542843492481ly4cO.jpg%22&amp;type&#x3D;nf340_228" alt="소주 마시는 법을 그림으로 정리해야 하는 이유" width="170" height="114">
+						<span class="thumb_bd"></span>
+					</a>
+					<a href="https://blog.naver.com/businessinsight/222085395562" class="theme_info" data-clk="tcc_bsn.list12cont1" target="_blank">
+						<em class="theme_category"> 비즈니스</em>
+						<strong class="title elss">소주 마시는 법을 그림으로 정리해야 하는 이유</strong>
+						<p class="desc">​[일러스트로 보는 &#x27;알랑말랑&#x27; 소주 탐구생활 (1)]​비대면 시대에도 &#x27;술자리&#x27;의 중요성은 여전하다. 단순히 &#x27;만나야 비즈니스가 된다&#x27;는 이유여서가 아니다. 모니터 너머 상대와도 술은 마실 수 있다. 핵심은 ‘주도(酒道)’를 알고 있느냐다. 술자리에서 마땅히 행해야 할 바른 예절이다. 가장 대중적인 술인 소주를 마실 때도 나름대로의 예절...</p>
+						<div class="source_box">
+							<span class="date">3개월 전</span>
+							<span class="source"><span class="source_inner">인터비즈</span></span>
+						</div>
+					</a>
+				</li>
+
+				<li class="theme_item" data-gdid="CAS_e9ecd72f-45b2-11eb-93a0-4d6906d8cbd3" data-da-position="true">
+					<a href="https://post.naver.com/viewer/postView.nhn?volumeNo&#x3D;30256380&amp;memberNo&#x3D;30942091&amp;searchKeyword&#x3D;%25EC%259D%25B4%25EC%25A7%2581&amp;searchRank&#x3D;4" class="theme_thumb" data-clk="tcc_bsn.list12cont2" target="_blank">
+						<img  data-src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1225%2Fupload_24810641226343595rROrP.jpg%22&amp;type&#x3D;nf340_228" alt="똑똑할수록 빨리 이직한다? 에이스 붙잡는 리더의 자세" width="170" height="114">
+						<span class="thumb_bd"></span>
+					</a>
+					<a href="https://post.naver.com/viewer/postView.nhn?volumeNo&#x3D;30256380&amp;memberNo&#x3D;30942091&amp;searchKeyword&#x3D;%25EC%259D%25B4%25EC%25A7%2581&amp;searchRank&#x3D;4" class="theme_info" data-clk="tcc_bsn.list12cont2" target="_blank">
+						<em class="theme_category"> 비즈니스</em>
+						<strong class="title elss">똑똑할수록 빨리 이직한다? 에이스 붙잡는 리더의 자세</strong>
+						<p class="desc">“너무 일 잘하면, 금방 퇴사한다” “스펙이 너무 좋으면 이직이 쉽다”취업 포털 사이트에서 실시한 설문조사에서 응답 기업의 49.4%가 고스펙 지원자를 탈락시킨 적이 있다고 답했다. 탈락시킨 이유로 약 88%가 &#x27;쉽게 이직 및 퇴사할 것 같아서&#x27;를 선택했다. 왜 일 잘하는 직원이나 스펙 좋은 직원들은 이직을 꿈꾸는</p>
+						<div class="source_box">
+							<span class="date">1주일 전</span>
+							<span class="source"><span class="source_inner">21세기북스</span></span>
+						</div>
+					</a>
+				</li>
+
+				<li class="theme_item" data-gdid="CAS_60f60436-4420-11eb-aa73-037aa7c3597e" data-da-position="true">
+					<a href="https://blog.naver.com/businessinsight/221874079422" class="theme_thumb" data-clk="tcc_bsn.list12cont3" target="_blank">
+						<img  data-src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1223%2Fupload_246374844400970859tf8f.jpg%22&amp;type&#x3D;nf340_228" alt="앞으로는 뭘 준비해야 할까" width="170" height="114">
+						<span class="thumb_bd"></span>
+					</a>
+					<a href="https://blog.naver.com/businessinsight/221874079422" class="theme_info" data-clk="tcc_bsn.list12cont3" target="_blank">
+						<em class="theme_category"> 비즈니스</em>
+						<strong class="title elss">앞으로는 뭘 준비해야 할까</strong>
+						<p class="desc">대부분의 사람들이 아직까지 깨닫지 못한 것이 있다. 몇 주, 몇 달이 지나도 코로나 이전의 상태로 되돌아가지 못한다는 사실이다. 평생이 걸릴 수도 있다.​우리는 막연하게 모든 것이 빨리 정상으로 돌아가기를 원하지만, 팬데믹은 짧은 기간에 쉽게 해결 가능한 현상이 아니다. 바이러스 보균자가 전세계 단 한 명 뿐이라도 언제든 재발할 수 있는 것이 바로 전염병이</p>
+						<div class="source_box">
+							<span class="date">9개월 전</span>
+							<span class="source"><span class="source_inner">인터비즈</span></span>
+						</div>
+					</a>
+				</li>
+
+				<li class="theme_item" data-gdid="CAS_e9ecd72e-45b2-11eb-93a0-3bf52531190c" data-da-position="true">
+					<a href="https://blog.naver.com/mkresearch/222182826383" class="theme_thumb" data-clk="tcc_bsn.list12cont4" target="_blank">
+						<img  data-src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1225%2Fupload_2481054824545964322nJW.jpg%22&amp;type&#x3D;nf340_228" alt="&#x27;연봉1000 인상&#x27;스카웃 제의, 당신의 선택은?" width="170" height="114">
+						<span class="thumb_bd"></span>
+					</a>
+					<a href="https://blog.naver.com/mkresearch/222182826383" class="theme_info" data-clk="tcc_bsn.list12cont4" target="_blank">
+						<em class="theme_category"> 비즈니스</em>
+						<strong class="title elss">'연봉1000 인상'스카웃 제의, 당신의 선택은?</strong>
+						<p class="desc">올해 말, 내년 초는 연봉 협상 시즌인데요. 만약 본인이 기대한 것보다 적은 돈으로 연봉이 타결된 상태에서, 보다 좋은 조건으로 스카웃 제의가 왔다면 어떻게 하실 건가요? 물론 회사를 선택할 때, 연봉 외에도 고려할 요소가 많은 건 사실이지만 ‘연봉’이 우선 순위라는 데는 많은 직장인이 공감하지 않을까 싶어요.​회사는 그저 돈 벌기 위해 다니는 곳인걸요.​</p>
+						<div class="source_box">
+							<span class="date">4일 전</span>
+							<span class="source"><span class="source_inner">리서치기업 엠브레인</span></span>
+						</div>
+					</a>
+				</li>
+
+				<li class="theme_item" data-gdid="CAS_015716b9-44eb-11eb-aa73-b9e3292f3530" data-da-position="true">
+					<a href="https://blog.naver.com/businessinsight/220970913508" class="theme_thumb" data-clk="tcc_bsn.list12cont5" target="_blank">
+						<img  data-src="https://s.pstatic.net/dthumb.phinf/?src&#x3D;%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F2020%2F1224%2Fupload_24724618179779179dmnZ1.jpg%22&amp;type&#x3D;nf340_228" alt="스페인 ‘무적함대’의 패전 이유" width="170" height="114">
+						<span class="thumb_bd"></span>
+					</a>
+					<a href="https://blog.naver.com/businessinsight/220970913508" class="theme_info" data-clk="tcc_bsn.list12cont5" target="_blank">
+						<em class="theme_category"> 비즈니스</em>
+						<strong class="title elss">스페인 ‘무적함대’의 패전 이유</strong>
+						<p class="desc">[DBR/동아비즈니스리뷰] 1588년, 해양 패권을 두고 스페인의 무적 함대와 영국 함대가 한 판 붙었습니다. 당시에 해상 강대국이었던 스페인의 무적함대는 그야말로 세계 최강이었는데 예상 밖으로 완패를 당합니다. 과연 이 해전에서 무엇이 승리와 패배를 갈라놓았을까요? 16세기 스페인의 전성기, 유럽의 통합을 꿈꾸다 16세기 펠리페 2세가 이끄는 스페인은 역</p>
+						<div class="source_box">
+							<span class="date">3년 전</span>
+							<span class="source"><span class="source_inner">인터비즈</span></span>
+						</div>
+					</a>
+				</li>
+
+		</ul>
+	</div>
+</div>
+
+
+	<p class="alert_msg" data-clk-prefix="tcc_bsn">비즈니스 판의 컨텐츠는 <a href="https://blog.naver.com/businessinsight/221343879983" data-clk-suffix="corp" target="_blank">㈜인터비즈</a>에 의해 운영·편집 됩니다.</p>
+
+
+
+	<div class="btn_more_wrap">
+		<button type="button" class="btn_more" data-clk-custom="tcc_bsn.more" data-next-page="2"><i class="ico_more"></i>새로운 글 더보기</button>
+	</div>
+
+
+	</div>
+</div>
+ </div> </div> <div id="NM_INT_RIGHT" class="column_right"> <div class="column_fix_wrap"> <div id="da_brand"></div>
+<div class="sc_my" style="height: 135px;">
+<iframe id="minime" name="minime" data-iframe-src="/my.html" title="MY" style="position:relative;width:390px;height:135px;border:0px" frameborder="0" framespacing="0" marginheight="0" marginwidth="0" scrolling="no" vspace="0">
+</iframe>
+</div>
+
+ <div id="timesquare" class="sc_timesquare"> <h2 class="blind">타임스퀘어</h2> <div class="card_wrap">
+<div class="card_nav">
+<a href="#" role="button" class="btn_nav btn_prev" data-clk="squ.pre"><span class="blind">이전</span></a>
+<a href="#" role="button" class="btn_nav btn_next" data-clk="squ.next"><span class="blind">다음</span></a>
+</div>
+<div id="NM_TS_ROLLING_WRAP" style="height: 100%;">
+<div>
+<a href="https://news.naver.com/main/home.nhn" class="card_news" data-clk="squ.line1"><i class="news_badge type_live">LIVE</i><span class="news">저녁방송 메인뉴스 보기</span></a>
+</div>
+<div>
+<a href="https://search.naver.com/search.naver?sm=top_hty&amp;fbm=0&amp;ie=utf8&amp;query=%EC%BD%94%EB%A1%9C%EB%82%9819" class="card_news" data-clk="squ.line3"><i class="news_badge">이슈</i><span class="news">코로나바이러스감염증19 현황</span></a>
+</div>
+<div>
+<a data-clk="squ.weat" href="https://weather.naver.com/today/09410116" class="card_weather ico_w02">
+<div class="current_box">
+<strong class="current" aria-label="현재기온">6.0°</strong><strong class="state">맑음</strong>
+</div>
+<div class="degree_box">
+<span class="min" aria-label="최저기온">4.0°</span><span class="max" aria-label="최고기온">10.0°</span>
+</div>
+<span class="location">창천동</span>
+</a>
+</div>
+<div>
+<a data-clk="squ.dust" href="https://weather.naver.com/today/09410116" class="card_air">
+<ul class="list_air">
+<li class="air_item">미세<strong class="state state_normal">보통</strong></li>
+<li class="air_item">초미세<strong class="state state_bad">나쁨</strong></li>
+</ul>
+<span class="location">창천동</span>
+</a>
+</div>
+
+<div>
+<a href="https://finance.naver.com/world/sise.nhn?symbol=RUI@RTSI" class="card_stock " data-clk="squ.rus">
+<strong class="stock_title">증시</strong>
+<div class="stock_box">
+<em class="name">러시아</em>
+<strong class="current">1,391.17</strong>
+<span class="rate rate_up">12.81 +0.92%</span>
+</div>
+</a>
+</div>
+<div>
+<a href="https://finance.naver.com/world/sise.nhn?symbol=XTR@DAX30" class="card_stock " data-clk="squ.ger">
+<strong class="stock_title">증시</strong>
+<div class="stock_box">
+<em class="name">독일</em>
+<strong class="current">13,793.91</strong>
+<span class="rate rate_up">206.68 +1.52%</span>
+</div>
+</a>
+</div>
+<div>
+<a href="https://finance.naver.com/world/sise.nhn?symbol=STX@SX5E" class="card_stock " data-clk="squ.euro">
+<strong class="stock_title">증시</strong>
+<div class="stock_box">
+<em class="name">유로스톡스50</em>
+<strong class="current">3,576.78</strong>
+<span class="rate rate_up">33.50 +0.95%</span>
+</div>
+</a>
+</div>
+<div>
+<a href="https://finance.naver.com/marketindex/exchangeDetail.nhn?marketindexCd=FX_USDKRW" class="card_stock type_exchange" data-clk="squ.usd">
+<strong class="stock_title">환율</strong>
+<div class="stock_box">
+<em class="name">USD</em>
+<strong class="current">1,096.50</strong>
+<span class="rate rate_down">7.00 -0.63%</span>
+</div>
+</a>
+</div>
+</div>
+</div> <!-- EMPTY --> </div>  <div id="veta_branding"> <iframe id="da_iframe_rolling" name="da_iframe_rolling" data-iframe-src="https://siape.veta.naver.com/fxshow?su=SU10601&amp;nrefreshx=0" data-veta-preview="main_rolling" title="광고" width="350" height="200" marginheight="0" marginwidth="0" scrolling="no" frameborder="0"></iframe> <span class="veta_bd_t"></span> <span class="veta_bd_b"></span> <span class="veta_bd_l"></span> <span class="veta_bd_r"></span> </div>   <div id="shopcast" class="sc_shopcast"> <iframe id="shopcast_iframe" data-iframe-src="https://castbox.shopping.naver.com/shoppingboxnew/main.nhn" title="쇼핑캐스트" width="350" height="1539" marginheight="0" marginwidth="0" scrolling="no" frameborder="0"></iframe> </div> </div> </div> <a id="NM_scroll_top_btn" href="#wrap" class="content_top"><span class="blind">TOP</span></a> <button id="NM_darkmode_btn" type="button" role="button" class="btn_theme" aria-pressed="false"  > <span class="blind">라이트 모드로 보기</span> </button> </div> <div id="footer" role="contentinfo"> <div class="footer_inner"> <div class="banner_area"> <div class="da_box_wrap">    <div id="da_public_left"> <iframe id="da_iframe_bottom_left" data-iframe-src="https://siape.veta.naver.com/fxshow?su=SU10641&amp;nrefreshx=0" title="광고" width="350" height="86" scrolling="no" frameborder="0"></iframe> </div> <div id="da_public_right"> <iframe id="da_iframe_bottom_right" data-iframe-src="https://siape.veta.naver.com/fxshow?su=SU10642&amp;nrefreshx=0" title="광고" width="350" height="86" scrolling="no" frameborder="0"></iframe> </div> <div id="veta_time2"> <iframe id="da_iframe_below" name="da_iframe_below" data-iframe-src="https://siape.veta.naver.com/fxshow?su=SU10640&amp;nrefreshx=0" data-veta-preview="main_below" width="350" height="86" scrolling="no" frameborder="0" title="광고"> </iframe> </div> </div> </div> <div class="notice_area" data-clk-prefix="ntc"> <div class="notice_box"> <h3 class="title"><a href="https://www.naver.com/NOTICE">공지사항</a> </h3> <!-- EMPTY --> </div> <a href="more.html" class="link_all" data-clk="svcmap">서비스 전체보기</a> </div> <div class="aside_area"> <div class="partner_box_wrap"> <div class="partner_box" data-clk-prefix="crt"> <h3 class="title">Creators</h3> <a href="https://www.navercorp.com/service/creators" class="link_partner" data-clk="creator">크리에이터</a> <a href="https://www.navercorp.com/service/business" class="link_partner" data-clk="smbusiness">스몰비즈니스</a> </div> <div class="partner_box" data-clk-prefix="crt"> <h3 class="title">Partners</h3> <a href="https://business.naver.com/service.html" class="link_partner" data-clk="service">비즈니스 · 광고</a> <a href="https://sell.storefarm.naver.com/#/home/about" class="link_partner" data-clk="store">스토어 개설</a> <a href="https://smartplace.naver.com" class="link_partner" data-clk="place">지역업체 등록</a> <a href="https://expert.naver.com/?tab=guide#join" class="link_partner" data-clk="expert">엑스퍼트 등록</a> </div> <div class="partner_box" data-clk-prefix="crt"> <h3 class="title">Developers</h3> <a href="https://developers.naver.com" class="link_partner" data-clk="center">네이버 개발자 센터</a> <a href="https://developers.naver.com/docs/common/openapiguide/#/apilist.md" class="link_partner" data-clk="openapi">오픈 API</a> <a href="https://naver.github.io" class="link_partner" data-clk="opensource">오픈소스</a> <a href="https://d2.naver.com" class="link_partner" data-clk="d2">네이버 D2</a> <a href="http://d2startup.com" class="link_partner" data-clk="naverD2SF">네이버 D2SF</a> <a href="https://www.naverlabs.com" class="link_partner" data-clk="labs">네이버 랩스</a> </div> </div> <div class="service_box_wrap"> <div class="service_box" data-clk-prefix="wbd"> <a href="http://whale.naver.com/" class="service_logo" data-clk="bt"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAAC91BMVEUAAACE1dAbf6jE1Nq/z9e82drQ3OG7ytOzws+6x9QNs7MeLpQSx60QrLAfL50gMakTxKyzwc8fMacSr6yywc8fMKIdLYzJ1d4KrrW6ydMJrrUbr6QgMKW2xNEcr6W7ydUfL5cIr7XBztgMtbMeL50fMaQQzrI0tK4cLIQUvqsVvqofMKLL0eGzxM+4xtIZuKcJr7XCyNt0xsILsLW1w9AdLYZwvL8gMaoeLY6CzMceLYyxz9fI1d0JwLMeLY4KrbXFzeAgMqvN2OEIrLUGsrVIurMfLpAcLIIIsbVWs7MeLpXIzt0UvakgMqwfL5x4wcEJsLYfMagWt6k6qqoil6DV2+UdK4EeMoEfLpOzws4/s7YgMacXvqoC27QcK38B17TE1dobKW0bKnID0bTP3OACzrQcKngcLIMbKXAD07QeLYfi6uzY4+YfLpDN2+DK2d0cK3zU4eTS3+IFzLQeL5ccKnXk7O7G19wgMJ3R3uHa5ejL2t7c5unI2Nzg6esBxrMfMKPp7vEeLYrr8fMNr7X2+PkeLYzt8vQE2LTx9fYfLpPz9/gHyLMOsrUHr7UCybQLs7YKu7UIuLUFvLQGwbUIxbQGw7QcKnTZ5OfV4uUJv67e5+rd5+rl7e8Ju6z3+vvm7vDp8PHs8vPw9fbv9PUgMaj6/PwgMqwJs6kNw7AFubULtrUGtbUJvrQEv7QAwq8MrqYKuKsKtqn+/v4Osaf7/P0K1rMHq6UeqKQNqKQhNoIgSH0Vvqoie5MhWIdV3cAcsaYhhZoglJkdLXnJ7+ia5tU61rgp1rceoKIhb4whZYgcM3fj9vJw3sdJx7xtd6sXt6hCT5AvPpAfPYQbKIMcJ34fP3q+8uSy49ux0tWd2NKYzM+A48yE08t6xchdv8FP0b1zfbcSpKIgToEbJ3nE5OG12Nmn19WM5tGKk8ehqMZlxcJJuLwgtLcbvbYc2bUTtaknNpA1Q4bZ7uuzuNuP3M9p0cNfbLUKtq5IVqk8Sp8jZpxaZZrUCA9eAAAAXXRSTlMABAj99BcO6IpfLhj9hPLp5ryyq6ZzXDnd2cuYkHtzbFFOQj0yJv76+ebc29fXx8TCuJuVlIqHgX5gPS0kEvn49/f08O3t6+fj2tLR0MzGeGNfWvbz7sXBpYN4PB4CDkIdAAAFcUlEQVRo3q3TdVwTYRjA8eeI0SKgYnd3d3d362tgO7u7Y4rd3d2K4pwwQkAQJUSxu7vbPzwYg9vufe+eO/neP9vtPr/n7t53gFMobxXPVu719pu4t/LM2a4gBwioeGZP9/0U9TyrFEyHepUSeyW45+wB/8GmXetZskpkdlGbz+w+CyVDThdV+QyT0FSMyFtikiIZMnOggIvnOMWaFwS0LBkkQj/q/mL8UpVDvv2ui6V89XvF+qm1C2rnNx8u6ferq8zfGlcHWdUbD/8PtbPI7p7aC5R49Mn6TFWZ5Z2jzKNPolOVJPtD04HEhLxFh6YH5lsqWHQQ1dVBCjFW2qUJo+8Xq3BAUeputenci27Qo6u9FGpC+8dV6pUODAZDQkKCwdAFRNz+s2wMiYwbQkwi7oWVBCvOHUep9yQkTkfMIsIv+/HygKVigaPoYuMFX+InGEQXJIS4kjRBN/b5JZutAaHcxDhQ3gVD7AWrU0a9TpgPO5OqnMUOciWJA9O8jh+IYwwmAhE39gnMrwFpchByQXCjn/kvCOf1ROil7z4LgnWuVZiQ8UpFh/gTgYs3tlvzFj4AiVbYN7oSoaDL20VaQAou6drE9UpcCCUWruyeL+ZbM3UL8Yw+YrHD4n2ozgdY9X3n05g3UnHCC6R0Xvv9pfaj/ImFoN3zqbQcJOlJkugpofWfafnoSGIp4rIvg5N5iXn+0aIS7vUQ/zBfFtMyFyPJogajXOpHrIQvYprNJf0JiEkAJu8TQqwF7VnE5mTaQyaX5PvRwUQkbLeEpH1UhqRw9ZHrP3ElInf3SOkEABmJWWhfaVG9iciHywulzNWAjY6kuiSV9wklFOELpeWHAsINZ2T3+d1JcXHrLmkVITcRGMJ8hsDehCZ8rozSkINYCKTmn8QRQn8AuQElwYtYCj4vyieG6gjdy51y6kMZYkUXmmj58kP9CcOHL7PlaKElEdEFR5031wPjCNvd2fKgOKHqF6CP1AeI7j1k+PA/aSfDdsiDjESBgDm8SJIiaCuCsgH6a7xAkuLmBASFA67zzAMuanEDdAoUHvX06dNgncldLQYU763Ex6hLkebPz7TaCfIHtOyt0kMtCpRROyAc1R8GXvy1Q1Qc/htmYNQFtyHqXEH1N2eD9ioH3NyM4gHO/VSJ2IKTC7ixqgZ8m4bjDVBMTb/waFx/IwfgNUCFK1NwHACgvZoBN5EDMgGAzRJWZSyz/3ADkjfwGo1V7PYwnPoc8MovZ2Dll18cjRzgAUnsDy5hYE24NwwpPyRrNJNuOcOSZxtx7MCk2kG6JQzfRyM5Qooix2lmsjxH9qdqIEX5TTRrGR6OQcoEZlwRSp/5BC/GjEYdI+whVfltYgfX0sXgH0CgiKh/fB3D7ck4thoQqHbS2kFGP2YyUi6w0OyUpW1rGG73x3HgwIJ98AGhU0cZ/Rhkf2oNsNLGYsC2YwwvkAMcQaTZ6TQfjzK8QfazcSDCdTiRajXD++cjUOzsgaKG3tz/uZLhHq4/PT9QVTt3NtmB1QwxI3EDnIChzeNzvLMrGd7fmoriCEyVH/P9Qyx3cP2KAJITDq9iuD8SxREkdT/C6j+Yjup3A0nOTQ8zPJiIyds6gaQCDY8wvJk4HcHOGyS1XbqC4f50jNL2IMWmwlKGd3cmItjmknn92VcwvL2F6ZeqKX37bszbv98HwU5mdfNlncfw4FYf3kSpg887aqQ3T1lW/u2dPnLk8/nKLmMoW9nDVjZfyomTzjdl1BtWcAYA+zylpGY4ONYEOc5u2evMs5a1QoHU+9I4ZXKwpcU98tgDDufc1s0re9YGdZYta5A1u5dbvlpgReOdp6JHNgc7fpCtnUO20ply5UfG/wEFXaai/lOVTwAAAABJRU5ErkJggg==" alt="웨일" width="48" height="48"> </a> <div class="service_info"> <strong class="title">웨일 브라우저</strong> <a href="http://whale.naver.com/" class="dsc" data-clk="bt">다운받기</a> </div> </div> <div class="service_box" data-clk-prefix="prj"> <a href="https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EA%BD%83" class="service_logo" data-clk="link"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF4AAABkCAMAAAA47XeXAAAAgVBMVEUAAADN5PdGm99Gm99Gm99Gm99Gm95Gm99Gm99Gm99Gm99Gm99Gm99Gm99Gm99Gm99Gm99Gm99Gm99Gm99Gm99Gm99Gm99Gmt9Gm99Gm99Gm99Gm95Gm99Gm99Gm95Gm99Hm99Gm99Gm9/////3+/5cp+LO5PfR5/fO5fdcp+P7/f/zv5GhAAAAInRSTlMA/v7vH9u5qJNgGwb6l8a9uqF9WFUyLxYMCtbVmLCwe4OCj8gzEgAAA0NJREFUaN7NmmFz4iAQhkkwMTHGWrWtWvWuq8mF+/8/8Ey2nb0OhSwQZnw+MHQ7pbjAy2s2gsuiLPJMLpcyy4tyISZltnmHbxw3MzEVr/MUNNL5q5iCt2ccXCN9fhPB7CQYkTsRRlWDlboSAexzGCHfC28OKxhldfDOzBMwePLNTw0sauHFFphshQcLCUwkaQRfXYBPSkrEUBdv3jezcXXhw1ciUhc+fCUidQlH7qzqEk5d2dQlnHxvU5dwVgdXdSGclaiGyamt6hLO1qIu4ZASzcFE092SBprk1jagulvXAAw/qb5N7m176xQYmOPoLymYaK/X65/PNhlagE6LGUhfRM8FjNzuf/73//bHmInzoJEpjMyeWpp9RzGz/PT6+QvMNO2Q+67PPeYZY5h7jDVg5OM+/BGikd13JfDAj/Ad1WLMyEyUwKPT00ypN1GKAljQJtFiFgqRe86eYhbWIvPPPR5d+9pKiIgUwKNJdHXBvW9jyRye1EWLWYfnJcd141Byspizz7gbUyWDuqiW0v15D9g3ZgF86JwyKUgUHJaATUmS5rsEdkkTZLjZS8Alw+skFr8Nl6H6uosShaKOp3Zo+/jgFTDe+wcSfv0yFGfQaLX7tDO0reXOPRuMCG4Q11Y3IiYblWgzS7R+h31qdRtlGB7zikeUckz+AB3a8FuMqD7Cd2nhUHLOEIkLubQIkEuLxIdwEwUy3HyXxsbgPMJcGuGox+TSIugxuTQ+KHIaAS5N92eIIuMT5tJoPfHy5q9yKoXLelLuKRri0mjMQdhwTPw6Sv8pzKXhFyhNilEwkSCXRrnAnaPnJdyl0UrqXircpeHVglnv+62K4NJo3lFcGmWd79KO7OQoXAE8XNO6tIQGxj7fpfHTwk8RubQLWEGvgTNGKzj01fixunCMCCYcvSSlaFwUyKVx86J3bczpUR3zimq1LqdosAUbJF54ar+uk5Gju436mPTk8ZAXFdO93HRYTesUVgf3B+y0XdxLfdVputmfKp/iBtNjyl3c0kzUwtJIWewIPvAL9LOyWLsV9WAps3VRzh6hJBm3oOqsRKfHLGYzS/GP+iLBuBKdqkd+iWPkFZTHf4Em4us/uhI5qss/6zK5u8+AXpwAAAAASUVORK5CYII=" alt="꽃" width="47" height="50"> </a> <div class="service_info"> <strong class="title">프로젝트 꽃</strong> <a href="https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EA%BD%83" class="dsc" data-clk="link">바로가기</a> </div> </div> </div> </div> <div class="corp_area" data-clk-prefix="plc"> <h3 class="blind">네이버 정책 및 약관</h3> <ul class="list_corp"> <li class="corp_item"><a href="https://www.navercorp.com" data-clk="intronhn">회사소개</a></li> <li class="corp_item"><a href="https://recruit.navercorp.com/naver/recruitMain" data-clk="recruit">인재채용</a></li> <li class="corp_item"><a href="https://www.navercorp.com/naver/proposalGuide" data-clk="contact">제휴제안</a></li> <li class="corp_item"><a href="/policy/service.html" data-clk="service">이용약관</a></li> <li class="corp_item"><a href="/policy/privacy.html" data-clk="privacy"><strong>개인정보처리방침</strong></a></li> <li class="corp_item"><a href="/policy/youthpolicy.html" data-clk="youth">청소년보호정책</a></li> <li class="corp_item"><a href="/policy/spamcheck.html" data-clk="policy">네이버 정책</a></li> <li class="corp_item"><a href="https://help.naver.com/" data-clk="helpcenter">고객센터</a></li> </ul> <address class="addr"><a href="https://www.navercorp.com" target="_blank" data-clk="nhn">ⓒ NAVER Corp.</a></address> </div> </div> </div> </div> <div id="adscript" style="display:none"></div> </body> </html>
